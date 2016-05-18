@@ -1,0 +1,79 @@
+.page--small .container {
+  margin: 120px auto 110px;
+  width: 860px;
+  background: #fff;
+}
+.page--small .logo {
+  display: block;
+  margin: 0 auto;
+  padding-top: 34px;
+  width: 80px;
+  height: 98px;
+}
+.page--small .register-box,
+.page--small .c-tab--first {
+  margin-top: 3px;
+  padding: 0 195px;
+}
+.page--small .register-box .form-horizontal,
+.page--small .c-tab--first .form-horizontal {
+  margin-top: 38px;
+}
+.page--small .register-box .form-horizontal .control-group--custom,
+.page--small .c-tab--first .form-horizontal .control-group--custom {
+  margin-top: 30px;
+}
+.page--small .register-box .form-horizontal .validate-error,
+.page--small .c-tab--first .form-horizontal .validate-error {
+  margin-top: 8px;
+}
+.page--small .link-register {
+  padding: 65px 0 60px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #989898;
+}
+.page--small .link-register a {
+  color: #989898;
+}
+.page--small .footer-bd {
+  background-color: #eaeeef;
+  color: #686868;
+}
+.page--small .footer-nav a {
+  color: #686868;
+}
+.checkbox-label >input {
+  width: 16px;
+  height: 16px;
+  vertical-align: -2px;
+}
+.validate-error {
+  padding-left: 28px;
+  background: url("/static/image/sign_warn.png") no-repeat 0 50%;
+  font-size: 16px;
+  color: #f2734a;
+}
+.register-box .title {
+  margin-top: 26px;
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+}
+.entrance-remotecase {
+  padding: 210px 0 110px;
+  text-align: center;
+}
+.register-success {
+  padding-top: 210px;
+  text-align: center;
+  font-size: 32px;
+  color: #e80707;
+}
+.register-success >img {
+  margin-right: 15px;
+  vertical-align: -6px;
+}
+.auto-jump {
+  font-size: 14px;
+}

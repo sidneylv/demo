@@ -1,0 +1,163 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/nivo-slider.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+</head>
+<body>
+<div id="header">
+  <div class="inheader">
+    <div id="logo"><a href="/"></a></div>
+    <div id="login">
+      <form accept-charset="UTF-8" action="/users/sign_in" class="new_user" id="new_user" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="VmoL9qJ9DJTeUBZSjwoerx0UEAeRR8PVUJO4Hf1Rvm8=" /></div>
+      <ul>
+        <li>
+          <label>手机号</label>
+          <input id="home_mobile" name="user[mobile]" placeholder="请输入手机号" tabindex="1" type="text" />
+            <input name="user[remember_me]" type="hidden" value="0" /><input class="check" id="user_remember_me" name="user[remember_me]" type="checkbox" value="1" /> 
+          <label class="checklb" for="user_remember_me">记住我</label>
+        </li>
+        <li>
+          <label>密码</label>
+          <input autocomplete="off" id="home_password" name="user[password]" placeholder="输入密码" tabindex="2" type="password" />
+          <a class="relink" href="/password_reset/new">忘记密码?</a>
+        </li>
+        <li class="log">
+          <button class="submitC" type="submit">登录</button>
+          <button class="submitB" data-url="/users/sign_up" id="btn_register" name="button" type="button">注册</button>
+        </li>
+      </ul>
+      <input name="authenticity_token" type="hidden" value="VmoL9qJ9DJTeUBZSjwoerx0UEAeRR8PVUJO4Hf1Rvm8=" />
+</form>    </div>
+  </div>
+</div>
+<div id="navigation">
+  <div class="innav">
+      <ul>
+        <li class="index on">
+          <a class="indexico" href="/">首页</a>
+        </li>
+        <li>
+          <a class="applyico" href="/customer">服务申请</a>
+        </li>
+        <li>
+          <a class="priceico" href="/home/service_price">服务价格</a>
+        </li>
+        <li>
+          <a class="doctorico" href="/provider">我是医生</a>
+        </li>
+        <li>
+          <a class="questionico" href="/home/question">常见问题</a>
+        </li>
+      </ul>
+  </div>
+</div>
+<div id="focuspic">
+  <div class="slider-wrapper theme-default">
+    <div id="slider" class="nivoSlider"> 
+      <a href="#"><img src="images/980X430.jpg" alt="" /></a>
+      <a href="#"><img src="images/980X430-4.jpg" alt="" /></a>
+      <a href="#"><img src="images/980X430-5.jpg" alt="" /></a>
+    </div>
+  </div>
+  <div id="indexcont">
+    <div class="wrap">
+      <ul>
+        <li>
+            <a href="/customer/services/recommendations/new">
+              <h1 class="columnA"></h1>
+            </a>
+          
+          <p style="font-size:15px"> 我有些不舒服，但不知道找哪个医生看病，希望就诊通帮我推荐合适的医院和医生。 </p>
+          
+        </li>
+        <li>
+            <a href="/customer/services/appointments/new">
+              <h1 class="columnB"></h1>
+            </a>
+
+          <p style="font-size:15px"> 我就是来约心仪的医生看病的。</br>
+              我是来复诊的，和原来的医生约个时间继续看病。
+          </p>
+        </li>
+        <li>
+            <a href="/customer/services/consultations/new">
+              <h1 class="columnC"></h1>
+            </a>
+
+          <p style="font-size:15px"> 我找了很多医院医生看病，现在希望找上海的专家会诊，得到整体全面的诊疗方案。</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="otherinfo">
+  <div class="wrap">
+    <ul>
+      <li>
+        <h1 class="otpartA">关于我们</h1>
+        <div class="otbox">
+          <p>诊通健康科技（上海）有限公司是一家由多名上海三甲医院医学专家共同创建的高端私人健康顾问及服务机构，旨在以国际化的“私人医生”健康医疗服务理念、五星级的顾问式服务定位和一流的行业资源整合，为高端人群提供专业、便捷、优质、隐私的医疗健康服务。 <span class="f-org more"><a href="/home/more">more</a></span> </p>
+        </div>
+      </li>
+      <li>
+        <h1 class="otpartB">联系我们</h1>
+        <div class="otbox"> 
+          <span class="address">上海市思南路105号312室</span> 
+          <span class="tel">400 888 4013 (谐音:私人医生)</span> 
+          <span class="weixin">诊通 (ID: jiuzhentong)</span> 
+          <span class="mail">kefu@jiuzhentong.com</span> 
+          <span class="web">www.JiuZhenTong.com</span> 
+        </div>
+      </li>
+      <li>
+        <h1 class="otpartC">意见反馈</h1>
+        <div class="otbox">
+        <form accept-charset="UTF-8" action="/home/message" class="new_message" data-remote="true" id="new_message" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+            <dl>
+              <dd>
+                <input id="message_user_name" name="message[user_name]" placeholder="姓名" required="required" type="text" />
+              </dd>
+              <dd>
+                <input id="message_user_mobile" name="message[user_mobile]" placeholder="手机" required="required" type="text" />
+              </dd>
+              <dd>
+                <textarea id="message_content" name="message[content]" placeholder="内容" required="required">
+</textarea>
+              </dd>
+            </dl>
+            <button class="submitB bj-fright" type="submit">提交</button>
+</form>        </div>
+      </li>
+      <li>
+        <h1 class="otpartD">关注我们</h1>
+        <div id="weixin">
+          <h2 class="f-18">微信公众帐号</h2>
+          <h3 class="f-14">诊通</h3>
+          <h3>ID:jiuzhentong</h3>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="clearit"></div>
+<div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+<script data-turbolinks-track="true" src="assets/application.js"></script>
+<script type="text/javascript" src="javascripts/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+  $(window).load(function() {
+      $('#slider').nivoSlider();
+  });
+</script>
+<script src="assets/home.js"></script>
+</body>
+</html>

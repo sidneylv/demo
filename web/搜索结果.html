@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.shCircleLoader.css" >
+  <link rel="stylesheet" type="text/css" href="stylesheets/loading.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="false" src="assets/application.js"></script>
+  
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <div class="seachbox_top">
+        <div class="keywds_top">
+            <input type="text" value="输入疾病、症状、医生姓名、医院……"><a href="#" title="搜索"></a>
+        </div>
+    </div>
+    <div class="login">
+      <a class="usericon" href="/customer" id="home_user_name">王欣捷</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+<div id="wrap" class="clearfix">
+	<div class="resulttit">您搜索<span class="dekeywds">胃癌</span>共找到<span class="denum">788</span>名相关医生：</div>
+    <div class="selebox">
+    	<div class="selected">您的选择：<span class="sthison">北京<a href="#" class="closesel"></a></span><span class="sthison">肿瘤科<a href="#" class="closesel"></a></span><span class="sthison">一周内可预约<a href="#" class="closesel"></a></span></div>
+    	<ul>
+        	<li class="areas"><span class="lefttit">地区：</span><div class="rigcontslist"><a href="#" class="ont">北京</a><a href="#">上海</a><a href="#">美国</a><a href="#">香港</a><a href="#">台湾</a></div></li>
+            <li><span class="lefttit">科室：</span><div class="rigcontslist"><a href="#" class="ont">肿瘤科 </a><a href="#">普外科</a><a href="#">微创外科</a><a href="#">放疗科</a><a href="#">台湾</a></div></li>
+            <li><span class="lefttit">职称：</span><div class="rigcontslist"><a class="" href="/doctors?hospital=&amp;keywords=%E9%87%91" name="hospital">全部</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E4%B8%AD%E5%B1%B1%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海中山医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E4%BA%94%E5%AE%98%E7%A7%91%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海五官科医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E5%84%BF%E7%AB%A5%E5%8C%BB%E5%AD%A6%E4%B8%AD%E5%BF%83&amp;keywords=%E9%87%91" name="hospital">上海儿童医学中心</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E5%84%BF%E7%AB%A5%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海儿童医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E5%8D%8E%E4%B8%9C%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海华东医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E5%8D%8E%E5%B1%B1%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海华山医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E5%B2%B3%E9%98%B3%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海岳阳医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E5%B8%82%E7%AC%AC%E4%B8%80%E4%BA%BA%E6%B0%91%E5%8C%BB%E9%99%A2%E5%88%86%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海市第一人民医院分院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E5%B8%82%E7%AC%AC%E4%B8%80%E5%A6%87%E5%A9%B4%E4%BF%9D%E5%81%A5%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海市第一妇婴保健院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E5%B8%82%E7%AC%AC%E5%85%AD%E4%BA%BA%E6%B0%91%E5%8C%BB%E9%99%A2%E4%B8%9C%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海市第六人民医院东院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E5%B8%82%E8%82%BA%E7%A7%91%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海市肺科医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E5%B8%82%E8%82%BF%E7%98%A4%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海市肿瘤医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E6%9B%99%E5%85%89%E5%8C%BB%E9%99%A2%E4%B8%9C%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海曙光医院东院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E6%9B%99%E5%85%89%E5%8C%BB%E9%99%A2%E8%A5%BF%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海曙光医院西院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E7%91%9E%E9%87%91%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海瑞金医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E7%9A%AE%E8%82%A4%E7%97%85%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital" class="ont">上海皮肤病医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E7%AC%AC%E4%B8%80%E4%BA%BA%E6%B0%91%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海第一人民医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E7%AC%AC%E4%B9%9D%E4%BA%BA%E6%B0%91%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海第九人民医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E7%AC%AC%E5%85%AD%E4%BA%BA%E6%B0%91%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海第六人民医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E7%B2%BE%E7%A5%9E%E5%8D%AB%E7%94%9F%E4%B8%AD%E5%BF%83&amp;keywords=%E9%87%91" name="hospital">上海精神卫生中心</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E8%83%B8%E7%A7%91%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海胸科医院</a>
+        <a href="/doctors?hospital=%E4%B8%8A%E6%B5%B7%E9%BE%99%E5%8D%8E%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">上海龙华医院</a>
+        <a href="/doctors?hospital=%E4%BB%81%E6%B5%8E%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">仁济医院</a>
+        <a href="/doctors?hospital=%E5%8D%8E%E4%B8%9C%E5%8C%BB%E9%99%A2%E9%97%B5%E8%A1%8C%E5%88%86%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">华东医院闵行分院</a>
+        <a href="/doctors?hospital=%E5%8D%8E%E5%B1%B1%E5%8C%BB%E9%99%A2%E5%AE%9D%E5%B1%B1%E5%88%86%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">华山医院宝山分院</a>
+        <a href="/doctors?hospital=%E5%8D%8E%E5%B1%B1%E5%8C%BB%E9%99%A2%E9%9D%99%E5%AE%89%E5%88%86%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">华山医院静安分院</a>
+        <a href="/doctors?hospital=%E5%9B%BD%E9%99%85%E5%A6%87%E5%B9%BC%E4%BF%9D%E5%81%A5%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">国际妇幼保健院</a>
+        <a href="/doctors?hospital=%E5%A4%8D%E6%97%A6%E5%84%BF%E7%A7%91%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">复旦儿科医院</a>
+        <a href="/doctors?hospital=%E6%96%B0%E5%8D%8E%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">新华医院</a>
+        <a href="/doctors?hospital=%E7%91%9E%E9%87%91%E5%8C%BB%E9%99%A2%E5%8D%A2%E6%B9%BE%E5%88%86%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">瑞金医院卢湾分院</a>
+        <a href="/doctors?hospital=%E7%BA%A2%E6%88%BF%E5%AD%90%E5%8C%BB%E9%99%A2&amp;keywords=%E9%87%91" name="hospital">红房子医院</a></div><div class="showmoreadd"><a class="morechoose" href="javascript:void(0);"></a></div></li>
+            <li><span class="lefttit">状态：</span><div class="rigcontslist"><a href="#" class="ont">一周内可预约 </a><a href="#">可预约</a></div></li>
+            <li><span class="lefttit">学历：</span><div class="rigcontslist"><a href="#">博士 </a><a href="#">硕士</a><a href="#">本科</a><a href="#">其他</a></div></li>
+        </ul>
+    </div>
+    <div class="redsm">不知道哪位医生最适合您？<a href="#" title="人工推荐医生？"><img src="images/new/tjdoct.gif" /></a></div>
+    <div class="user-tb">
+  <div class="tbinfo">    
+    <div>
+      <table id="table_doctor" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <th class="auto">医生信息</th>
+              <th class="date">
+              	<a href="#" class="arr_left_new"></a>
+                星期二
+                <span>2014-12-16</span>
+              </th>
+              <th class="date">
+                星期三
+                <span>2014-12-17</span>
+              </th>
+              <th class="date">
+                星期四
+                <span>2014-12-18</span>
+                <a href="#" class="arr_right_new"></a>
+              </th>
+              <th class="operation">服务操作</th>
+            </tr>
+        <tr>
+          <td style="background:#fff;">
+            <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td rowspan="5" class="docimg">
+                    <img src="images/120X160.png" width="120" height="160">
+                </td>
+                <td rowspan="5" class="docinfo">
+                  <h1 class="f-14">
+                    狄青<span class="f-12">住院医师</span>
+                  </h1>
+                  <ul class="rank">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <a href="#">胃肠道肿瘤</a><a href="#">腹腔镜</a><a href="#">腹腔镜</a><br>
+                  医院：仁济医院(东院)<br>
+                  科室：心内科<br>
+                  地址：上海市浦东新区浦建路160号 <br>
+                  <input type="button" value="查看简历" name="show_resume" data-dir-url="/customer/resumes/DN141104102528295">
+                  <br /><br />
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+          <td colspan="3">
+            <table id="doctor_schedules_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                      <td class="timeoff">
+                        07:00-08:00
+                      </td>
+                      <td class="timeoff">
+                        07:00-08:00
+                      </td>
+                      <td class="timeoff">
+                        07:00-08:00
+                      </td>
+                </tr>
+                <tr>
+                      <td>
+                        <input data-doctor-no="DN141104102528295" data-schedule-id="567" data-service-price="100" id="doctor_no_dn141104102528295" name="doctor[no]" type="radio" value="DN141104102528295">
+                        08:00-11:30
+                      </td>
+                      <td class="timeoff">
+                        08:00-11:30
+                      </td>
+                      <td class="timeoff">
+                        08:00-11:30
+                      </td>
+                </tr>
+                <tr>
+                      <td class="timeoff">
+                        11:30-13:30
+                      </td>
+                      <td class="timeoff">
+                        11:30-13:30
+                      </td>
+                      <td class="timeoff">
+                        11:30-13:30
+                      </td>
+                </tr>
+                <tr>
+                      <td class="timeoff">
+                        13:30-17:00
+                      </td>
+                      <td class="timeoff">
+                        13:30-17:00
+                      </td>
+                      <td class="timeoff">
+                        13:30-17:00
+                      </td>
+                </tr>
+                <tr>
+                      <td class="timeoff">
+                        17:00-20:00
+                      </td>
+                      <td class="timeoff">
+                        17:00-20:00
+                      </td>
+                      <td class="timeoff">
+                        17:00-20:00
+                      </td>
+                </tr>
+            </tbody></table>
+          </td>
+          <td class="operation" id="doctor_id_DN141104102528295" name="service_price">
+          	<p class="sep_p"><a href="#" class="newbutt_red">预约</a></p>
+            <p class="sep_p"><a href="#" class="newbutt_blue">云诊</a></p>
+            <p class="sep_bor_p"><a href="#" class="newbutt_gz">关注</a></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td rowspan="5" class="docimg">
+                    <img src="images/120X160.png" width="120" height="160">
+                </td>
+                <td rowspan="5" class="docinfo">
+                  <h1 class="f-14">
+                    金羽青<span class="f-12">主治医师</span>
+                  </h1>
+                  <ul class="rank">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  专长：五官整形 周围神经损伤修复 毛发移植<br>
+                  医院：上海市第一人民医院<br>
+                  科室：整形外科<br>
+                  地址：上海市海宁路100号 <br>
+                  <input type="button" value="查看简历" name="show_resume" data-dir-url="/customer/resumes/DN141105135219860">
+                  <br /><br />
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+          <td colspan="3">
+            <table id="doctor_schedules_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                      <td class="timeoff">
+                        07:00-08:00
+                      </td>
+                      <td class="timeoff">
+                        07:00-08:00
+                      </td>
+                      <td class="timeoff">
+                        07:00-08:00
+                      </td>
+                </tr>
+                <tr>
+                      <td class="timeon">
+                        <input data-doctor-no="DN141105135219860" data-schedule-id="637" data-service-price="111" id="doctor_no_dn141105135219860" name="doctor[no]" type="radio" value="DN141105135219860">
+                        08:00-11:30
+                      </td>
+                      <td class="timeoff">
+                        08:00-11:30
+                      </td>
+                      <td class="timeoff">
+                        08:00-11:30
+                      </td>
+                </tr>
+                <tr>
+                      <td class="">
+                        <input data-doctor-no="DN141105135219860" data-schedule-id="638" data-service-price="111" id="doctor_no_dn141105135219860" name="doctor[no]" type="radio" value="DN141105135219860">
+                        11:30-13:30
+                      </td>
+                      <td class="timeoff">
+                        11:30-13:30
+                      </td>
+                        <td class="">
+                          <input data-doctor-no="DN141105135219860" data-schedule-id="648" data-service-price="200" id="doctor_no_dn141105135219860" name="doctor[no]" type="radio" value="DN141105135219860">
+                          11:30-13:30
+                        </td>
+                </tr>
+                <tr>
+                      <td class="timeoff">
+                        13:30-17:00
+                      </td>
+                      <td class="timeoff">
+                        13:30-17:00
+                      </td>
+                      <td class="timeoff">
+                        13:30-17:00
+                      </td>
+                </tr>
+                <tr>
+                      <td class="timeoff">
+                        17:00-20:00
+                      </td>
+                      <td class="timeoff">
+                        17:00-20:00
+                      </td>
+                      <td class="timeoff">
+                        17:00-20:00
+                      </td>
+                </tr>
+            </tbody></table>
+          </td>
+          <td class="operation" id="doctor_id_DN141104102528295" name="service_price">
+          	<p class="sep_p"><a href="#" class="newbutt_red">预约</a></p>
+            <p class="sep_p"><a href="#" class="newbutt_blue">云诊</a></p>
+            <p class="sep_bor_p"><a href="#" class="newbutt_gz">关注</a></p>
+          </td>
+        </tr>
+      </tbody></table>     
+    </div>
+  </div>
+   <div id="paginator">
+   	<div class="pagelists clearfix"><a class="prev_new" href="#">上一页</a><a href="#" class="onpage">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#" class="next_new">下一页</a></div>
+  </div>
+</div>
+    
+</div>
+<div class="clearit"></div>
+<div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.shCircleLoader-min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0
+        });
+      });
+    });
+  </script>
+    <script src="assets/doctor_schedules.js"></script>
+  <script src="assets/orders.js"></script>
+  <script src="assets/chinese_pid_verify.js"></script>
+  <script src="assets/services/attachments.js"></script>
+  <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

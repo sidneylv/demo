@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.shCircleLoader.css" >
+  <link rel="stylesheet" type="text/css" href="stylesheets/loading.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="false" src="assets/application.js"></script>
+  
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <div class="seachbox_top">
+        <div class="keywds_top">
+            <input type="text" value="输入疾病、症状、医生姓名、医院……"><a href="#" title="搜索"></a>
+        </div>
+    </div>
+    <div class="login">
+      <a class="usericon" href="/customer" id="home_user_name">王欣捷</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+<div id="wrap" class="clearfix">	
+    <div class="doc_info_add clearfix">
+    	<div class="leftdocbar"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="160">
+                    <img src="images/new/pic.jpg" width="140">
+                </td>
+                <td class="docinfo_td">
+                  <h1 class="f-24">
+                    狄青<span class="f-14 mar_l8">住院医师</span>
+                  </h1>
+                  <ul class="rank">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  科室：<a href="#">胃肠道肿瘤</a><a href="#">腹腔镜</a><a href="#">腹腔镜</a><br>
+                  擅长领域：<a href="#">胃肠道肿瘤</a><a href="#">腹腔镜</a><a href="#">腹腔镜</a>
+                 <p class="jg_add"> 执业机构：上海瑞金医院<br>
+                  执业地点：上海市 黄浦区 瑞金二路197号 <br> </p>                
+                </td>
+              </tr>
+            </tbody></table>
+            </div>
+            <div class="rightorder">
+            	<p class="otherchoose">其他选择<span class="vmidspan"><a href="#" class="newbutt_blue">云诊</a><em class="blank24"></em><a href="#" class="newbutt_gz">关注</a></span></p>
+                <div class="redsm cenalign" style="font-size:12px;padding:10px 0 0 0;">不知道哪位医生最适合您？<br /><a href="#" title="人工推荐医生？"><img class="mar_t5" src="images/new/tjdoct.gif"></a></div>
+            </div>
+    </div>
+    <div class="chostime_tit"><span>选择时间</span></div>
+    <div class="timelistwrap">
+    	<div class="mar_12">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" id="doctor_schedules_table">
+                <tbody>
+                    <tr class="thead">
+                        <td class="pos_relative">星期二<br />2014-07-08<a href="#" class="arr_left_new"></a></td>
+                        <td>星期二<br />2014-07-08</td>
+                        <td>星期二<br />2014-07-08</td>
+                        <td>星期二<br />2014-07-08</td>
+                        <td>星期二<br />2014-07-08</td>
+                        <td>星期二<br />2014-07-08</td>
+                        <td class="pos_relative">星期二<br />2014-07-08<a href="#" class="arr_right_new"></a></td>
+                    </tr>
+                    <tr>
+                        <td class=""><input data-doctor-no="DN141105135219860" data-schedule-id="637" data-service-price="111" id="doctor_no_dn141105135219860" name="doctor[no]" type="radio" value="DN141105135219860">7:00-8:00</td>
+                        <td class=""><input data-doctor-no="DN141105135219860" data-schedule-id="637" data-service-price="111" id="doctor_no_dn141105135219860" name="doctor[no]" type="radio" value="DN141105135219860">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                    </tr>
+                    <tr>
+                        <td class=""><input data-doctor-no="DN141105135219860" data-schedule-id="637" data-service-price="111" id="doctor_no_dn141105135219860" name="doctor[no]" type="radio" value="DN141105135219860">7:00-8:00</td>
+                        <td class=""><input data-doctor-no="DN141105135219860" data-schedule-id="637" data-service-price="111" id="doctor_no_dn141105135219860" name="doctor[no]" type="radio" value="DN141105135219860">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                    </tr>
+                    <tr>
+                        <td class=""><input data-doctor-no="DN141105135219860" data-schedule-id="637" data-service-price="111" id="doctor_no_dn141105135219860" name="doctor[no]" type="radio" value="DN141105135219860">7:00-8:00</td>
+                        <td class=""><input data-doctor-no="DN141105135219860" data-schedule-id="637" data-service-price="111" id="doctor_no_dn141105135219860" name="doctor[no]" type="radio" value="DN141105135219860">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                    </tr>
+                    <tr>
+                        <td class=""><input data-doctor-no="DN141105135219860" data-schedule-id="637" data-service-price="111" id="doctor_no_dn141105135219860" name="doctor[no]" type="radio" value="DN141105135219860">7:00-8:00</td>
+                        <td class=""><input data-doctor-no="DN141105135219860" data-schedule-id="637" data-service-price="111" id="doctor_no_dn141105135219860" name="doctor[no]" type="radio" value="DN141105135219860">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                    </tr>
+                    <tr>
+                        <td class=""><input data-doctor-no="DN141105135219860" data-schedule-id="637" data-service-price="111" id="doctor_no_dn141105135219860" name="doctor[no]" type="radio" value="DN141105135219860">7:00-8:00</td>
+                        <td class=""><input data-doctor-no="DN141105135219860" data-schedule-id="637" data-service-price="111" id="doctor_no_dn141105135219860" name="doctor[no]" type="radio" value="DN141105135219860">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                        <td class="timeoff">7:00-8:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="chostime_tit mar_t20"><span>医生介绍</span></div>
+    <div class="padbor">
+    	<div class="mar_12">
+        	<p class="prediowz mar_b12">华佗，男，医学博士，副主任医师，硕士研究生导师，擅长: 胃肠肿瘤 腹腔镜手术 纤维结肠镜治疗。上海交通大学医学院附属瑞金医院普外科，上海市微创外科临床医学中心副主任医师，主要研究方向胃肠肿瘤早期诊断与微创治疗，擅长腹腔镜胃肠肿瘤手术及纤维结肠镜诊疗技术。中国医师协会外科医师分会结直肠外科医师委员会委员，上海市医学会微创外科学组秘书。2009赴美国Cornell大学医学院附属 New York Presbyterian 医院结直肠外科任访问学者。独立承担国家自然科学基金项目及上海市卫生局与上海市教委科研项目，并入选上海交通大学晨星培养计划。获2008上海市科技进步一等奖。获国家发明专利1项及实用新型专利2项。发表第一作者及通讯作者论文30篇，其中SCI收录论文14篇。</p>
+            
+        </div>    
+        <a href="#" class="showmore"><img src="images/new/more.gif" />查看更多</a>
+    </div>
+    <div class="chostime_tit mar_t20"><span>医生相册</span></div>
+    <div class="padbor">
+    	<div class="mar_12">
+        	<ul class="docpicslist clearfix">
+            	<li><img src="images/new/deft.jpg" /><p>读片ing</p></li>
+                <li><img src="images/new/deft.jpg" /><p>读片ing</p></li>
+                <li><img src="images/new/deft.jpg" /><p>读片ing</p></li>
+                <li><img src="images/new/deft.jpg" /><p>读片ing</p></li>
+                <li><img src="images/new/deft.jpg" /><p>读片ing</p></li>
+                <li><img src="images/new/deft.jpg" /><p>读片ing</p></li>
+                <li><img src="images/new/deft.jpg" /><p>读片ing</p></li>
+                <li><img src="images/new/deft.jpg" /><p>读片ing</p></li>
+                <li><img src="images/new/deft.jpg" /><p>读片ing</p></li>
+                <li><img src="images/new/deft.jpg" /><p>读片ing</p></li>
+                <li><img src="images/new/deft.jpg" /><p>读片ing</p></li>
+                <li><img src="images/new/deft.jpg" /><p>读片ing</p></li>
+            </ul>            
+        </div>    
+        <a href="#" class="showmore"><img src="images/new/more.gif" />查看更多</a>
+    </div>
+</div>
+<div class="clearit"></div>
+<div class="blank30"></div>
+<div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.shCircleLoader-min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0
+        });
+      });
+    });
+  </script>
+    <script src="assets/doctor_schedules.js"></script>
+  <script src="assets/orders.js"></script>
+  <script src="assets/chinese_pid_verify.js"></script>
+  <script src="assets/services/attachments.js"></script>
+  <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,437 @@
+/* CSS Document */
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, table, td, th, form, fie ldset, img, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+textarea, input, select, body {
+  font-size: 12px;
+}
+select, input, textarea {
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  line-height: 20px;
+}
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+fieldset, img {
+  border: 0;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  color: #4c595c;
+  text-decoration: none;
+}
+a:hover {
+  color: #f66e3e;
+  text-decoration: none;
+}
+.clearit {
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+}
+body {
+  font-size: 12px;
+  color: #4c595c;
+  font-family: "Microsoft Yahei", "Arial";
+}
+.bj-fright {
+  float: right;
+}
+.wrap, .inheader, .innav {
+  width: 980px;
+  margin: 0 auto;
+}
+#header #logo, .userico, .indexico, .applyico, .priceico, .doctorico, .questionico, #otherinfo h1, #otherinfo span {
+  background: url(../images/index-detail.png) 0 0 no-repeat;
+}
+.inheader {
+  position: relative;
+  height: 109px;
+}
+#header {
+  background: url(../images/jzt-index-topbg.png) 0 0 repeat-x;
+  height: 109px;
+}
+#header #logo {
+  position: absolute;
+  left: 0px;
+  top: 17px;
+  background-position: 0px 0px;
+  width: 156px;
+  height: 74px;
+}
+#header #logo a {
+  display: block;
+  width: 156px;
+  height: 74px;
+}
+#header #login {
+  position: absolute;
+  right: 0px;
+  top: 26px;
+}
+#header #login input{
+  min-width:150px;  
+}
+#header #login .check{
+  width:auto;
+  min-width:inherit;   
+}
+#header #login .relink {
+  color: white;
+}
+#header #login li {
+  width: 152px;
+  float:left;
+  padding: 0 20px 0 0;
+  color: #fff;
+  height:80px;
+}
+#header #login li.log{
+padding:25px 0 0 0;
+height:55px;  
+  }
+#header #login li.enter {
+  width: 80px;
+}
+#header #login li input:not(:focus) {
+  opacity: 1;
+}
+#header #login input {
+  width: 150px;
+  text-indent: 10px;
+  padding:0;
+}
+#header #login label {
+  padding: 0 0 5px 0;
+  display: block;
+}
+#header #login label.checklb{display:inline;}
+#header #welcome {
+  position: absolute;
+  right: 31px;
+  top: 48px;
+  font-size:14px;
+  color:#fff;
+}
+#header #welcome a{
+  color:#fff;
+  }
+#header #toolbar {
+  position: absolute;
+  right: 30px;
+  bottom: 8px;
+  color: #fff;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+}
+#header #toolbar a {
+  color: #fff;
+}
+#header .cutline {
+  padding: 0 15px;
+  color: #69c2d4;
+}
+#navigation {
+  border-bottom: 1px solid #e4e2e3;
+  background: #fff;
+}
+#navigation li {
+  width: 173px;
+  border-right: 1px solid #f4f8f7;
+  height: 57px;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+}
+#navigation li.on {
+  background: url(../images/index-navi-on.png) center 49px no-repeat;
+}
+#navigation li.index {
+  width: 62px;
+}
+#navigation li a {
+  height: 57px;
+  display: block;
+  line-height: 57px;
+  padding: 0 0 0 30px;
+}
+#navigation li.index a {
+  width: 62px;
+  text-indent: -9999em;
+  padding: 0 0 0 0;
+}
+#focuspic {
+  background: #dfecf2;
+}
+#indexcont {
+  background: #f4f4f4 url(../images/jzt-index-contbg.png) 0 0 repeat-x;
+  height: 280px;
+}
+#indexcont li {
+  margin: 0 12px;
+  float:left;
+  background: #fff;
+  border-right: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  width: 296px;
+  min-height: 230px;
+}
+#indexcont li h1 {
+  display: block;
+  height: 90px;
+}
+#indexcont li h1.columnA {
+  background: url(../images/jzt-index-col-A.png) 0 0 no-repeat;
+}
+#indexcont li h1.columnB {
+  background: url(../images/jzt-index-col-B.png) 0 0 no-repeat;
+}
+#indexcont li h1.columnC {
+  background: url(../images/jzt-index-col-C.png) 0 0 no-repeat;
+}
+#indexcont li p {
+  padding: 20px 15px;
+  line-height: 28px;
+  font-size:15px;
+}
+#otherinfo {
+  margin: 15px 0 0 0;
+}
+#otherinfo li {
+  width: 242px;
+  display: block;
+  height: 300px;
+  float: left;
+}
+#otherinfo h1 {
+  font-size: 20px;
+  padding: 0 0 0 40px;
+  height: 57px;
+  line-height: 57px;
+  font-weight: normal;
+}
+#otherinfo h1.otpartA {
+  background-position: 0px -588px;
+}
+#otherinfo h1.otpartB {
+  background-position: 0px -671px;
+}
+#otherinfo h1.otpartC {
+  background-position: 0px -750px;
+}
+#otherinfo h1.otpartD {
+  background-position: 0px -828px;
+}
+#otherinfo .otbox {
+  padding: 10px 30px 10px 10px;
+}
+#otherinfo p {
+  line-height: 22px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+#otherinfo span {
+  display: block;
+  height: 22px;
+  padding: 0 0 0 30px;
+}
+#otherinfo span.more {
+  display: inline;
+}
+#otherinfo span.address {
+  background-position: 0px -918px;
+}
+#otherinfo span.tel {
+  background-position: 0px -943px;
+}
+#otherinfo span.weixin {
+  background-position: 0px -967px;
+}
+#otherinfo span.mail {
+  background-position: 0px -990px;
+}
+#otherinfo span.web {
+  background-position: 0px -1015px;
+}
+#otherinfo input {
+  padding: 0 10px;
+  width: 200px;
+  font-size: 12px;
+}
+#otherinfo textarea {
+  padding: 10px;
+  width: 200px;
+  min-height: 25px;
+  font-size: 12px;
+}
+#otherinfo dd {
+  padding: 0 0 10px 0;
+}
+#weixin {
+  background: url(../images/weixin.jpg) 9px 11px no-repeat;
+  padding: 20px 0 0 125px;
+  height: 94px;
+}
+#footer {
+  height: 52px;
+  background: #51a7ba;
+  text-align: center;
+  font-size: 11px;
+  color: #fff;
+  line-height: 52px;
+}
+.article-content{
+font-size:15px;
+line-height:32px; 
+width:980px;
+margin:0 auto;
+padding:20px 0 50px 0;
+  }
+.article-content h1{
+display:block;
+border-bottom:1px dashed #dcdcdc;
+height:80px;
+line-height:80px;
+font-size:24px;
+color:#000; 
+margin:0 auto 30px auto;
+text-align:center;
+  }
+.article-content h2{
+  font-weight:bold;
+  font-size:19px; 
+  text-indent:35px;
+  color:#51a7ba;
+  line-height:50px;
+  }
+.article-content b{color:#000;}
+.article-content p{text-indent:35px;}
+.userico {
+  background-position: 16px -126px;
+  padding: 3px 0 3px 45px;
+}
+.indexico {
+  background-position: 16px -510px;
+}
+.applyico {
+  background-position: 25px -190px;
+}
+.priceico {
+  background-position: 25px -271px;
+}
+.doctorico {
+  background-position: 25px -352px;
+}
+.questionico {
+  background-position: 25px -433px;
+}
+/*============================*/
+/*=== Custom Slider Styles ===*/
+/*============================*/
+.slider-wrapper {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+.theme-default .nivoSlider {
+  position: relative;
+  background: #fff url(../images/loading.gif) no-repeat 50% 50%;
+  margin-bottom: 10px;
+}
+.theme-default .nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+.theme-default .nivoSlider a {
+  border: 0;
+  display: block;
+}
+.theme-default .nivo-controlNav {
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  right: 28px;
+  bottom: 0px;
+  z-index: 100;
+}
+.theme-default .nivo-controlNav a {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url(../images/bullets.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  margin: 0 2px;
+}
+.theme-default .nivo-controlNav a.active {
+  background-position: 0 -22px;
+}
+.theme-default .nivo-directionNav a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/arrows.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.theme-default:hover .nivo-directionNav a {
+  opacity: 1;
+}
+.theme-default a.nivo-nextNav {
+  background-position: -30px 0;
+  right: 15px;
+}
+.theme-default a.nivo-prevNav {
+  left: 15px;
+}
+.theme-default .nivo-caption {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.theme-default .nivo-caption a {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}
+.theme-default .nivo-caption a:hover {
+  color: #fff;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled {
+  width: 100%;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled a {
+  width: auto;
+  height: auto;
+  background: none;
+  margin-bottom: 5px;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled img {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+/**foot**/
+.f-org, .f-org a, a.f-org {
+  color: #f66e3e;
+  font-weight: normal;
+}
+.f-14, .f-14 a, a.f-14 {
+  font-size: 14px;
+}
+.f-18, .f-18 a, a.f-18 {
+  font-size: 18px;
+}
+/**Fix login frame**/

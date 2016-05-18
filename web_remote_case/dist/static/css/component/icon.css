@@ -1,0 +1,11 @@
+.c-icon {
+  display: inline-block;
+  font-size: 0;
+  background-size: 100% 100%;
+}
+.c-icon-close {
+  width: 12px;
+  height: 12px;
+  background-image: url("/static/image/close_15×15.png");
+  background-repeat: no-repeat;
+}

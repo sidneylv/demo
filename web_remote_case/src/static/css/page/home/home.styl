@@ -1,0 +1,132 @@
+@import '../../core/var'
+@import '../../core/mix'
+
+.home-welcome
+	padding 20px 0
+	text-align center
+	>img
+		display block
+		margin 0 auto	
+		width 200px
+		height 200px
+		border-radius(120px)
+	.text
+		margin-top 15px
+		font-size 20px
+		em
+			font-weight 600
+	.time
+		margin-top 10px
+		font-size 14px
+		color #a1a1a1
+
+.home-integral
+	margin-top 25px
+	padding-top 15px
+	.current-integral
+		margin-left 60px
+		font-size 14px
+		color #666
+	.current-integral-count
+		margin-top 18px
+		text-align center
+		font-size 44px
+		color #fb5e01
+	.btn-integral-exchange
+		display block
+		margin 10px auto 0
+		width 114px
+		height 34px
+		background-color #fff
+		border 1px solid #e2e6e7
+		border-radius(34px)
+		line-height 34px
+		text-align center
+		font-size 14px
+		color #666
+
+.home-integral-summary
+	margin-top 28px
+	.hd
+		border-bottom 1px solid #e2e6e7
+		text-align center
+	.bd
+		height 284px	
+	h3
+		display inline-block
+		margin-bottom -1px
+		padding 9px 0
+		border-bottom 2px solid #28bdcf
+		font-size 16px
+		color #333
+	ul
+		>li
+			padding 12px 25px 0
+			height 59px
+			&:nth-child(even)
+				background-color #f5f9fc
+			p
+				font-size 14px
+			.text				
+				color #666
+			.time
+				margin-top 5px
+				color #999	
+			em
+				line-height 59px
+				font-size 20px
+				color #28bdcf
+	.ft
+		padding 20px 0								
+	.link-integral-detail		
+		font-size 14px
+		color #28bdcf
+
+.home-integral-summary--empty
+	.bd
+		padding 167px 0 154px
+		background url('/static/image/integral_none.png') no-repeat center 77px
+		text-align center
+		font-size 16px
+		color #a7aeb3
+
+.home-order
+	.bd
+		padding 25px
+
+.home-order--empty
+	.bd
+		padding 270px 0
+		background url('/static/image/order_none.png') no-repeat center 160px
+		text-align center
+		font-size 22px
+		color #d8e0e1					
+
+/*
+*1、待处理
+*2、等待反馈
+*3、已反馈
+*4、待资料补齐
+*5、已完结
+*6、已取消
+*/
+.order-status--1
+	color #fd4442
+	
+.order-status--2
+	color #524521
+
+.order-status--3
+	color #fd4442
+
+.order-status--4
+	color #333
+	
+.order-status--5
+	color #333
+
+.order-status--6
+	padding 0 5px
+	color #7c7c7c
+	background url('../image/bg_text_delete.png') no-repeat left center					
+

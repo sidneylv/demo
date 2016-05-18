@@ -1,0 +1,1 @@
+require(["bootstrap"],function(){function n(){alert("aaaaa"),$(".btn-integral-exchange").click(function(){$(".successExchange").slideDown()})}function a(){n()}a()});

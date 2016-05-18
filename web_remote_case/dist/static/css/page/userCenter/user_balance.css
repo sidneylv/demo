@@ -1,0 +1,22 @@
+.btn-widthdraw {
+  margin-top: 13px;
+  width: 62px;
+  height: 29px;
+  border: 1px solid #d8dfe3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  line-height: 29px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+.tab-balance {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.tab-balance .balance--add {
+  font-size: 14px;
+  color: #29b895;
+}

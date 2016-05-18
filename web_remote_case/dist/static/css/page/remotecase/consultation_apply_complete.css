@@ -1,0 +1,62 @@
+.consultation-apply-complete .row-consultation-detail h3 {
+  margin-top: 30px;
+}
+.consultation-apply-complete .row-consultation-detail h3:first-child {
+  margin-top: 0;
+}
+.consultation-apply-complete .row-consultation-history {
+  margin: 30px 33px 0;
+  padding-bottom: 30px;
+}
+.consultation-apply-complete .row-consultation-history h3 {
+  padding-left: 12px;
+  border-left: 4px solid #28b9cf;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.consultation-apply-complete .row-consultation-history .bd {
+  position: relative;
+  margin-top: 20px;
+  padding: 0 35px 27px;
+  background-color: #f5f5f5;
+}
+.consultation-apply-complete .row-consultation-history .bd h4 {
+  margin-bottom: 20px;
+  padding: 27px 0 10px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+}
+.consultation-apply-complete .row-consultation-history .bd .item {
+  margin-top: 7px;
+  font-size: 14px;
+  color: #777;
+}
+.consultation-apply-complete .row-consultation-history .bd .item-left {
+  float: left;
+  width: 70px;
+  text-align: right;
+  font-weight: 600;
+}
+.consultation-apply-complete .row-consultation-history .bd .item-right {
+  margin-left: 90px;
+}
+.consultation-apply-complete .row-consultation-history .bd:before,
+.consultation-apply-complete .row-consultation-history .bd:after {
+  position: absolute;
+  left: 42px;
+  width: 18px;
+  height: 9px;
+  content: '';
+}
+.consultation-apply-complete .row-consultation-history .bd:before {
+  top: 0;
+  background: url("/static/image/arrow_down_white.png") no-repeat;
+}
+.consultation-apply-complete .row-consultation-history .bd:after {
+  bottom: -9px;
+  background: url("/static/image/arrow_down_grey.png") no-repeat;
+}

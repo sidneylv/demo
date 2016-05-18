@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.shCircleLoader.css" >
+  <link rel="stylesheet" type="text/css" href="stylesheets/loading.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="false" src="assets/application.js"></script>
+  
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <ul>
+        <li class="on">
+          <a class="application" href="/customer">服务申请</a>
+        </li>
+        <li>
+          <a class="price" href="/service_price">服务价格</a>
+        </li>
+        <li>
+          <a class="question" href="/question">常见问题</a>
+        </li>
+      
+    </ul>
+    <div class="login">
+      <a class="usericon" href="/customer" id="home_user_name">王欣捷</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+  <div id="wrap">
+    <div id="leftpart">
+      <div id="user-kind">
+  <h1 class="f-white-20">我的就诊通</h1>
+  <h2 class="f-white-14">用户类型：普通</h2>
+</div>
+<dl id="user-menu">
+  <dt><a>服务申请</a></dt>
+  <dd><a href="/customer" id="menu_dashboard" class="on">预约服务</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">病历资料</a></dd>
+  <dd><a href="/customer/doctors" id="customer_doctors">我的医生</a></dd>
+  <dd><a href="/customer/orders" id="customer_orders">我的订单</a></dd>
+  <dd><a href="/customer/orders/preview" id="customer_orders_preview">订单查看</a></dd>
+
+  <dt><a>个人信息管理</a></dt>
+  <dd><a href="/customer/profile/edit" id="customer_profile">个人信息</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">密码修改</a></dd>
+
+  <dt><a>账户管理</a></dt>
+  <dd><a href="/customer/balances" id="customer_balances">余额/充值/提现</a></dd>
+  <dd><a href="/customer/member_points" id="customer_member_points">我的积分</a></dd>
+
+  <dt><a>评价建议</a></dt>
+  <dd><a href="/customer/messages/new" id="customer_message">投诉建议</a></dd>
+</dl>
+
+
+    </div>
+    <div id="rightpart">
+      <div id="contitle">
+  <h1 class="f-org-24">订单支付</h1>
+</div>
+<div id="usercont" class="without-menu">
+  <div class="hintboxB">
+    提交订单成功，请您尽快付款！订单号：<a href="/customer/orders/SO141215193344142" target="_blank">SO3344142</a> <p class="f-org">应付金额：200.00元</p>
+    <p class="f-blue">请您在提交订单后24小时内完成支付，否则订单会自动取消</p>
+  </div>
+  <form accept-charset="UTF-8" action="/customer/payments/PN141215193344149/pay" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="93t2IEQhcUbnXwcf9ecjG3GM97XUAdO0QL0A+k9ICV4=" /></div>
+  <dd class="radio pay-alipay">
+    <input type="radio" value="alipay" id="zfb" name="channel" class="hidden" />
+    <label for="zfb"><span class="pay-hint">支付宝支付</span></label>
+    <span style="font-size: 22px;color: #55a8ba;padding: 0 0 0 30px">使用支付宝支付</span>
+    
+  </dd>
+  <dd class="radio pay-jiuzhentong">
+    <input type="radio" value="balance" id="balance" name="channel" class="hidden" />
+    <label for="balance"><span class="pay-hint">余额支付</span></label>
+    <span style="font-size: 22px;color: #55a8ba;padding: 0 0 0 40px">使用就诊通余额支付</span>
+  </dd>
+  
+  <div class="bj-sp-35 clearit"></div>
+  <div align="center" class="clearit">
+    <button class="submit"  type="submit">下一步</button>
+  </div>
+</form></div>
+    </div>
+  </div>
+  <div class="clearit"></div>
+  <div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.shCircleLoader-min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0
+        });
+      });
+    });
+  </script>
+    <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

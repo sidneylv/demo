@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.shCircleLoader.css" >
+  <link rel="stylesheet" type="text/css" href="stylesheets/loading.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="false" src="assets/application.js"></script>
+  
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <ul>
+        <li class="on">
+          <a class="application" href="/customer">服务申请</a>
+        </li>
+        <li>
+          <a class="price" href="/service_price">服务价格</a>
+        </li>
+        <li>
+          <a class="question" href="/question">常见问题</a>
+        </li>
+      
+    </ul>
+    <div class="login">
+      <a class="usericon" href="/customer" id="home_user_name">王欣捷</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+  <div id="wrap">
+    <div id="leftpart">
+      <div id="user-kind">
+  <h1 class="f-white-20">我的就诊通</h1>
+  <h2 class="f-white-14">用户类型：普通</h2>
+</div>
+<dl id="user-menu">
+  <dt><a>看病预约</a></dt>
+  <dd><a href="/customer" id="menu_dashboard" class="on">预约服务</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">病历资料</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">健康评估</a></dd>
+  <dd><a href="/customer/doctors" id="customer_doctors">我的医生</a></dd>
+  <dd><a href="/customer/orders" id="customer_orders">我的订单</a></dd>
+
+  <dt><a>账户管理</a></dt>
+  <dd><a href="/customer/profile/edit" id="customer_profile">余额/充值/提现</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">信用卡管理</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">我的积分</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">邀请好友得礼金</a></dd>
+
+  <dt><a>个人信息管理</a></dt>
+  <dd><a href="/customer/balances" id="customer_balances">个人信息</a></dd>
+  <dd><a href="/customer/member_points" id="customer_member_points">密码修改</a></dd>
+
+  <dt><a>评价建议</a></dt>
+  <dd><a href="/customer/messages/new" id="customer_message">服务评价</a></dd>
+  <dd><a href="/customer/messages/new" id="customer_message">服务评价</a></dd>
+</dl>
+
+
+    </div>
+    <div id="rightpart">
+      <div id="contitle">
+  <h1 class="f-org-24" style="background-image:none;">预约服务</h1>
+</div>
+
+<div id="usercont" class="without-menu">
+    <ul class="ser_lists clearfix mar_futop30">
+    	<li class="clearfix">
+        	<a href="#">
+            <div class="pic_lefticon"></div>
+            <div class="ser_detsm">
+            	<p><span class="f-24 orange">找医生</span>（人工推荐）</p>
+                <p class="blue mar_b5 bold">预约医生面聊15分钟</p>
+                <p>• 我还不知道找哪个医生看比较合适我<br />• 我已经找医生看过了，但是我想听听其他医生的意见。</p>
+            </div>
+            </a>
+        </li>
+       <li class="clearfix">
+        	<a href="#">
+            <div class="pic_lefticon sericon_left02"></div>
+            <div class="ser_detsm">
+            	<p><span class="f-24 orange">约专家</span></p>
+                <p class="blue mar_b5 bold">预约医生面聊15分钟</p>
+                <p>• 我已经知道哪个医生适合我<br />• 我想在医生门诊时间加号，或和医生约他的空余时间</p>
+            </div>
+            </a>
+        </li>
+        <li class="clearfix">
+        	<a href="#">
+            <div class="pic_lefticon sericon_left03"></div>
+            <div class="ser_detsm">
+            	<p><span class="f-24 orange">请云诊</span></p>
+                <p class="blue mar_b5 bold">让专家远程给咨询意见</p>
+                <p>• 我的病有点复杂，不知道应该找哪些专科的医生看<br />•  我想多找几个医生听听他们意见</p>
+            </div>
+            </a>
+        </li>
+        <li class="clearfix">        	
+            <div class="pic_lefticon sericon_left04"></div>
+            <div class="ser_detsm">
+            	<p><span class="f-24">定制体检</span></p>
+                <p class="mar_b5 bold">个性化指定体检方案</p>
+                <p>• 我想在公立三甲医院进行体检，但环境要好、流程要快<br />• 我想有医生指导我挑选适合我的体检方案</p>
+            </div>
+        </li>
+        <li class="clearfix">
+            <div class="pic_lefticon sericon_left05"></div>
+            <div class="ser_detsm">
+            	<p><span class="f-24">找陪诊</span></p>
+                <p class="mar_b5 bold">雇专业人员陪同就医</p>
+                <p>• 我想找个熟悉医院的人陪我去医院，帮我挂号、付费、跑腿<br />• 我想有懂医学的人陪我去看医生，帮我提问、记录、解释医生的话</p>
+            </div>
+        </li>
+    </ul>
+</div>
+    </div>
+  </div>
+  <div class="clearit"></div>
+  <div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.shCircleLoader-min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0
+        });
+      });
+    });
+  </script>
+    <script src="assets/doctor_schedules.js"></script>
+  <script src="assets/orders.js"></script>
+  <script src="assets/chinese_pid_verify.js"></script>
+  <script src="assets/services/attachments.js"></script>
+  <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

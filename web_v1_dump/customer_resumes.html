@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.shCircleLoader.css" >
+  <link rel="stylesheet" type="text/css" href="stylesheets/loading.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="false" src="assets/application.js"></script>
+  
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <ul>
+        <li class="on">
+          <a class="application" href="/customer">服务申请</a>
+        </li>
+        <li>
+          <a class="price" href="/service_price">服务价格</a>
+        </li>
+        <li>
+          <a class="question" href="/question">常见问题</a>
+        </li>
+      
+    </ul>
+    <div class="login">
+      <a class="usericon" href="/customer" id="home_user_name">王欣捷</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+  <div id="wrap">
+    <div id="leftpart">
+      <div id="user-kind">
+  <h1 class="f-white-20">我的就诊通</h1>
+  <h2 class="f-white-14">用户类型：普通</h2>
+</div>
+<dl id="user-menu">
+  <dt><a>服务申请</a></dt>
+  <dd><a href="/customer" id="menu_dashboard">预约服务</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">病历资料</a></dd>
+  <dd><a href="/customer/doctors" id="customer_doctors" class="on">我的医生</a></dd>
+  <dd><a href="/customer/orders" id="customer_orders">我的订单</a></dd>
+  <dd><a href="/customer/orders/preview" id="customer_orders_preview">订单查看</a></dd>
+
+  <dt><a>个人信息管理</a></dt>
+  <dd><a href="/customer/profile/edit" id="customer_profile">个人信息</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">密码修改</a></dd>
+
+  <dt><a>账户管理</a></dt>
+  <dd><a href="/customer/balances" id="customer_balances">余额/充值/提现</a></dd>
+  <dd><a href="/customer/member_points" id="customer_member_points">我的积分</a></dd>
+
+  <dt><a>评价建议</a></dt>
+  <dd><a href="/customer/messages/new" id="customer_message">投诉建议</a></dd>
+</dl>
+
+
+    </div>
+    <div id="rightpart">
+      <div id="contitle">
+  <h1 class="f-org-24">医生简历</h1>
+</div>
+<div id="usercont" class="without-menu">
+  <div class="bj-tb">
+  <div class="user-notice f-18 f-org">基本信息：</div>
+  <div class="blueline  bj-m10-30"></div>
+  <div class="bj-tb-l f-14">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td rowspan="5">
+                      <img src="images/120X160.png" width="120" height="160">
+                  </td>
+                  <td>
+                    医生姓名：
+                  </td>
+                  <td>
+                    狄青
+                  </td>
+                  <td>职称：</td>
+                  <td>住院医师</td>
+                </tr>
+                <tr>
+                  <td>所在医院：</td>
+                  <td>仁济医院(东院)</td>
+                </tr>
+                <tr>
+                  <td>所在科室：</td>
+                  <td>心内科</td>
+                </tr>
+                <tr>
+                  <td>擅长：</td>
+                  <td>高血压 早搏 心律不齐 心衰</td>
+                </tr>
+                <tr>
+                  <td>地址：</td>
+                  <td>
+                    上海市浦东新区浦建路160号
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+    <div class="user-notice f-18 f-org">工作经历：</div>
+    <div class="blueline  bj-m10-30"></div>
+    <div class="bj-tb-l f-14">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <thead>
+        <tr>
+          <th>开始年月</th>
+          <th>结束年月</th>
+          <th>职称</th>
+          <th>科室/部门</th>
+          <th>机构/单位</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>2010-09</td>
+            <td>2013-06</td>
+            <td>主任医师</td>
+            <td>普外科</td>
+            <td>瑞金医院</td>
+          </tr>
+          <tr>
+            <td>2004-09</td>
+            <td>2008-06</td>
+            <td>主治医师</td>
+            <td>普外科</td>
+            <td>华山医院</td>
+          </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="user-notice f-18 f-org">教育培训：</div>
+    <div class="blueline  bj-m10-30"></div>
+    <div class="bj-tb-l f-14">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <thead>
+        <tr>
+          <th>开始年月</th>
+          <th>结束年月</th>
+          <th>身份</th>
+          <th>专业</th>
+          <th>院校/机构</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>2004-09</td>
+            <td>2008-06</td>
+            <td>博士研究生</td>
+            <td>病理学</td>
+            <td>上海复旦大学附属医学院</td>
+          </tr>
+          <tr>
+            <td>1996-09</td>
+            <td>2000-06</td>
+            <td>硕士研究生</td>
+            <td>临床医学</td>
+            <td>上海交通大学附属医学院</td>
+          </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="user-notice f-18 f-org">学术发表：</div>
+    <div class="blueline  bj-m10-30"></div>
+    <div class="bj-tb-l f-14">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <thead>
+        <tr>
+          <th>类型</th>
+          <th>时间</th>
+          <th>属性</th>
+          <th>文章题目</th>
+          <th>机构/单位</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>综述</td>
+            <td>2010-05</td>
+            <td>国内核心</td>
+            <td>胃肠道肿瘤的非手术治疗进展</td>
+            <td>中华外科学杂志</td>
+          </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="user-notice f-18 f-org">科研项目：</div>
+    <div class="blueline  bj-m10-30"></div>
+    <div class="bj-tb-l f-14">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <thead>
+        <tr>
+          <th>起题时间</th>
+          <th>结题时间</th>
+          <th>参与身份</th>
+          <th>项目名称</th>
+          <th>资助机构</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>2012-03</td>
+            <td>2014-07</td>
+            <td>负责人</td>
+            <td>紧急降压与硝苯地平</td>
+            <td>国家自然基金委</td>
+          </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="bj-sp-35"></div>
+</div>
+
+
+    </div>
+  </div>
+  <div class="clearit"></div>
+  <div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.shCircleLoader-min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0
+        });
+      });
+    });
+  </script>
+    <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

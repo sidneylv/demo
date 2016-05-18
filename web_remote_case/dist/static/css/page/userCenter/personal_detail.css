@@ -1,0 +1,90 @@
+.bg-gradient {
+  background: url("/static/image/bg_gradient.png") repeat-x left 88px;
+}
+.p-summay {
+  margin-top: 39px;
+}
+.p-summay .media__img {
+  width: 146px;
+  height: 146px;
+  -webkit-border-radius: 146px;
+  -moz-border-radius: 146px;
+  -o-border-radius: 146px;
+  border-radius: 146px;
+  margin-right: 34px;
+}
+.p-summay .p-name {
+  margin-top: 22px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #333;
+}
+.p-summay .p-v {
+  display: inline-block;
+  margin-left: 15px;
+  width: 94px;
+  height: 27px;
+  background: url("/static/image/p_v.png") no-repeat;
+  vertical-align: -3px;
+}
+.p-summay .p-office {
+  margin-top: 7px;
+  font-size: 18px;
+  color: #666;
+}
+.p-summay .p-degree {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #999;
+}
+.p-info {
+  margin-top: 26px;
+  line-height: 2;
+  font-size: 16px;
+  color: #808080;
+}
+.p-info table td {
+  vertical-align: top;
+}
+.p-info .prop {
+  padding-right: 15px;
+  text-align: right;
+  color: #28b9cf;
+}
+.p-tag-wrapper,
+.p-tag {
+  display: inline-block;
+}
+.p-tag-wrapper {
+  padding-right: 16px;
+  background: url("/static/image/p_tag.png") no-repeat right 50%;
+}
+.p-tag {
+  padding: 0 15px;
+  height: 24px;
+  background-color: #e1e4e5;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  -o-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #666;
+}
+.p-introduce {
+  margin-top: 26px;
+}
+.p-introduce h3 {
+  display: inline-block;
+  padding-bottom: 6px;
+  border-bottom: 4px solid #28b9cf;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+.p-introduce p {
+  margin-top: 16px;
+  line-height: 2;
+  font-size: 16px;
+  color: #666;
+}

@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="true" src="assets/application.js"></script>
+
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <ul>
+        <li class="on">
+          <a class="application" href="/provider/appointments/pending">预约管理</a>
+        </li>
+        <li>
+          <a class="question" href="/question">常见问题</a>
+        </li>
+      
+    </ul>
+    <div class="login">
+      <a class="usericon" href="/provider" id="home_user_name">狄青</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+  <div id="wrap">
+    <div id="leftpart">
+      <div id="user-kind">
+  <h1 class="f-white-20">我的就诊通</h1>
+  <h2 class="f-white-14">用户类型：医生</h2>
+</div>
+<dl id="user-menu">
+  <dt><a>预约管理</a></dt>
+  <dd><a href="/provider/appointments/pending" id="menu_dashboard" class="on">我的预约</a></dd>
+  <dd><a href="/provider/consultations/pending" id="provider_consultations">我的会诊</a></dd>
+  <dd><a href="/provider/doctor_schedules/near_week" id="provider_schedules">我的日程</a></dd>
+  
+  <dt><a>个人信息管理</a></dt>
+  <dd><a href="/provider/profile/edit" id="provider_profile">个人信息</a></dd>
+  <dd><a href="/provider/resumes/experience" id="provider_resumes">我的简历</a></dd>
+  <dd><a href="/users/edit" id="provider_edit_password">密码修改</a></dd>
+
+  <dt><a>账户管理</a></dt>
+  <dd><a href="/provider/balances" id="provider_balances">余额/充值/提现</a></dd>
+  <dd><a href="/provider/member_points" id="provider_member_points">我的积分</a></dd>
+
+  <dt><a>评价建议</a></dt>
+  <dd><a href="/provider/messages/new" id="provider_message">投诉建议</a></dd>
+</dl>
+
+
+    </div>
+    <div id="rightpart">
+      <div id="contitle">
+  <h1 class="f-org-24">我的预约</h1>
+  <ul id="usercont-menu">
+    <li><a href="/provider/appointments/pending">待处理</a></li>
+    <li><a href="/provider/appointments/handled">已处理</a></li>
+    <li><a class="on" href="/provider/appointments/completed">已完成</a></li>
+  </ul>
+</div>
+
+<div id="usercont" class="without-menu">
+  <div class="whitebox">
+    <div class="bj-tb">
+      <div class="blueline bj-m10"></div>
+      <table>
+        <tr>
+          <th>订单号</th>
+          <th>患者姓名</th>
+          <th>订单类型</th>
+          <th>预约时间</th>
+          <th>订单价格</th>
+          <th>状态</th>
+        </tr>
+        <tr>
+          <td><a href="/provider/appointments/SO141104110810389">SO0810389</a></td>
+          <td>王欣捷</td>
+          <td>预约门诊</td>
+          <td>2014年11月06日(17:00-20:00)</td>
+          <td>0.00</td>
+          <td>客服确认完成</td>
+        </tr>
+        <tr>
+          <td><a href="/provider/appointments/SO141117102702790">SO2702790</a></td>
+          <td>王欣捷</td>
+          <td>预约门诊</td>
+          <td>2014年11月20日(11:30-13:30)</td>
+          <td>100.00</td>
+          <td>客服确认完成</td>
+        </tr>
+      </table>
+    </div>
+    <div class="bj-sp-35"></div>
+    
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="clearit"></div>
+  <div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          yearRange: "1900:+0"
+        });
+      });
+    });
+  </script>
+    <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

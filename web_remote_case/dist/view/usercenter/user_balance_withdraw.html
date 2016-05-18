@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />	
+	<title>html5</title>
+	<link rel="stylesheet" href="/static/css/core.css" />
+	<link rel="stylesheet" href="/static/css/style.css" />
+</head>	
+<body class="page-usercenter">
+	<div class="global-top">
+		<div class="container">
+			<span class="l">欢迎您，进入就诊通网站</span>
+			<div class="r">
+				<a class="message" href="">
+					<i>1</i>
+				</a>
+				<span class="userbar">
+					<a href="">登录</a>
+					<span class="line-split">|</span>
+					<a href="">退出</a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<div class="container pr clearfix">
+			<a class="l logo" href=""><img src="/static/image/logo_large.png" width="311" height="50" /></a>
+			<ul class="nav">
+				<li class="current"><a href="">首页</a></li>
+				<li><a href="">接收的会诊</a></li>
+				<li><a href="">我申请的会诊</a></li>
+				<li><a href="">个人中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="layout-two clearfix layout-two--usercenter">
+			<div class="layout-two-left">
+				<div class="sidebar">
+					<h2>个人中心</h2>
+					<ul class="sidebar-nav">
+						<li class="sidebar-nav__item--first">
+							<a href="user_info.html">基本信息</a>
+						</li>
+						<li class="sidebar-nav__item--second">
+							<a href="user_resume.html">个人简历</a>
+						</li>
+						<li class="sidebar-nav__item--third">
+							<a href="user_integral.html">积分兑换</a>
+						</li>
+						<li class="sidebar-nav__item--fourth current">
+							<a href="user_balance.html">我的余额</a>
+						</li>
+						<li class="sidebar-nav__item--fifth">
+							<a href="user_password.html">修改密码</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="layout-two-right">
+				<div class="mod-box--third">
+					<div class="hd">
+						<h3>我的余额</h3>
+					</div>				
+					<div class="bd">
+						<div class="myAssets">
+							<span class="count-info">我的余额<em class="count">5885.22</em>元</span>							
+							<a class="r c-btn--jump" href="user_balance.html">返回我的余额</a>
+						</div>
+						<div class="c-tab tab-balance-withdraw">
+							<div class="tab-balance-withdraw-hd">
+								<b class="l">请选择提现方式：</b>
+								<ul class="tab-trigger clearfix">
+									<li class="pay-alipay active">
+										<a href="#alipay" data-toggle="tab">支付宝</a>
+										<p class="shadow-border dn"></p>
+									</li>
+									<li class="pay-card">
+										<a href="#card" data-toggle="tab">银行卡</a>
+										<p class="shadow-border dn"></p>
+									</li>
+									<li class="pay-cash">
+										<a href="#cash" data-toggle="tab">现金</a>
+										<p class="shadow-border dn"></p>
+									</li>
+								</ul>
+							</div>							
+							<div class="tab-content">
+								<div id="alipay" class="tab-pane active">
+									<div class="form-horizontal form-horizontal--pay">
+										<div class="control-group clearfix">
+											<label class="control-label">支付宝账号：</label>
+											<div class="controls">
+												<input class="c-input c-input--bordered c-input--default" type="text" placeholder="输入支付宝账号" />
+											</div>
+										</div>
+										<div class="control-group clearfix">
+											<label class="control-label">收款人姓名：</label>
+											<div class="controls">
+												<input class="c-input c-input--bordered c-input--default" type="text" placeholder="输入您的姓名" />
+											</div>
+										</div>
+										<div class="control-group clearfix">
+											<label class="control-label">提现金额(元)：</label>
+											<div class="controls">
+												<input class="c-input c-input--bordered c-input--default" type="text" placeholder="输入金额" />
+											</div>
+										</div>
+										<div class="control-group clearfix">
+											<label class="control-label"></label>
+											<div class="controls">
+												<input class="c-btn c-btn--xlarge c-btn--fillet c-btn--red" type="submit" value="确认提现" />
+												<a id="J_withdraw-introduce" class="withdraw-introduce" href="javasript:;">提现规则说明</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="card" class="tab-pane">
+									
+								</div>
+								<div id="cash" class="tab-pane">
+									
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-hd">
+			<div class="container">
+				<div class="media clearfix footer-media--weixin">
+					<img class="media__img" src="/static/image/weixin.jpg" width="72" height="72" />
+					<div class="media__body">
+						<span class="attention">关注微信公众号</span>
+						<p>客服热线：400-888-4013</p>
+						<p>用手机上传病历资料</p>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="footer-bd">
+			<div class="footer-nav">
+				<a href="">关于我们</a>
+				<span class="line-split">|</span>
+				<a href="">联系我们</a>
+				<span class="line-split">|</span>
+				<a href="">招贤纳士</a>
+				<span class="line-split">|</span>
+				<a href="">反馈信息</a>
+				<span class="line-split">|</span>
+				<span>使用条款 移动版</span>
+			</div>
+			<p class="copyright">
+				2014诊通健康科技(上海)有限公司 All Rights Reserved 沪ICP备09010079号-14沪卫(中医) 网审[2015]第10069号
+			</p>
+		</div>
+	</div>
+	<div id="J_withdraw-introduce-dialog" class="modal fade c-modal c-modal-form withdraw-introduce-dialog" role="dialog">
+	  	<div class="modal-dialog">
+		    <div class="modal-content">
+		      	<div class="modal-header">
+		      		<a class="r c-icon c-icon-close" href="javascript:;" data-dismiss="modal" aria-label="Close"></a>
+			        <h4 class="modal-title">提现规则说明</h4>
+		      	</div>
+		   		<div class="modal-body">
+			      	<p>
+			      		1. 为了保障您的财产安全只能使用您本人本地的银行卡或者支付宝账户来提现；<br /> 
+			      		2. 提现申请成功后，我们将尽快审核并支付，预计2-5个工作日到账；<br />
+			      		3. 如果您提交的帐户有误，提现款项将退回“我的余额”，请您检查后重新申请提现；<br />
+			      		4. 其他问题，请您联系客服处理 <em class="color-red">400-888-4013</em>。
+			      	</p>			      	
+			    </div>			    
+		    </div>
+		</div>
+	</div>
+	<script src="/static/js/all.js"></script>
+	<script src="/static/js/page/usercenter/user_balance_withdraw.js"></script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.shCircleLoader.css" >
+  <link rel="stylesheet" type="text/css" href="stylesheets/loading.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="false" src="assets/application.js"></script>
+  
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <ul>
+        <li class="on">
+          <a class="application" href="/customer">服务申请</a>
+        </li>
+        <li>
+          <a class="price" href="/service_price">服务价格</a>
+        </li>
+        <li>
+          <a class="question" href="/question">常见问题</a>
+        </li>
+      
+    </ul>
+    <div class="login">
+      <a class="usericon" href="/customer" id="home_user_name">王欣捷</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+  <div id="wrap">
+    <div id="leftpart">
+      <div id="user-kind">
+  <h1 class="f-white-20">我的就诊通</h1>
+  <h2 class="f-white-14">用户类型：普通</h2>
+</div>
+<dl id="user-menu">
+  <dt><a>服务申请</a></dt>
+  <dd><a href="/customer" id="menu_dashboard">预约服务</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">病历资料</a></dd>
+  <dd><a href="/customer/doctors" id="customer_doctors">我的医生</a></dd>
+  <dd><a href="/customer/orders" id="customer_orders" class="on">我的订单</a></dd>
+  <dd><a href="/customer/orders/preview" id="customer_orders_preview">订单查看</a></dd>
+
+  <dt><a>个人信息管理</a></dt>
+  <dd><a href="/customer/profile/edit" id="customer_profile">个人信息</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">密码修改</a></dd>
+
+  <dt><a>账户管理</a></dt>
+  <dd><a href="/customer/balances" id="customer_balances">余额/充值/提现</a></dd>
+  <dd><a href="/customer/member_points" id="customer_member_points">我的积分</a></dd>
+
+  <dt><a>评价建议</a></dt>
+  <dd><a href="/customer/messages/new" id="customer_message">投诉建议</a></dd>
+</dl>
+
+
+    </div>
+    <div id="rightpart">
+      <div id="contitle">
+  <h1 class="f-org-24">我的订单</h1>
+</div>
+<div id="usercont" class="without-menu">
+  <div class="bj-tb">
+    <h1 class="f-18">订单列表</h1>
+    <div class="blueline bj-m10"></div>
+    <table>
+      <tr>
+        <th>订单号</th>
+        <th>患者姓名</th>
+        <th>医生姓名</th>
+        <th>类型</th>
+        <th>订单价格</th>
+        <th>下单时间</th>
+        <th>状态</th>
+        <th>操作</th>
+      </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141216131756540">SO1756540</a>
+          </td>
+          <td><a href="/customer/patients/PT141216131756551">王礼荣</a></td>
+          <td>
+              <a href="/customer/resumes/DN141105135219860">金羽青</a>
+          </td>
+          <td>预约门诊</td>
+          <td>230.00元</td>
+          <td>2014-12-16 13:17:56</td>
+          <td>处理中</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141216115237979">SO5237979</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+          </td>
+          <td>推荐医生</td>
+          <td>100.00元</td>
+          <td>2014-12-16 11:52:37</td>
+          <td>处理中</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141216104125179">SO4125179</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+              <a href="/customer/resumes/DN141105135219860">金羽青</a>
+          </td>
+          <td>远程会诊</td>
+          <td>1.00元</td>
+          <td>2014-12-16 10:41:25</td>
+          <td>会诊中</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141215193344142">SO3344142</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+              <a href="/customer/resumes/DN141105135219860">金羽青</a>
+          </td>
+          <td>预约门诊</td>
+          <td>200.00元</td>
+          <td>2014-12-15 19:33:44</td>
+          <td>处理中</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141214191739261">SO1739261</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+              <a href="/customer/resumes/DN141105135219860">金羽青</a>
+          </td>
+          <td>预约门诊</td>
+          <td>111.00元</td>
+          <td>2014-12-14 19:17:39</td>
+          <td>待付款</td>
+          <td>
+              <a href="/customer/payments/PN141214191739267">支付</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141125092100788">SO2100788</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+              <a href="/customer/resumes/DN141104102528295">狄青</a>
+          </td>
+          <td>远程会诊</td>
+          <td>0.00元</td>
+          <td>2014-11-25 09:21:00</td>
+          <td>会诊中</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141125091920857">SO1920857</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+              <a href="/customer/resumes/DN141104102528295">狄青</a>
+          </td>
+          <td>预约门诊</td>
+          <td>0.00元</td>
+          <td>2014-11-25 09:19:20</td>
+          <td>已处理,待就诊</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141117105716272">SO5716272</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+              <a href="/customer/resumes/DN141104102528295">狄青</a>
+          </td>
+          <td>预约门诊</td>
+          <td>100.00元</td>
+          <td>2014-11-17 10:57:16</td>
+          <td>已处理,待就诊</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141117102702790">SO2702790</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+              <a href="/customer/resumes/DN141104102528295">狄青</a>
+          </td>
+          <td>预约门诊</td>
+          <td>100.00元</td>
+          <td>2014-11-17 10:27:02</td>
+          <td>已处理,待就诊</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141117084904896">SO4904896</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+              <a href="/customer/resumes/DN141104102528295">狄青</a>
+          </td>
+          <td>预约门诊</td>
+          <td>100.00元</td>
+          <td>2014-11-17 08:49:04</td>
+          <td>处理中</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141117084645695">SO4645695</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+              <a href="/customer/resumes/DN141104102528295">狄青</a>
+          </td>
+          <td>预约门诊</td>
+          <td>100.00元</td>
+          <td>2014-11-17 08:46:45</td>
+          <td>处理中</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141117083951878">SO3951878</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+              <a href="/customer/resumes/DN141104102528295">狄青</a>
+          </td>
+          <td>预约门诊</td>
+          <td>100.00元</td>
+          <td>2014-11-17 08:39:51</td>
+          <td>处理中</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141116154837468">SO4837468</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+              <a href="/customer/resumes/DN141104102528295">狄青</a>
+          </td>
+          <td>远程会诊</td>
+          <td>0.00元</td>
+          <td>2014-11-16 15:48:37</td>
+          <td>会诊完成</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141104230515153">SO0515153</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+              <a href="/customer/resumes/DN141104102528295">狄青</a>
+          </td>
+          <td>预约门诊</td>
+          <td>0.00元</td>
+          <td>2014-11-04 23:05:15</td>
+          <td>处理中</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/customer/orders/SO141104115250593">SO5250593</a>
+          </td>
+          <td><a href="/customer/patients/PT141104105052569">王欣捷</a></td>
+          <td>
+              <a href="/customer/resumes/DN141104102528295">狄青</a>
+          </td>
+          <td>预约门诊</td>
+          <td>0.00元</td>
+          <td>2014-11-04 11:52:50</td>
+          <td>已处理,待就诊</td>
+          <td>
+          </td>
+        </tr>
+    </table>
+  </div>
+  <div class="bj-sp-35"></div>
+  <div class="page">
+  <ul>
+    
+        <li class=" on">
+  1
+</li>
+
+        <li class="">
+  <a href="/customer/orders?page=2" rel="next">2</a>
+</li>
+
+    <li class="next">
+  <a href="/customer/orders?page=2" rel="next">下一页</a>
+</li>
+
+  </ul>
+
+</div>
+    </div>
+  </div>
+  <div class="clearit"></div>
+  <div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.shCircleLoader-min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0
+        });
+      });
+    });
+  </script>
+    <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

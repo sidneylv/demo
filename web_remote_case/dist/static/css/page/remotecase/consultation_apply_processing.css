@@ -1,0 +1,123 @@
+.consultation-apply-processing,
+.consultation-apply-complete {
+  margin-top: 43px;
+  padding: 25px 0;
+  background-color: #fff;
+}
+.consultation-apply-processing .row-doctor-info,
+.consultation-apply-complete .row-doctor-info {
+  padding: 0 33px;
+}
+.consultation-apply-processing .row-doctor-info ul,
+.consultation-apply-complete .row-doctor-info ul {
+  border-top: 1px solid #d8e1e5;
+  border-bottom: 1px solid #d8e1e5;
+}
+.consultation-apply-processing .row-doctor-info ul li,
+.consultation-apply-complete .row-doctor-info ul li {
+  float: left;
+  padding: 12px 56px;
+  border-right: 1px solid #d8e1e5;
+  text-align: left;
+  font-size: 16px;
+}
+.consultation-apply-processing .row-doctor-info ul li em,
+.consultation-apply-complete .row-doctor-info ul li em {
+  color: #41bed2;
+}
+.consultation-apply-processing .row-doctor-info ul .col-1,
+.consultation-apply-complete .row-doctor-info ul .col-1 {
+  width: 80px;
+}
+.consultation-apply-processing .row-doctor-info ul .col-2,
+.consultation-apply-complete .row-doctor-info ul .col-2 {
+  width: 64px;
+}
+.consultation-apply-processing .row-doctor-info ul .col-3,
+.consultation-apply-complete .row-doctor-info ul .col-3 {
+  width: 80px;
+}
+.consultation-apply-processing .row-doctor-info ul .col-4,
+.consultation-apply-complete .row-doctor-info ul .col-4 {
+  width: 256px;
+}
+.consultation-apply-processing .row-doctor-info ul:first-child,
+.consultation-apply-complete .row-doctor-info ul:first-child {
+  border-left: 1px solid #d8e1e5;
+}
+.consultation-apply-processing .row-doctor-info .view-resume,
+.consultation-apply-complete .row-doctor-info .view-resume {
+  margin-top: -3px;
+  width: 260px;
+  height: 76px;
+  background-color: #fea501;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px #db8601;
+  -moz-box-shadow: 0 4px #db8601;
+  -o-box-shadow: 0 4px #db8601;
+  box-shadow: 0 4px #db8601;
+  text-align: center;
+  line-height: 76px;
+  font-size: 18px;
+  color: #fff;
+}
+.consultation-apply-processing .row-doctor-info .view-resume i,
+.consultation-apply-complete .row-doctor-info .view-resume i {
+  display: inline-block;
+  margin-right: 6px;
+  width: 32px;
+  height: 32px;
+  background: url("/static/image/view.png") no-repeat;
+  vertical-align: middle;
+}
+.consultation-apply-processing .row-consultation-detail,
+.consultation-apply-complete .row-consultation-detail {
+  margin: 30px 33px 0;
+  padding-bottom: 30px;
+  border: 1px solid #d8e1e5;
+}
+.consultation-apply-processing .row-consultation-detail h3,
+.consultation-apply-complete .row-consultation-detail h3 {
+  padding: 0 14px;
+  height: 46px;
+  background-color: #ecefef;
+  line-height: 46px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #28b9cf;
+}
+.consultation-apply-processing .row-consultation-detail .item,
+.consultation-apply-complete .row-consultation-detail .item {
+  margin-top: 10px;
+  padding: 0 14px;
+  font-size: 14px;
+  color: #666;
+}
+.consultation-apply-processing .row-consultation-detail .item-left,
+.consultation-apply-complete .row-consultation-detail .item-left {
+  float: left;
+  width: 70px;
+  text-align: right;
+  font-weight: 600;
+}
+.consultation-apply-processing .row-consultation-detail .item-right,
+.consultation-apply-complete .row-consultation-detail .item-right {
+  margin-left: 90px;
+}
+.consultation-apply-processing .row-tips,
+.consultation-apply-complete .row-tips {
+  padding: 70px 0 70px 550px;
+  background: url("/static/image/consultation_processing.png") no-repeat 532px 50%;
+  color: #c8cdcf;
+}
+.consultation-apply-processing .row-tips p,
+.consultation-apply-complete .row-tips p {
+  font-size: 30px;
+}
+.consultation-apply-processing .row-tips small,
+.consultation-apply-complete .row-tips small {
+  font-size: 20px;
+}

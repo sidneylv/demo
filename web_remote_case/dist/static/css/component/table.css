@@ -1,0 +1,35 @@
+.c-table {
+  width: 100%;
+  max-width: 100%;
+}
+.c-table th,
+.c-table td {
+  max-width: 180px;
+  font-size: 14px;
+  color: #333;
+  word-break: break-all;
+}
+.c-table td {
+  padding: 23px 0;
+}
+.c-table .pl30 {
+  padding-left: 30px;
+}
+.c-table .pr30 {
+  padding-right: 30px;
+}
+.c-table .pl50 {
+  padding-left: 50px;
+}
+.c-table .pl90 {
+  padding-left: 90px;
+}
+.c-table >thead >tr >th {
+  height: 49px;
+  background-color: #eaeff0;
+  line-height: 49px;
+  font-weight: 600;
+}
+.c-table >tbody .even {
+  background: #f5fafc;
+}

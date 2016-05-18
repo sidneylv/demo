@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="static/css/reset.css" />
+	<link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<a class="l logo" href="">
+				<img src="static/image/logo.png" width="80" height="80" />
+			</a>
+			<div class="hgroup">
+				<h1>上海瑞金医院远程会诊中心</h1>
+				<h2>医生会诊意见书</h2>
+			</div>			
+		</div>		
+	</div>
+	<div class="container">
+		<div class="row">
+			<ul class="table-head clearfix">
+				<li class="control-group">
+					<label class="control-label">患者姓名</label>
+					<div class="controls">
+						<span class="w130 th-value">小明</span>
+					</div>					
+				</li>
+				<li class="control-group">
+					<label class="control-label">会诊编号</label>
+					<div class="controls">
+						<span class="w170 th-value">小明</span>
+					</div>
+				</li>
+				<li class="control-group">
+					<label class="control-label">会诊时间</label>
+					<div class="controls">
+						<span class="w170 th-value">小明</span>
+					</div>
+				</li>
+				<li class="control-group">
+					<label class="control-label">会诊科室</label>
+					<div class="controls">
+						<span class="w130 th-value">小明</span>
+					</div>
+				</li>
+				<li class="control-group">
+					<label class="control-label">会诊医生</label>
+					<div class="controls">
+						<span class="w170 th-value">小明</span>
+					</div>
+				</li>
+				<li class="control-group">
+					<label class="control-label">职称</label>
+					<div class="controls">
+						<span class="w170 th-value">小明</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="table-body">
+				<h3>医生意见<small>（基于本次书面病例资料，仅供医师参考）：</small></h3>
+				<div class="tb-content pr">
+					<div class="tb-content__item tb-content__item--first">
+						<h4>印象诊断：</h4>
+						<div class="tb-content__item-content">
+							<textarea id="J_display-textarea" class="display-textarea" disabled>这是医生测试
+							alksdfjalksdj;flk
+							adsfkja;lsdkf;lk
+							asldkflas;lkdjf;lkasj测试格式是否合理
+        如果不合理
+那我们就不管了
+呵呵····测试格式是否合理
+        如果不合理
+那我们就不管了
+呵呵····测试格式是否合理
+        如果不合理
+那我们就不管了
+呵呵····</textarea>
+						</div>
+					</div>
+					<p class="line-interval"></p>
+					<div class="tb-content__item tb-content__item--second">
+						<h4>分析及意见：</h4>
+						<div class="tb-content__item-content">
+							<textarea id="J_display-textarea2" class="display-textarea" disabled>这是医生测试
+    测试格式是否合理
+        如果不合理
+那我们就不管了
+呵呵····测试格式是否合理
+        如果不合理
+那我们就不管了
+呵呵····测试格式是否合理
+        如果不合理
+那我们就不管了
+呵呵····测试格式是否合理
+        如果不合理
+那我们就不管了
+呵呵····asdjfhlakjshdflkjashldkjfhaslkjdhflkjashdlkfjhaslkjdhflkasjhdflkjahsdlkjfhaslkdjhflkajshdflkjhasdlkfjhaskjdhf</textarea>							
+						</div>
+					</div>					
+					<div class="signature-wrapper">
+						医生签字：
+						<img class="signature" src="static/image/signature.png" width="118" height="64" />
+						<img class="stamp" src="static/image/stamp.png" width="158" height="112" />
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="remark">
+				注：
+				<p>1) 会诊意见仅供相关医师参考，具体诊断和治疗还须由实际负责患者诊疗的医生综合判断决定;</p>
+				<p>2) 若病情有变化，需要根据实际情况调整诊疗方案;</p>
+				<p>3) “就诊通”远程会诊中心作为第三方仅协助患者履行会诊手续，并不直接提供疾病诊疗相关意见，也不对医生意见及患者的诊疗结果负责。</p>
+			</div>
+		</div>		
+	</div>
+	<script src="static/js/lib/jquery/jquery.js"></script>
+	<script src="static/js/component/autoTextarea.js"></script>
+	<script>
+		var textarea = $('#J_display-textarea')[0],
+			textarea2 = $('#J_display-textarea2')[0];
+		autoTextarea(textarea);
+		autoTextarea(textarea2);
+	</script>
+</body>	
+</html>	

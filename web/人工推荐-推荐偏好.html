@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.shCircleLoader.css" >
+  <link rel="stylesheet" type="text/css" href="stylesheets/loading.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="false" src="assets/application.js"></script>
+  
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <ul>
+        <li class="on">
+          <a class="application" href="/customer">服务申请</a>
+        </li>
+        <li>
+          <a class="price" href="/service_price">服务价格</a>
+        </li>
+        <li>
+          <a class="question" href="/question">常见问题</a>
+        </li>
+      
+    </ul>
+    <div class="login">
+      <a class="usericon" href="/customer" id="home_user_name">王欣捷</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+  <div id="wrap">
+    <div id="leftpart">
+      <div id="user-kind">
+  <h1 class="f-white-20">我的就诊通</h1>
+  <h2 class="f-white-14">用户类型：普通</h2>
+</div>
+<dl id="user-menu">
+  <dt><a>服务申请</a></dt>
+  <dd><a href="/customer" id="menu_dashboard" class="on">预约服务</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">病历资料</a></dd>
+  <dd><a href="/customer/doctors" id="customer_doctors">我的医生</a></dd>
+  <dd><a href="/customer/orders" id="customer_orders">我的订单</a></dd>
+  <dd><a href="/customer/orders/preview" id="customer_orders_preview">订单查看</a></dd>
+
+  <dt><a>个人信息管理</a></dt>
+  <dd><a href="/customer/profile/edit" id="customer_profile">个人信息</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">密码修改</a></dd>
+
+  <dt><a>账户管理</a></dt>
+  <dd><a href="/customer/balances" id="customer_balances">余额/充值/提现</a></dd>
+  <dd><a href="/customer/member_points" id="customer_member_points">我的积分</a></dd>
+
+  <dt><a>评价建议</a></dt>
+  <dd><a href="/customer/messages/new" id="customer_message">投诉建议</a></dd>
+</dl>
+
+
+    </div>
+    <div id="rightpart">
+      <div id="contitle">
+  <h1 class="f-org-24">找医生</h1>
+</div>
+
+<div id="usercont" class="without-menu">
+  
+  <form accept-charset="UTF-8" action="/customer/services/recommendations/verify_condition" class="new_order" data-remote="true" id="recommend_condition_form" method="post" style="display: none"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <div id="online-step" class="a"></div>
+  <div id="recommend_condition_message"></div>
+  <div class="user-notice">如果您不清楚如何填写，可以添加微信公众号“<span>诊通</span>”，我们的客服会耐心给您解答。<span class="required_notification">* 表示必填项</span>
+  </div>
+   <dl class="clearfix">
+    <dt>疾病描述：</dt>
+    <dd>
+      <textarea class="info-descript" cols="0" id="order_condition" name="order[condition]" placeholder="简单描述病情" required="required" rows="10">
+</textarea>
+      <div class="quot">请简单描述病情<br />
+        <br />
+        <span> 例如：<br />
+          患者怎么不舒服？<br />
+          何时开始发生的？<br />
+          持续了多久？<br />
+          去医院就诊过吗？<br />
+          就诊的结果是什么？
+        </span>
+      </div>
+    </dd>
+      <dt>常用人：</dt>
+      <dd>
+        <div class="select">
+        <select id="check_patient" name="check_patient"><option value="">请选择常用人</option><option value="PT141104105052569">王欣捷</option></select>
+        </div>
+      </dd>
+    <dt>患者姓名：</dt>
+    <dd>
+      <input id="order_patient_name" name="order[patient_name]" placeholder="真实姓名" required="required" type="text" />
+    </dd>
+    <dt>身份证号：</dt>
+    <dd>
+      <input id="order_patient_pid" ischinesepid="true" name="order[patient_pid]" placeholder="真实身份证号码" required="required" type="text" />
+      <span class="form_hint">请正确输入您的身份证号码</span>
+    </dd>
+    <dt>所在区域：</dt>
+    <dd>
+      <div class="select">
+      <select id="order_patient_province" name="order[patient_province]"><option value=""></option>
+<option value="北京市">北京市</option>
+<option value="天津市">天津市</option>
+<option value="河北省">河北省</option>
+<option value="山西省">山西省</option>
+<option value="内蒙古自治区">内蒙古自治区</option>
+<option value="辽宁省">辽宁省</option>
+<option value="吉林省">吉林省</option>
+<option value="黑龙江省">黑龙江省</option>
+<option value="上海市">上海市</option>
+<option value="江苏省">江苏省</option>
+<option value="浙江省">浙江省</option>
+<option value="安徽省">安徽省</option>
+<option value="福建省">福建省</option>
+<option value="江西省">江西省</option>
+<option value="山东省">山东省</option>
+<option value="河南省">河南省</option>
+<option value="湖北省">湖北省</option>
+<option value="湖南省">湖南省</option>
+<option value="广东省">广东省</option>
+<option value="广西壮族自治区">广西壮族自治区</option>
+<option value="海南省">海南省</option>
+<option value="重庆市">重庆市</option>
+<option value="四川省">四川省</option>
+<option value="贵州省">贵州省</option>
+<option value="云南省">云南省</option>
+<option value="西藏自治区">西藏自治区</option>
+<option value="陕西省">陕西省</option>
+<option value="甘肃省">甘肃省</option>
+<option value="青海省">青海省</option>
+<option value="宁夏回族自治区">宁夏回族自治区</option>
+<option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+<option value="台湾省">台湾省</option>
+<option value="香港特别行政区">香港特别行政区</option>
+<option value="澳门特别行政区">澳门特别行政区</option></select>
+      </div>
+      <div class="select">
+      <select id="order_patient_city" name="order[patient_city]"><option value=""></option></select>
+      </div>
+      <div class="select">
+      <select id="order_patient_region" name="order[patient_region]"><option value=""></option></select>
+      </div>
+    </dd>
+    <dt>详细地址：</dt>
+    <dd>
+      <input id="order_patient_address" name="order[patient_address]" type="text" />
+    </dd>
+    <dt>联系人：</dt>
+    <dd>
+      <input id="order_contact_name" name="order[contact_name]" placeholder="真实姓名" required="required" type="text" />
+      
+    </dd>
+    <dt>联系人手机号：</dt>
+    <dd>
+      <input id="order_contact_mobile" name="order[contact_mobile]" placeholder="真实手机号码" required="required" type="text" />
+      
+    </dd>
+    <dt>与患者关系：</dt>
+    <dd>
+      <div class="select">
+        <select id="order_contact_is" name="order[contact_is]"><option value="患者本人">患者本人</option>
+<option value="患者家属">患者家属</option>
+<option value="患者朋友/同事">患者朋友/同事</option>
+<option value="患者的医生">患者的医生</option>
+<option value="中介机构">中介机构</option></select>
+      </div>
+    </dd>
+   </dl>
+  <div align="center clearfix">
+    <button class="submit" type="submit">下一步</button>
+  </div>
+ </form>
+  <form accept-charset="UTF-8" action="/customer/services/recommendations/verify_attachments" class="new_order" data-remote="true" id="recommend_attachment_form" method="post" style="display: none"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div id="online-step" class="b"></div>
+<div id="attachment_message"></div>
+<div class="user-notice f-18 f-org">上传资料(限JPG,PNG,GIF格式)</div>
+<div class="blueline bj-m10"></div>
+<div id="choose_attachment_upload">
+  <div id="order_attachments">
+    <div class="bj-p20-t">
+  <span class="select">
+    <select id="order[order_attachments_attributes][1][attachment_type]" name="order[order_attachments_attributes][1][attachment_type]"><option value="请选择资料类别">请选择资料类别</option>
+<option value="门诊病历,出院小结">门诊病历,出院小结</option>
+<option value="验血报告">验血报告</option>
+<option value="验尿报告">验尿报告</option>
+<option value="验粪报告">验粪报告</option>
+<option value="超声检查">超声检查</option>
+<option value="X线平片">X线平片</option>
+<option value="CT">CT</option>
+<option value="MR(核磁共振)">MR(核磁共振)</option>
+<option value="病理学检查">病理学检查</option>
+<option value="内镜检查">内镜检查</option>
+<option value="骨密度">骨密度</option>
+<option value="PET-CT">PET-CT</option>
+<option value="ECT(核素扫描)">ECT(核素扫描)</option>
+<option value="其他">其他</option></select>
+  </span>
+  <span>
+    <input class="attachment_dp" id="order[order_attachments_attributes][1][attachment_at]" name="order[order_attachments_attributes][1][attachment_at]" placeholder="资料获取时间" readonly="readonly" type="text" />
+  </span>
+  <span>
+  <input accept="image/png,image/gif,image/jpeg" id="order[order_attachments_attributes][1][file_path]" name="order[order_attachments_attributes][1][file_path]" type="file" />
+  </span>
+  <span class="bj-p10-l">
+    <button id="remove_attachment" name="button" type="button" class="submitC">删除</button>
+  </span>
+</div>
+  </div>
+</div>
+<div class="bj-p20-t">
+  <a class="submitB" data-fields="&lt;div class=&quot;bj-p20-t&quot;&gt;  &lt;span class=&quot;select&quot;&gt;    &lt;select id=&quot;order[order_attachments_attributes][1][attachment_type]&quot; name=&quot;order[order_attachments_attributes][1][attachment_type]&quot;&gt;&lt;option value=&quot;请选择资料类别&quot;&gt;请选择资料类别&lt;/option&gt;&lt;option value=&quot;门诊病历,出院小结&quot;&gt;门诊病历,出院小结&lt;/option&gt;&lt;option value=&quot;验血报告&quot;&gt;验血报告&lt;/option&gt;&lt;option value=&quot;验尿报告&quot;&gt;验尿报告&lt;/option&gt;&lt;option value=&quot;验粪报告&quot;&gt;验粪报告&lt;/option&gt;&lt;option value=&quot;超声检查&quot;&gt;超声检查&lt;/option&gt;&lt;option value=&quot;X线平片&quot;&gt;X线平片&lt;/option&gt;&lt;option value=&quot;CT&quot;&gt;CT&lt;/option&gt;&lt;option value=&quot;MR(核磁共振)&quot;&gt;MR(核磁共振)&lt;/option&gt;&lt;option value=&quot;病理学检查&quot;&gt;病理学检查&lt;/option&gt;&lt;option value=&quot;内镜检查&quot;&gt;内镜检查&lt;/option&gt;&lt;option value=&quot;骨密度&quot;&gt;骨密度&lt;/option&gt;&lt;option value=&quot;PET-CT&quot;&gt;PET-CT&lt;/option&gt;&lt;option value=&quot;ECT(核素扫描)&quot;&gt;ECT(核素扫描)&lt;/option&gt;&lt;option value=&quot;其他&quot;&gt;其他&lt;/option&gt;&lt;/select&gt;  &lt;/span&gt;  &lt;span&gt;    &lt;input class=&quot;attachment_dp&quot; id=&quot;order[order_attachments_attributes][1][attachment_at]&quot; name=&quot;order[order_attachments_attributes][1][attachment_at]&quot; placeholder=&quot;资料获取时间&quot; readonly=&quot;readonly&quot; type=&quot;text&quot; /&gt;  &lt;/span&gt;  &lt;span&gt;  &lt;input accept=&quot;image/png,image/gif,image/jpeg&quot; id=&quot;order[order_attachments_attributes][1][file_path]&quot; name=&quot;order[order_attachments_attributes][1][file_path]&quot; type=&quot;file&quot; /&gt;  &lt;/span&gt;  &lt;span class=&quot;bj-p10-l&quot;&gt;    &lt;button id=&quot;remove_attachment&quot; name=&quot;button&quot; type=&quot;button&quot; class=&quot;submitC&quot;&gt;删除&lt;/button&gt;  &lt;/span&gt;&lt;/div&gt;" href="/customer/services/recommendations/new" id="add_attachment_row">添加</a>
+</div>
+<div class="user-notice f-18 f-org">已上传资料预览</div>
+<div class="blueline bj-m10"></div>
+<div class="bj-tb-l f-14">
+  <div id="upload_attachment_preview">
+    <div id="choose_picture_preview">
+    </div>
+  </div>
+</div>
+
+<div align="center">
+  <button type="button" class="submit" id="recommend_attachment_prev">上一步</button>
+  <button type="button" class="submit" id="recommend_attachment_next" >下一步</button>
+</div>
+</form>
+  <form accept-charset="UTF-8" action="/customer/services/recommendations/verify_preference" class="new_order" data-remote="true" id="recommend_preference_form" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+
+<div class="newlcicon lcstepone_02"></div>
+<div id="recommend_preference_message"></div>
+<div class="user-notice f-18 f-org">我希望推荐的医生最好是：</div>
+<div class="blueline bj-m10"></div>
+<dl class="clearfix">
+  <dt>位于：</dt>
+  <dd>
+    <div class="select">
+      <select id="order_doctor_locations" name="order[doctor_locations]"><option value="上海全市均可">上海全市均可</option>
+<option value="黄浦,静安,长宁">黄浦,静安,长宁</option>
+<option value="杨浦,虹口,崇明">杨浦,虹口,崇明</option>
+<option value="浦东新区">浦东新区</option>
+<option value="宝山,嘉定">宝山,嘉定</option>
+<option value="青浦,金山,奉贤">青浦,金山,奉贤</option></select>
+    </div>
+  </dd>
+  <dt>时间：</dt>
+  <dd>
+    <div class="select">
+      <select id="order_doctor_free_at" name="order[doctor_free_at]"><option value="明天可预约">明天可预约</option>
+<option value="三天内可预约">三天内可预约</option>
+<option value="一周内可预约">一周内可预约</option>
+<option value="两周内可预约">两周内可预约</option>
+<option value="一个月内可预约">一个月内可预约</option>
+<option value="不限">不限</option></select>
+    </div>
+  </dd>
+  <dt>性别：</dt>
+  <dd>
+    <div class="select">
+      <select id="order_doctor_gender" name="order[doctor_gender]"><option value="不限">不限</option>
+<option value="男">男</option>
+<option value="女">女</option></select>
+    </div>
+  </dd>
+   <dt>推荐医生数：</dt>
+  <dd>
+    <div class="select">
+      <select id="order_suggest_doctors_count" name="order[suggest_doctors_count]"><option value="1名">1名</option>
+<option value="2名">2名</option>
+<option value="3名">3名</option>
+<option value="4名">4名</option>
+<option value="5名">5名</option></select>
+    </div>
+  </dd>
+</dl>
+<div class="blueline bj-m10"></div>
+<div class="blank30" ></div>
+<div align="center clearfix">
+  <button type="button" class="submit mar_r20" id="recommend_preference_prev">上一步</button>
+  <button class="submit" type="submit">下一步</button>
+</div>
+
+</form>
+  <form accept-charset="UTF-8" action="/customer/services/recommendations" class="new_order" data-remote="true" id="recommend_confirmation_form" method="post" style="display: none"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+
+<div id="online-step" class="d"></div>
+<div id="recommend_confirmation_message"></div>
+
+<div class="user-notice f-18 f-org">患者的病情和相关资料：</div>
+<div class="blueline bj-m10-30"></div>
+<div class="bj-tb-l f-14">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <label name="order[patient_name]"></label>
+        </td>
+        <td>
+          身份证号：<label name="order[patient_pid]"></label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          地址： <label name="order[patient_province]"></label>
+                <label name="order[patient_city]"></label>
+                <label name="order[patient_region]"></label>
+                <label name="order[patient_address]"></label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          病情描述：<label name="order[condition]"></label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div id="confirmation_attachment">
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="user-notice f-18 f-org">联系人信息：</div>
+<div class="blueline  bj-m10-30"></div>
+<div class="bj-tb-l f-14">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <label name="order[contact_name]"></label>(<label name="order[contact_is]"></label>) 
+      </td>
+      <td>
+        手机号：<label name="order[contact_mobile]"></label>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="user-notice f-18 f-org">医生偏好：</div>
+<div class="blueline  bj-m10-30"></div>
+<div class="bj-tb-l f-14">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        地理位置：
+      </td>
+      <td>
+        <label name="order[doctor_locations]"></label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        可预约时间：
+      </td>
+      <td>
+        <label name="order[doctor_free_at]"></label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        医生性别：
+      </td>
+      <td>
+        <label name="order[doctor_gender]"></label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        语言：
+      </td>
+      <td>
+        <label name="doctor_languages"></label>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="user-notice f-18 f-org">在线择医费：</div>
+<div class="blueline  bj-m10-30"></div>
+<div class="bj-tb-l f-14">
+  <div  class="user-tb">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="fee" id="confirmation_appointment_price"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<input type="hidden" id="recommend_unit_price" value="100" />
+
+<input id="order_condition" name="order[condition]" type="hidden" />
+<input id="order_patient_name" name="order[patient_name]" type="hidden" />
+<input id="order_patient_pid" name="order[patient_pid]" type="hidden" />
+<input id="order_contact_name" name="order[contact_name]" type="hidden" />
+<input id="order_contact_mobile" name="order[contact_mobile]" type="hidden" />
+<input id="order_contact_is" name="order[contact_is]" type="hidden" />
+
+<input id="order_doctor_locations" name="order[doctor_locations]" type="hidden" />
+<input id="order_doctor_free_at" name="order[doctor_free_at]" type="hidden" />
+<input id="order_doctor_gender" name="order[doctor_gender]" type="hidden" />
+  <input id="hid_confirmation_0" multiple="multiple" name="order[doctor_languages][]" type="hidden" />
+  <input id="hid_confirmation_1" multiple="multiple" name="order[doctor_languages][]" type="hidden" />
+  <input id="hid_confirmation_2" multiple="multiple" name="order[doctor_languages][]" type="hidden" />
+<input id="order_suggest_doctors_count" name="order[suggest_doctors_count]" type="hidden" />
+<input id="order_require_doctor_info" name="order[require_doctor_info]" type="hidden" />
+<input id="order_require_doctor_resume" name="order[require_doctor_resume]" type="hidden" />
+<input id="order_patient_province" name="order[patient_province]" type="hidden" />
+<input id="order_patient_city" name="order[patient_city]" type="hidden" />
+<input id="order_patient_region" name="order[patient_region]" type="hidden" />
+<input id="order_patient_address" name="order[patient_address]" type="hidden" />
+
+<input id="order_price" name="order[price]" type="hidden" />
+<div id="attachment_hidden" style="display:none">
+</div>
+
+<div class="loading"></div>
+<div class="blank30" ></div>
+<div align="center clearfix">
+  <button class="submit" id="recommend_confirmation_prev" type="button" >上一步</button>
+  <button class="submit" type="submit" id="recommend_confirmation_submit">下一步</button>
+</div>
+
+</form>
+</div>
+
+
+    </div>
+  </div>
+  <div class="clearit"></div>
+  <div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.shCircleLoader-min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0
+        });
+      });
+    });
+  </script>
+    <script src="assets/orders.js"></script>
+  <script src="assets/chinese_pid_verify.js"></script>
+  <script src="assets/services/attachments.js"></script>
+  <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

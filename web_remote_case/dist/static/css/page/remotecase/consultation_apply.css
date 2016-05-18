@@ -1,0 +1,14 @@
+.consultation-list {
+  margin-top: 27px;
+  background: #fff;
+}
+.consultation-list .tab-content {
+  padding: 25px 0 0;
+}
+.consultation-list .tab-content .tab-pane {
+  height: 755px;
+}
+.consultation-list .tab-content .tab-pane .pagination--second {
+  padding: 40px 0;
+  font-size: 14px;
+}

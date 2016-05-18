@@ -1,0 +1,1 @@
+require(["bootstrap"],function(){function o(){$("#J_withdraw-introduce").on("click",i)}function i(){$("#J_withdraw-introduce-dialog").modal("show")}function n(){o()}n()});

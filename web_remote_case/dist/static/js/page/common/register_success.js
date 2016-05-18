@@ -1,0 +1,1 @@
+require([],function(){function n(){setTimeout(function(){window.location.href="/view/common/login.html"},4e3)}function o(){n()}o()});

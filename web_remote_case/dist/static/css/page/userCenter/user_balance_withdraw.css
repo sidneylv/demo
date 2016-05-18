@@ -1,0 +1,96 @@
+.tab-balance-withdraw {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.tab-balance-withdraw-hd b {
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #333;
+}
+.tab-balance-withdraw-hd .tab-trigger {
+  display: inline-block;
+  font-size: 0;
+}
+.tab-balance-withdraw-hd li {
+  position: relative;
+  display: inline-block;
+  margin-left: 22px;
+  width: 140px;
+  height: 38px;
+  overflow: hidden;
+}
+.tab-balance-withdraw-hd li a {
+  display: block;
+  width: 138px;
+  height: 36px;
+  border: 1px solid #cbd1d5;
+}
+.tab-balance-withdraw-hd li .shadow-border {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: url("/static/image/pay_active.png") no-repeat;
+}
+.tab-balance-withdraw-hd .pay-alipay a {
+  background: url("/static/image/pay_alipay.png") no-repeat;
+}
+.tab-balance-withdraw-hd .pay-card a {
+  background: url("/static/image/pay_card.png") no-repeat;
+}
+.tab-balance-withdraw-hd .pay-cash a {
+  background: url("/static/image/pay_cash.png") no-repeat;
+}
+.tab-balance-withdraw-hd .active .shadow-border {
+  display: block;
+}
+.form-horizontal--pay {
+  margin: 40px 0 0;
+  padding-left: 135px;
+  width: auto;
+  font-size: 14px;
+  color: #333;
+}
+.form-horizontal--pay .control-group {
+  margin: 0 0 28px;
+  height: 34px;
+  line-height: 34px;
+}
+.form-horizontal--pay .control-label {
+  float: left;
+  width: 115px;
+  text-align: left;
+}
+.form-horizontal--pay .controls {
+  margin-left: 115px;
+}
+.withdraw-introduce {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #39a1f1;
+}
+.withdraw-introduce-dialog .modal-dialog .modal-header {
+  padding: 0 14px;
+  height: 51px;
+  line-height: 51px;
+}
+.withdraw-introduce-dialog .modal-dialog .modal-header .modal-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.withdraw-introduce-dialog .modal-dialog .modal-body {
+  padding: 20px 0 30px;
+}
+.withdraw-introduce-dialog .modal-dialog .modal-body p {
+  padding: 0 27px;
+  text-align: left;
+  font-size: 14px;
+}
+.withdraw-introduce-dialog .modal-dialog .modal-body p .color-red {
+  color: #fa5050;
+}

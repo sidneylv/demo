@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.shCircleLoader.css" >
+  <link rel="stylesheet" type="text/css" href="stylesheets/loading.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="false" src="assets/application.js"></script>
+  
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <ul>
+        <li class="on">
+          <a class="application" href="/customer">服务申请</a>
+        </li>
+        <li>
+          <a class="price" href="/service_price">服务价格</a>
+        </li>
+        <li>
+          <a class="question" href="/question">常见问题</a>
+        </li>
+      
+    </ul>
+    <div class="login">
+      <a class="usericon" href="/customer" id="home_user_name">王欣捷</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+  <div id="wrap">
+    <div id="leftpart">
+      <div id="user-kind">
+  <h1 class="f-white-20">我的就诊通</h1>
+  <h2 class="f-white-14">用户类型：普通</h2>
+</div>
+<dl id="user-menu">
+  <dt><a>看病预约</a></dt>
+  <dd><a href="/customer" id="menu_dashboard" class="on">预约服务</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">病历资料</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">健康评估</a></dd>
+  <dd><a href="/customer/doctors" id="customer_doctors">我的医生</a></dd>
+  <dd><a href="/customer/orders" id="customer_orders">我的订单</a></dd>
+
+  <dt><a>账户管理</a></dt>
+  <dd><a href="/customer/profile/edit" id="customer_profile">余额/充值/提现</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">信用卡管理</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">我的积分</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">邀请好友得礼金</a></dd>
+
+  <dt><a>个人信息管理</a></dt>
+  <dd><a href="/customer/balances" id="customer_balances">个人信息</a></dd>
+  <dd><a href="/customer/member_points" id="customer_member_points">密码修改</a></dd>
+
+  <dt><a>评价建议</a></dt>
+  <dd><a href="/customer/messages/new" id="customer_message">服务评价</a></dd>
+  <dd><a href="/customer/messages/new" id="customer_message">服务评价</a></dd>
+</dl>
+
+
+    </div>
+    <div id="rightpart">
+      <div id="contitle">
+  <h1 class="f-org-24" style="background-image:none;">预约医生</h1>
+</div>
+
+<div id="usercont" class="without-menu">
+	<div  class="newlcicon lcstepone_03"></div>
+    <div class="blank30"></div>
+    <div class="tit_serv">1、疾病描述填写：</div>
+    <p class="intent_p f-14">如果您不清楚如何填写，可以添加微信公众号“<span class="orange">诊通</span>”，我们的客服会耐心给您解答。<span class="orange">*表示必填项</span></p>
+    <div class="userinfowd">
+    	<table cellpadding="0" cellspacing="0" width="100%" border="0">
+        	<tr>
+            	<td class="f-14 bold" width="110" align="right">疾病描述：</td>
+                <td width="495"><textarea required="required" class="userinfotxt"></textarea></td>
+                <td class="f-12 redzi02"><p class="pad_tb18 col_gray">请简单描述病情</p>
+例如：<br />
+患者怎么不舒服？<br />
+何时开始发生的？<br />
+持续了多久？<br />
+去医院就诊过吗？<br />
+就诊的结果是什么？
+</td>
+            </tr>
+        </table>
+        <div class="blank20"></div>
+        <div class="cenalign"><span class="loadfileinfo">载入上一次的预约/云诊时的病情描述</span></div>
+    </div>  
+    <div class="tit_serv">2、上传资料：<span class="f-14">（限jpg、png、gif格式）</span></div>  
+    <p class="intent_p f-14" style="padding:15px 0 5px 15px;">已上传资料预览</p>
+    <ul class="zllists clearfix">
+    	<li><a class="nopic" href="javascript:void(0);" onclick="maskpop('uppics');">未上传</a></li>
+        <li><a href="#"><img src="images/new/deft.jpg" /></a><a href="#" class="closesel_top"></a></li>
+        <li><a href="#"><img src="images/new/deft.jpg" /></a></li>
+    </ul>
+    <div class="upnewbor clearfix">
+    	<p><a class="bigredbutup mar_b5"  style="position:relative;overflow:hidden;" href="javascript:void(0);">上传本地图片<input type="file" style="position:absolute;top:0px;left:0px;z-index:5;opacity:0;width:100%;height:32px;" /></a><br />我有新的病历图片要上传</p>
+        <p style="border:none;"><a class="bigredbutup mar_b5" href="#">调取已上传图片</a><br />我要调取以往病历中的图<br />
+片或通过手机上传的图片</p>
+    </div>
+    <div class="clear"></div>
+    <div class="cenalign clearfix mar_t20"><a href="#" class="BigBtn-gray mar_r20">上一步</a><a href="#" class="BigBtn-green">下一步</a></div>
+</div>
+    </div>
+  </div>
+  <div class="clearit"></div>
+  <div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+  <!-- 以下为弹出层-->
+  <div class="popubox" id="uppics">
+  	<a href="javascript:void(0);" onclick="closemask('uppics');" class="closepopu"></a>
+  	<div class="cenalign tit_bigpop">选择资料库图片</div>    
+    <div class="popucont">
+    	<div class="tit_clickchoo"><a href="#" class="onpop">未归档图片</a><a href="#">已归档图片</a></div>
+    	<ul class="picsgdlist clearfix">
+        	<li><a href="#"><img src="images/new/deft.jpg" /></a></li>
+            <li><a href="#"><img src="images/new/deft.jpg" /></a></li>
+            <li><a href="#"><img src="images/new/deft.jpg" /></a></li>
+            <li><a href="#"><img src="images/new/deft.jpg" /></a></li>
+            <li><a href="#"><img src="images/new/deft.jpg" /></a></li>
+            <li><a href="#"><img src="images/new/deft.jpg" /></a></li>
+            <li><a href="#"><img src="images/new/deft.jpg" /></a></li>
+            <li><a href="#"><img src="images/new/deft.jpg" /></a></li>
+            <li><a href="#"><img src="images/new/deft.jpg" /></a></li>
+            <li><a href="#"><img src="images/new/deft.jpg" /></a></li>
+            <li><a href="#"><img src="images/new/deft.jpg" /></a></li>
+            <li><a href="#"><img src="images/new/deft.jpg" /></a></li>
+        </ul>
+    </div>
+  </div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.shCircleLoader-min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0
+        });
+      });
+    });
+  </script>
+    <script src="assets/doctor_schedules.js"></script>
+  <script src="assets/orders.js"></script>
+  <script src="assets/chinese_pid_verify.js"></script>
+  <script src="assets/services/attachments.js"></script>
+  <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

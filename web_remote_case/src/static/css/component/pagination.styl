@@ -1,0 +1,62 @@
+@import '../core/var'
+@import '../core/mix'
+
+//pagination
+.pagination,	
+.pagination-page,
+.pagination-jump
+	display inline-block
+.pagination	
+	a,
+	span,
+	input
+		display inline-block
+		margin-left 11px
+		width 31px
+		height 31px
+		background #f5f5f5
+		border 1px solid #959595
+		border-radius(5px)
+		line-height 31px
+		text-align center
+		color #7f7e8a
+	.prev,
+	.next
+		font-size 0
+		vertical-align top
+	.prev
+		margin-left 0
+		background url('../image/icon/arr_left_dark.png') no-repeat 50% 50% #f5f5f5
+	.next
+		background url('../image/icon/arr_right_dark.png') no-repeat 50% 50% #f5f5f5
+	.current
+		background #77c2d3
+		color #fff
+	.current.prev
+		background url('../image/icon/arr_left.png') no-repeat 50% 50% #f5f5f5
+	.current.next
+		background url('../image/icon/arr_right.png') no-repeat 50% 50% #f5f5f5
+
+.pagination-jump	
+	.page-num		
+		width 62px
+		background #fff
+		box-shadow(2px 2px 2px #f5f5f5 inset)
+	.jump
+		margin-left 5px
+		
+//pagination2
+.pagination--second
+	margin-top 5px
+	text-align right
+	.pagination-info		
+		color #aaa
+	.pagination-page
+		margin-left 10px	
+		span, 
+		a
+			margin-left 10px			
+		span
+			color #aaa
+		a
+			color #45bdd8	

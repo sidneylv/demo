@@ -1,0 +1,1 @@
+require([],function(){function n(){}n()});

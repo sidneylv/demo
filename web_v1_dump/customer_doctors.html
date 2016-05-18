@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.shCircleLoader.css" >
+  <link rel="stylesheet" type="text/css" href="stylesheets/loading.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="false" src="assets/application.js"></script>
+  
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <ul>
+        <li class="on">
+          <a class="application" href="/customer">服务申请</a>
+        </li>
+        <li>
+          <a class="price" href="/service_price">服务价格</a>
+        </li>
+        <li>
+          <a class="question" href="/question">常见问题</a>
+        </li>
+      
+    </ul>
+    <div class="login">
+      <a class="usericon" href="/customer" id="home_user_name">王欣捷</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+  <div id="wrap">
+    <div id="leftpart">
+      <div id="user-kind">
+  <h1 class="f-white-20">我的就诊通</h1>
+  <h2 class="f-white-14">用户类型：普通</h2>
+</div>
+<dl id="user-menu">
+  <dt><a>服务申请</a></dt>
+  <dd><a href="/customer" id="menu_dashboard">预约服务</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">病历资料</a></dd>
+  <dd><a href="/customer/doctors" id="customer_doctors" class="on">我的医生</a></dd>
+  <dd><a href="/customer/orders" id="customer_orders">我的订单</a></dd>
+  <dd><a href="/customer/orders/preview" id="customer_orders_preview">订单查看</a></dd>
+
+  <dt><a>个人信息管理</a></dt>
+  <dd><a href="/customer/profile/edit" id="customer_profile">个人信息</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">密码修改</a></dd>
+
+  <dt><a>账户管理</a></dt>
+  <dd><a href="/customer/balances" id="customer_balances">余额/充值/提现</a></dd>
+  <dd><a href="/customer/member_points" id="customer_member_points">我的积分</a></dd>
+
+  <dt><a>评价建议</a></dt>
+  <dd><a href="/customer/messages/new" id="customer_message">投诉建议</a></dd>
+</dl>
+
+
+    </div>
+    <div id="rightpart">
+      <div id="contitle">
+  <h1 class="f-org-24">我的医生</h1>
+</div>
+
+<div>
+  <div class="user-tb">
+    <div class="tbinfo">
+      <table id="table_doctor" width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <th class="date">医生信息</th>
+        <th class="date">相关记录</th>
+        <th class="date">操作</th>
+      </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td rowspan="5" class="docimg">
+                    <img src="images/120X160.png" width="120" height="160">
+                </td>
+                <td rowspan="5" class="docinfo">
+                  <h1 class="f-14">
+                    <a href="/customer/resumes/DN141104102528295">狄青</a><span class="f-12">住院医师</span>
+                  </h1>
+                  <ul class="rank">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  专长：高血压 早搏 心律不齐...<br>
+                  医院：仁济医院(东院)<br>
+                  科室：心内科<br>
+                  地址：上海市浦东新区浦建路160号 <br>
+                  <input type="button" value="查看简历" name="show_resume" data-dir-url="/customer/resumes/DN141104102528295" />
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td align="center">
+              <a href="/customer/orders/SO141104105052529">SO5052529</a></br>
+              <a href="/customer/orders/SO141104110040935">SO0040935</a></br>
+              <a href="/customer/orders/SO141104110810389">SO0810389</a></br>
+              <a href="/customer/orders/SO141104113607107">SO3607107</a></br>
+              <a href="/customer/orders/SO141104113912427">SO3912427</a></br>
+              <a href="/customer/orders/SO141104114214235">SO4214235</a></br>
+              <a href="/customer/orders/SO141104114606330">SO4606330</a></br>
+              <a href="/customer/orders/SO141104115250593">SO5250593</a></br>
+              <a href="/customer/orders/SO141104230515153">SO0515153</a></br>
+              <a href="/customer/orders/SO141116154837468">SO4837468</a></br>
+          </td>
+          <td align="center">
+            <button type="button" class="submitB" >预约</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td rowspan="5" class="docimg">
+                    <img src="images/120X160.png" width="120" height="160">
+                </td>
+                <td rowspan="5" class="docinfo">
+                  <h1 class="f-14">
+                    <a href="/customer/resumes/DN141105135219860">金羽青</a><span class="f-12">主治医师</span>
+                  </h1>
+                  <ul class="rank">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  专长：五官整形 周围神经损伤修复 毛发移植<br>
+                  医院：上海市第一人民医院<br>
+                  科室：整形外科<br>
+                  地址：上海市海宁路100号 <br>
+                  <input type="button" value="查看简历" name="show_resume" data-dir-url="/customer/resumes/DN141105135219860" />
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td align="center">
+              <a href="/customer/orders/SO141214191739261">SO1739261</a></br>
+              <a href="/customer/orders/SO141215193344142">SO3344142</a></br>
+              <a href="/customer/orders/SO141216104125179">SO4125179</a></br>
+              <a href="/customer/orders/SO141216131756540">SO1756540</a></br>
+          </td>
+          <td align="center">
+            <button type="button" class="submitB" >预约</button>
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+  </div>
+</div>
+
+<script src="assets/cutsomer_doctors.js"></script>
+    </div>
+  </div>
+  <div class="clearit"></div>
+  <div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.shCircleLoader-min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0
+        });
+      });
+    });
+  </script>
+    <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

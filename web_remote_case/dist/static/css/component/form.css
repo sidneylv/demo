@@ -1,0 +1,32 @@
+.c-input {
+  border: none;
+}
+.c-input--bordered {
+  border: 1px solid #e3e8eb;
+}
+.c-input-bordered--second {
+  border: 1px solid #e0e7ea;
+}
+.c-input--default {
+  padding: 6px;
+  width: 217px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+}
+.c-input--xxxlarge {
+  padding: 0 10px;
+  width: 445px;
+  height: 49px;
+  line-height: 49px;
+  font-size: 16px;
+}
+.c-input--xxlarge {
+  width: 260px;
+}
+.c-input--xlarge {
+  padding: 0 10px;
+  width: 248px;
+  height: 39px;
+  line-height: 39px;
+}

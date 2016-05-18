@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/nivo-slider.css">
+</head>
+<body>
+<div id="header">
+  <div class="inheader">
+    <div id="logo"><a href="/"></a></div>
+    <div id="login">
+      <form accept-charset="UTF-8" action="/users/sign_in" class="new_user" id="new_user" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="gWMTDP5hm7qeTUJ5iWLO3sXFUDZGNR8IkdS+/xBNghs=" /></div>
+      <ul>
+        <li>
+          <label>手机号</label>
+          <input id="home_mobile" name="user[mobile]" placeholder="请输入手机号" type="text" />
+            <input name="user[remember_me]" type="hidden" value="0" /><input class="check" id="user_remember_me" name="user[remember_me]" type="checkbox" value="1" /> 
+          <label class="checklb" for="user_remember_me">记住我</label>
+        </li>
+        <li>
+          <label>密码</label>
+          <input autocomplete="off" id="home_password" name="user[password]" placeholder="输入密码" type="password" />
+          <a class="relink" href="/password_reset/new">忘记密码?</a>
+        </li>
+        <li class="log">
+          <button class="submitC" type="submit">登录</button>
+          <button class="submitB" data-url="/users/sign_up" id="btn_register" name="button" type="button">注册</button>
+        </li>
+      </ul>
+      <input name="authenticity_token" type="hidden" value="gWMTDP5hm7qeTUJ5iWLO3sXFUDZGNR8IkdS+/xBNghs=" />
+</form>    </div>
+  </div>
+</div>
+<div id="navigation">
+  <div class="innav">
+      <ul>
+        <li class="index on">
+          <a class="indexico" href="/">首页</a>
+        </li>
+        <li>
+          <a class="applyico" href="/customer">服务申请</a>
+        </li>
+        <li>
+          <a class="priceico" href="/home/service_price">服务价格</a>
+        </li>
+        <li>
+          <a class="doctorico" href="/provider">我是医生</a>
+        </li>
+        <li>
+          <a class="questionico" href="/home/question">常见问题</a>
+        </li>
+      </ul>
+  </div>
+</div>
+<div class="article-content">
+<h1>关于我们</h1>
+<p>诊通健康科技（上海）有限公司成立于2014年，总部位于上海新天地商圈。</p>
+</br>
+<p>在上海，我们选择与瑞金医院、中山医院、仁济医院、新华医院、华山医院、第一人民医院、第六人民医院、第九人民医院、华东医院、龙华医院、曙光医院、红房子医院、第一妇婴保健院、儿童医学中心、儿科医院、肿瘤医院、眼耳鼻喉科医院、胸科医院、肺科医院、东方医院及国际医学中心等知名医疗机构、重点科室、著名专家建立稳定高效的合作关系，以优质专家资源保障客户医疗质量。</p>
+</br>
+<p>我们的团队由医学博士硕士、专业护士组成，在各自领域从业多年，经验丰富，能够为客户提供专业服务。</p>
+</br>
+<p>我们与美国和欧洲医学学会最新动态保持同步更新，并为中国医生们搭建学术交流平台，使我们的客户有机会分享国内领先的医疗资源。</p>
+</br>
+<p>为了向客户提供更多的健康延伸服务，我们与高端健康体检中心合作，根据客户实际情况量身定制体检套餐，为您提供高端健康体验。</p>
+</br>
+<h2>快速•省心</h2>
+ <p> 我们为企业客户和个人客户带来更多价值，个人信息高度保密，看病不再费时、费心、费力，获得更好的就医体验。</p>
+<h2>双向•自由</h2>
+<p>  我们拥有上海市内三甲医院优势科室的专家库资源，找哪个专家由患者自由选择，看什么病由医生自主选择。</p>
+<h2>全面•精准</h2>
+ <p> 我们了解各大医院科室及专家的特长和优势，有强大的医学团队与专家紧密对接，实现病人病情与专家特长精准匹配。<br>
+</p>
+</div>
+<div class="clearit"></div>
+<div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+<script data-turbolinks-track="true" src="assets/application.js"></script>
+<script src="assets/home.js"></script>
+</body>
+</html>

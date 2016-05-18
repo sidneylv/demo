@@ -1,0 +1,129 @@
+.page-usercenter {
+  background-color: #fff;
+}
+.page-usercenter .header {
+  border-bottom: 1px solid #e0e7ea;
+}
+.layout-two--usercenter {
+  border: 1px solid #e0e7ea;
+}
+.layout-two--usercenter .layout-two-left {
+  float: left;
+  width: 270px;
+  background-color: #f0f3f8;
+}
+.layout-two--usercenter .layout-two-right {
+  margin-left: 270px;
+}
+.layout-two--usercenter .mod-box--third {
+  padding: 20px 38px;
+  background: #fff;
+}
+.sidebar h2 {
+  margin: -1px 0 0 -1px;
+  height: 59px;
+  background-color: #9cafc2;
+  line-height: 59px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+.sidebar-nav {
+  padding: 24px 0 500px;
+  background-color: #f0f3f8;
+  border-right: 1px solid #e0e7ea;
+}
+.sidebar-nav li {
+  border-bottom: 1px solid #e0e7ea;
+}
+.sidebar-nav li:first-child {
+  border-top: 1px solid #e0e7ea;
+}
+.sidebar-nav li a {
+  display: block;
+  margin: 0 -1px 0 -1px;
+  padding-left: 114px;
+  height: 57px;
+  background-color: #f0f3f8;
+  background-repeat: no-repeat;
+  background-position: 78px 50%;
+  line-height: 57px;
+  border-left: 1px solid #e0e7ea;
+  border-right: 1px solid #e0e7ea;
+  font-size: 16px;
+  color: #666;
+}
+.sidebar-nav .current a {
+  background-color: #fff;
+  border-left: 3px solid #28b9cf;
+  border-right: 1px solid #fff;
+  color: #28b9cf;
+}
+.sidebar-nav__item--first a {
+  background-image: url("/static/image/nav/info.png");
+}
+.sidebar-nav__item--first.current a {
+  background-image: url("/static/image/nav/info_active.png");
+}
+.sidebar-nav__item--second a {
+  background-image: url("/static/image/nav/resume.png");
+}
+.sidebar-nav__item--second.current a {
+  background-image: url("/static/image/nav/resume_active.png");
+}
+.sidebar-nav__item--third a {
+  background-image: url("/static/image/nav/integral.png");
+}
+.sidebar-nav__item--third.current a {
+  background-image: url("/static/image/nav/integral_active.png");
+}
+.sidebar-nav__item--fourth a {
+  background-image: url("/static/image/nav/balance.png");
+}
+.sidebar-nav__item--fourth.current a {
+  background-image: url("/static/image/nav/balance_active.png");
+}
+.sidebar-nav__item--fifth a {
+  background-image: url("/static/image/nav/config.png");
+}
+.sidebar-nav__item--fifth.current a {
+  background-image: url("/static/image/nav/config_active.png");
+}
+.user-info-table {
+  margin-top: 36px;
+}
+.user-info-table >tbody >tr:first-child td {
+  border-top: 1px solid #f4f4f4;
+}
+.user-info-table td {
+  padding: 14px 0;
+  border-bottom: 1px solid #f4f4f4;
+  font-size: 16px;
+  color: #333;
+}
+.user-info-table .pl10 {
+  padding-left: 10px;
+}
+.upload-head {
+  margin: 0 auto;
+  width: 139px;
+}
+.upload-head img {
+  display: block;
+  border: 1px solid #e1e8eb;
+}
+.upload-head .btn-upload {
+  margin-top: 13px;
+  width: 139px;
+  height: 37px;
+  background: -webkit-linear-gradient(top, #f9f9f9, #f5f5f5);
+  background: -moz-linear-gradient(top, #f9f9f9, #f5f5f5);
+  background: linear-gradient(top, #f9f9f9, #f5f5f5);
+  border: 1px solid #e2e2e2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #333;
+}

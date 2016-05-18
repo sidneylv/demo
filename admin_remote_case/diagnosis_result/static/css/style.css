@@ -1,0 +1,169 @@
+/* unit */
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+.pr{
+	position: relative;
+}
+.w130{
+	width: 130px;
+}
+.w170{
+	width: 170px;
+}
+.clearfix,
+.container{
+	*zoom: 1;
+}
+.clearfix:before, 
+.clearfix:after, 
+.container:before, 
+.container:after{
+	display: table;
+	content: '';
+}
+.clearfix:after,
+.container:after{
+	clear: both;
+}
+
+/* scaffolding */
+html{
+	font-size: 100%;
+	overflow-x: hidden;
+	overflow-y: auto; 
+}
+body{
+	background: #fff;
+	line-height: 1.5;
+	font-family: "Microsoft Yahei", Helvetica, sans-serif, Arial;
+	font-size: 100%;
+
+	color: #333;
+}
+.container{
+	margin: 0 auto;
+	width: 795px;
+}
+.line-interval{
+	border-bottom: 1px solid #000;
+}
+
+/* header */
+.header{	
+	text-align: center;	
+}
+.logo{
+	margin: 19px 0 0 40px;	
+}
+.hgroup{
+	margin: 30px auto 0;
+	width: 290px;
+}
+.hgroup h1,
+.hgroup h2{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/* table-head */
+.table-head{
+	margin-top: 30px;
+	padding: 0 45px 0 35px;
+}
+.table-head .control-group{
+	float:left;
+	margin:0 0 8px 10px;		
+}
+.table-head .control-label{
+	float: left;
+	width: 65px;
+	text-align: right;
+}
+.table-head .controls{
+	margin-left: 70px;
+}
+.th-value{
+	display: block;
+	border-bottom: 1px solid #000;
+	text-align: center;
+}
+
+/* table-body */
+.table-body{
+	margin-top: 35px;
+	padding: 0 45px;
+}
+.table-body h3{
+	margin:0 0 5px -10px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.table-body h3 small{
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.tb-content{
+	min-height: 640px;
+	border: 1px solid #000;
+}
+.tb-content__item{
+
+}
+.tb-content__item--first{
+	min-height: 170px;
+	overflow: hidden;
+}
+.tb-content__item--second{
+	margin-bottom: 50px;
+}
+.tb-content__item h4{
+	margin: 10px 0 0 5px;
+	font-weight: 600;
+}
+.tb-content__item-content{
+	padding: 10px 10px 0;
+}
+.display-textarea{
+	width: 661px;
+	height: auto;
+	background: #fff;
+	border: none;	
+	overflow: hidden;
+	resize: none;
+	word-break: break-all;
+	padding: 10px;
+}
+.tb-content__item-content p{
+	margin-bottom: 5px;
+	line-height: 1.2;
+	text-indent: 2em;
+}
+.signature-wrapper{
+	position: absolute;
+	left: 440px;
+	bottom: 10px;	
+	font-weight: 600;
+}
+.signature-wrapper .signature{
+	position: absolute;
+	left: 80px;
+	bottom: -15px;
+}
+.signature-wrapper .stamp{
+	position: absolute;
+	left: 10px;
+	bottom: 20px;
+}
+
+/* remark */
+.remark{
+	padding: 0 45px;
+	margin: 15px 0 0 -10px;
+	font-size: 12px;
+	color: #CCC;
+}

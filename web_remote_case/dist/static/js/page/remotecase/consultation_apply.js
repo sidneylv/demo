@@ -1,0 +1,1 @@
+require(["component/pagination","bootstrap"],function(n){function t(){n.generate({id:"J_pagination-records-all",api:ll.common.test,config:{num_edge_entries:0,num_display_entries:0,show_info:!0,first_text:"首页",prev_text:"上一页",next_text:"下一页",last_text:"尾页",show_jump:!1,className:"pagination--second"},condition:{},callback:function(n){console.log(n)}})}function o(){t()}o()});

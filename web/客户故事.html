@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>客户故事</title>  
+  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/nivo-slider.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="false" src="assets/application.js"></script>
+  
+</head>
+<body>
+<div id="header">
+  <div class="inheader withslog">
+    <div id="logo"><a href="/"></a></div>
+    <div id="login">
+    	<a href="#">登录</a><span class="su">|</span><a href="#">注册</a>
+    </div>
+  </div>
+</div>
+<div id="navigation">
+  <div class="innav">
+      <ul class="showtel">
+        <li class="index">
+          <a class="indexico" href="/">首页</a>
+        </li>
+        <li>
+          <a class="applyico" href="/customer">服务申请</a>
+        </li>
+        <li class="on">
+          <a class="priceico" href="/home/service_price">客户故事</a>
+        </li>
+        <li>
+          <a class="doctorico" href="/provider">我是医生</a>
+        </li>
+        <li>
+          <a class="questionico" href="/home/question">常见问题</a>
+        </li>
+      </ul>
+  </div>
+</div>
+<div class="w clearfix">
+<div class="wid_980">
+	<div class="story_tit">客户故事</div>
+	<div class="storydes">
+		<div class="cenalign"><img src="images/new/story.jpg" /></div>
+		<p>建议些一段类似前言得内容，这里我就随便放一段上去占位置。就珍通健康科技（上海）有限公司是一家由多名上海三甲医院医学专家共同创建的高端私人健康顾问及服务机构，旨在以国际化的“私人医生”健康医疗服务理念、五星级的顾问式服务定位和一流的行业资源整合，为高端人群提供专业、便捷、优质、隐私的医疗健康服务。公司立足上海，面向全国，已经与上海几十家三甲公立医院及上百位副主任以上资深专家合作，力求为您提供国内最高标准的医疗服务和最方便快捷的就医体验。公司已为众多县市级政府领导、中大型企业领导人及高管提供了健康服务，并获得了一致好评。</p>
+	</div>
+	<dl class="stylist clearfix">
+		<dt><img src="images/new/story_01.jpg" /></dt>
+		<dd>
+			<div class="stylistit">奶奶的腿还有的治吗？</div>
+			<p><span class="quet">“</span>苏小姐购买就诊通“请会诊”服务，仅仅支付了专家会诊 费和公司服务费，就在几天内得到了上海专家的会诊意见，非常方便高效。<span class="quet_r">”</span></p>
+		</dd>
+	</dl>
+	<dl class="stylist clearfix">
+		<dt><img src="images/new/story_02.jpg" /></dt>
+		<dd>
+			<div class="stylistit">体检-专家预约-住院治疗一站式服务</div>
+			<p><span class="quet">“</span>从安排体检到出具体检总结、到安排入院，就诊通前后仅用了一周时间，患家对就诊通的工作效率非常满意。住院治疗时，由于就诊通的客服人员......<span class="quet_r">”</span></p>
+		</dd>
+	</dl>
+	<dl class="stylist clearfix">
+		<dt><img src="images/new/story_03.jpg" /></dt>
+		<dd>
+			<div class="stylistit">疑难病？就诊通帮您安排多学科专家会诊</div>
+			<p><span class="quet">“</span>杨女士的家人也非常感谢就诊通如此迅速准确地帮助他们找到了合适的医生团队，解了他们的燃眉之急。就诊通工作人员也很高兴看到杨女士......<span class="quet_r">”</span></p>
+		</dd>
+	</dl>
+</div>
+</div>
+<div class="clearit"></div>
+<div id="footer">
+<div class="foot_as"><a href="#">关于我们</a>▏<a href="#">联系我们</a>▏<a href="#">招贤纳士</a>▏<a href="#">反馈信息</a>▏<a href="#">使用条款</a> <a href="#">移动版</a></div>
+2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+
+ <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.shCircleLoader-min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0
+        });
+      });
+    });
+  </script>
+    <script src="assets/doctor_schedules.js"></script>
+  <script src="assets/orders.js"></script>
+  <script src="assets/chinese_pid_verify.js"></script>
+  <script src="assets/services/attachments.js"></script>
+  <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

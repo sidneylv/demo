@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.shCircleLoader.css" >
+  <link rel="stylesheet" type="text/css" href="stylesheets/loading.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="false" src="assets/application.js"></script>
+  
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <ul>
+        <li class="on">
+          <a class="application" href="/customer">服务申请</a>
+        </li>
+        <li>
+          <a class="price" href="/service_price">服务价格</a>
+        </li>
+        <li>
+          <a class="question" href="/question">常见问题</a>
+        </li>
+      
+    </ul>
+    <div class="login">
+      <a class="usericon" href="/customer" id="home_user_name">王欣捷</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+  <div id="wrap">
+    <div id="leftpart">
+      <div id="user-kind">
+  <h1 class="f-white-20">我的就诊通</h1>
+  <h2 class="f-white-14">用户类型：普通</h2>
+</div>
+<dl id="user-menu">
+  <dt><a>看病预约</a></dt>
+  <dd><a href="/customer" id="menu_dashboard" class="on">预约服务</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">病历资料</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">健康评估</a></dd>
+  <dd><a href="/customer/doctors" id="customer_doctors">我的医生</a></dd>
+  <dd><a href="/customer/orders" id="customer_orders">我的订单</a></dd>
+
+  <dt><a>账户管理</a></dt>
+  <dd><a href="/customer/profile/edit" id="customer_profile">余额/充值/提现</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">信用卡管理</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">我的积分</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">邀请好友得礼金</a></dd>
+
+  <dt><a>个人信息管理</a></dt>
+  <dd><a href="/customer/balances" id="customer_balances">个人信息</a></dd>
+  <dd><a href="/customer/member_points" id="customer_member_points">密码修改</a></dd>
+
+  <dt><a>评价建议</a></dt>
+  <dd><a href="/customer/messages/new" id="customer_message">服务评价</a></dd>
+  <dd><a href="/customer/messages/new" id="customer_message">服务评价</a></dd>
+</dl>
+
+
+    </div>
+    <div id="rightpart">
+      <div id="contitle">
+  <h1 class="f-org-24" style="background-image:none;">我的订单</h1>
+</div>
+
+<div id="usercont" class="without-menu" style="padding-top:0px;">
+	<div class="blank30"></div>
+    <div class="tit_serv"><span class="orange bold">金羽青</span> - <span class="f-16">人工推荐</span></div>
+    <div class="blank20"></div>
+    <div class="hzlisttab smpadtd_lefttoright" style="margin:0;">
+                <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                    <tbody>
+                    <tr>
+                        <td class="thead" width="120">订单号</td><td>SO0804859 <a class="newbutt_showdet mar_l5" href="#">查看详情</a></td>
+                    </tr>
+                   <tr>
+                        <td class="thead">下单时间</td><td>2014年11月18日  9:30:34</td>
+                    </tr>
+                    <tr>
+                        <td class="thead">订单收费</td><td>200.00 元</td>
+                    </tr>
+                     <tr>
+                        <td class="thead">订单进程</td><td class="orange">订单完成</td>
+                    </tr>
+                    <tr>
+                        <td class="thead">推荐医生</td><td style="padding:0;"><p class="doc_sblue bor_bot"><a href="#">张仲景</a><a href="#">主任医师</a><a href="#">上海瑞金医院</a><a href="#">普外科</a><a style="color:#fff;" class="newbutt_pay mar_l5" href="#">预约</a><a style="background:#51a7ba;color:#fff;border-color:#51a7ba;" class="newbutt_pay" href="#">云诊</a></p><p class="doc_sblue"><a href="#">张仲景</a><a href="#">主任医师</a><a href="#">上海瑞金医院</a><a href="#">普外科</a><a style="color:#fff;" class="newbutt_pay mar_l5" href="#">预约</a><a style="background:#51a7ba;color:#fff;border-color:#51a7ba;" class="newbutt_pay" href="#">云诊</a></p></td>
+                    </tr>
+                             
+                </tbody></table>
+            </div>
+            <div class="blank30"></div>
+            <div class="tit_serv"><span class="orange bold">金羽青</span> - <span class="f-16">云会诊</span></div>
+            <div class="blank20"></div>
+            <div class="hzlisttab smpadtd_lefttoright" style="margin:0;">
+                <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                    <tbody>
+                    <tr>
+                        <td class="thead" width="120">订单号</td><td>SO0804859 <a class="newbutt_showdet mar_l5" href="#">查看详情</a></td>
+                    </tr>
+                   <tr>
+                        <td class="thead">下单时间</td><td>2014年11月18日  9:30:34</td>
+                    </tr>
+                    <tr>
+                        <td class="thead">订单收费</td><td>200.00 元</td>
+                    </tr>
+                     <tr>
+                        <td class="thead">订单进程</td><td class="orange">云会诊资料已确认，等待医生给出诊断意见</td>
+                    </tr>
+                    <tr>
+                        <td class="thead">云诊医生</td><td style="padding:0;"><p class="doc_sblue"><a href="#">张仲景</a><a href="#">主任医师</a><a href="#">上海瑞金医院</a><a href="#">普外科</a></p></td>
+                    </tr>
+                             
+                </tbody></table>
+            </div>
+            <div class="blank30"></div>
+            <div class="tit_serv"><span class="orange bold">金羽青</span> - <span class="f-16">门诊预约</span></div>
+            <div class="blank20"></div>
+            <div class="hzlisttab smpadtd_lefttoright" style="margin:0;">
+                <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                    <tbody>
+                    <tr>
+                        <td class="thead" width="120">订单号</td><td>SO0804859 <a class="newbutt_showdet mar_l5" href="#">查看详情</a></td>
+                    </tr>
+                   <tr>
+                        <td class="thead">下单时间</td><td>2014年11月18日  9:30:34</td>
+                    </tr>
+                    <tr>
+                        <td class="thead">订单收费</td><td>200.00 元</td>
+                    </tr>
+                     <tr>
+                        <td class="thead">订单进程</td><td class="orange">订单资料已提交，等待支付<a class="newbutt_pay mar_l5" href="#">支付</a></td>
+                    </tr>
+                    <tr>
+                        <td class="thead">预约医生</td><td style="padding:0;"><p class="doc_sblue"><a href="#">张仲景</a><a href="#">主任医师</a><a href="#">上海瑞金医院</a><a href="#">普外科</a></p></td>
+                    </tr>
+                    <tr>
+                        <td class="thead">预约时间</td><td class="blue">2014年11月22日  7:30- 8:00
+</td>
+                    </tr>         
+                </tbody></table>
+            </div>
+    
+</div>
+    </div>
+  </div>
+  <div class="clearit"></div>
+  <div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.shCircleLoader-min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0
+        });
+      });
+    });
+  </script>
+    <script src="assets/doctor_schedules.js"></script>
+  <script src="assets/orders.js"></script>
+  <script src="assets/chinese_pid_verify.js"></script>
+  <script src="assets/services/attachments.js"></script>
+  <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

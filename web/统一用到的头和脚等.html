@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.shCircleLoader.css" >
+  <link rel="stylesheet" type="text/css" href="stylesheets/loading.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="false" src="assets/application.js"></script>
+  
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <div class="seachbox_top">
+        <div class="keywds_top">
+            <input type="text" id="keywords" value="输入疾病、症状、医生姓名、医院……"><a href="#" title="搜索"></a>
+        </div>
+    </div>
+    <div class="login">
+      <a class="usericon" href="/customer" id="home_user_name">王欣捷</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+<div id="wrap" class="clearfix">
+	页面内容<br />
+    页面内容<br />
+    页面内容<br />
+    页面内容<br />
+    页面内容<br />
+    页面内容<br />
+    页面内容<br />
+    页面内容<br />
+    页面内容<br />
+    页面内容<br />
+    页面内容<br />
+    页面内容<br />
+</div>
+<div class="clearit"></div>
+<div id="footer">
+<div class="foot_as"><a href="#">关于我们</a>▏<a href="#">联系我们</a>▏<a href="#">招贤纳士</a>▏<a href="#">反馈信息</a>▏<a href="#">使用条款</a> <a href="#">移动版</a></div>
+2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<!--右侧条-->
+<div class="contusinfo">
+	<ul class="phicons">
+    	<li class="phli ip01">
+        	<div class="flotside">
+            	<div class="cenalign pad22"><p class="f14px">就诊通</p>普通用户版<img class="mar_t8" src="images/new/2d.jpg" /></div>
+                <div class="cenalign pad22 bor_top"><p class="f14px">就诊通</p>医生版<img class="mar_t8" src="images/new/2d.jpg" /></div>
+            </div>
+        </li>
+        <li class="phli qq02"></li>
+        <li class="phli wx03">
+        	<div class="flotside">
+            	<div class="cenalign pad22"><p class="f14px">就诊通</p>微信公众号<img class="mar_t8" src="images/new/2d.jpg" /></div>                
+            </div>
+        </li>
+        <li class="phli wb04"></li>
+        <li class="phli kf05">
+        	<div class="flotside">
+            	<div class="qanda">
+                	<div class="tit_qanda">常见问题</div>
+                    <ul>
+                        <li><span class="cirsep">●</span><a href="#">挂号网预约是否收费？</a></li>
+                        <li><span class="cirsep">●</span><a href="#">网站预约什么时间更新？</a></li>
+                        <li><span class="cirsep">●</span><a href="#">小孩子如何预约？</a></li>
+                        <li><span class="cirsep">●</span><a href="#">我只知道哪里不舒服不知道该预约哪位医生？</a></li>
+                        <li><span class="cirsep">●</span><a href="#">预约具体步骤？</a></li>
+                    </ul>                    
+                </div> 
+                <div class="gotocenter clearfix">
+                    <span class="smltel">客服热线：<em>400 888 4013</em></span>
+                </div>               
+            </div>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.shCircleLoader-min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0
+        });
+      });
+    });
+  </script>
+    <script src="assets/doctor_schedules.js"></script>
+  <script src="assets/orders.js"></script>
+  <script src="assets/chinese_pid_verify.js"></script>
+  <script src="assets/services/attachments.js"></script>
+  <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

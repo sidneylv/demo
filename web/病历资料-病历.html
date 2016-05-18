@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.shCircleLoader.css" >
+  <link rel="stylesheet" type="text/css" href="stylesheets/loading.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="false" src="assets/application.js"></script>
+  
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <ul>
+        <li class="on">
+          <a class="application" href="/customer">服务申请</a>
+        </li>
+        <li>
+          <a class="price" href="/service_price">服务价格</a>
+        </li>
+        <li>
+          <a class="question" href="/question">常见问题</a>
+        </li>
+      
+    </ul>
+    <div class="login">
+      <a class="usericon" href="/customer" id="home_user_name">王欣捷</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+  <div id="wrap">
+    <div id="leftpart">
+      <div id="user-kind">
+  <h1 class="f-white-20">我的就诊通</h1>
+  <h2 class="f-white-14">用户类型：普通</h2>
+</div>
+<dl id="user-menu">
+  <dt><a>看病预约</a></dt>
+  <dd><a href="/customer" id="menu_dashboard" class="on">预约服务</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">病历资料</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">健康评估</a></dd>
+  <dd><a href="/customer/doctors" id="customer_doctors">我的医生</a></dd>
+  <dd><a href="/customer/orders" id="customer_orders">我的订单</a></dd>
+
+  <dt><a>账户管理</a></dt>
+  <dd><a href="/customer/profile/edit" id="customer_profile">余额/充值/提现</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">信用卡管理</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">我的积分</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password">邀请好友得礼金</a></dd>
+
+  <dt><a>个人信息管理</a></dt>
+  <dd><a href="/customer/balances" id="customer_balances">个人信息</a></dd>
+  <dd><a href="/customer/member_points" id="customer_member_points">密码修改</a></dd>
+
+  <dt><a>评价建议</a></dt>
+  <dd><a href="/customer/messages/new" id="customer_message">服务评价</a></dd>
+  <dd><a href="/customer/messages/new" id="customer_message">服务评价</a></dd>
+</dl>
+
+
+    </div>
+    <div id="rightpart">
+      <div id="contitle">
+  <h1 class="f-org-24" style="background-image:none;">病历资料</h1>
+</div>
+
+<div id="usercont" class="without-menu" style="padding-top:0px;">
+    <div class="chostime_tit mar_t20"><span>病历主人</span></div>
+    <div class="padbor">
+    	<div class="mar_12">
+        	<p class="prediowz mar_b12"><span class="f-24">张大海</span><span class="f-14 mar_l8">男  48岁</span></p>
+            <p class="f-16">身份证号：30311319660927341x</p>            
+        </div>
+    </div>
+    <div class="chostime_tit mar_t20"><span>疾病描述</span><select id="" name="" style="float:right;"><option value="">2014年11月2日</option><option value="PT141104105052569">2015年11月2日</option></select></div>
+    <div class="padbor">
+    	<div class="mar_12 mar_ps f-14">
+    	  <p>患者男性，41岁，应酬多饮酒多，不吸烟。</p>
+    	  <p>2013年7月体检发现血常规：WBC 3.0*10^9/L，N 1.5*10^9/L，L 44.5%。<br>
+    	    肝功能：总胆红素37.4umol/L，其余指标正常范围。</p>
+    	  <p>超声：脾稍大，脾肋间厚49mm，肋下恰及，脾内光点中小，分布均匀。 右颈部淋巴结肿大。<br>
+    	    2014年3月体检发现血常规：WBC 3.0*10^9/L，N 1.74*10^9/L。<br>
+    	    超声：脾稍大，厚47mm，内部回声均匀，脾门静脉不增宽。 <br>
+    	    甲状腺左叶囊性结节2*2mm，边界清晰，内见强光点，考虑胶质结节。</p>
+    	  <p>2014年6月复查血常规：WBC 3.2*10^9/L，血小板99*10^9/L。中性和淋巴细胞正常范围。甲状腺功能正常。</p>
+    	  <p>2014年10月复查血常规：WBC 2.9*10^9/L。肝功能：ALB 52g/L，ALT 41U/L，GGT 61.4IU/L，TB 51.9umol/L，DB 14.5umol/L，UDB 37.4umol/L。尿β2微球蛋白1.99mg/L。胸部CT平扫：纵隔淋巴结稍大。</p>
+    	  <p></p>
+    	</div>
+    </div>
+    <div class="chostime_tit mar_t20"><span>病历资料</span></div>
+    <div class="padbor">
+    	<div class="mar_12">        	
+            <div class="hzlisttab smpadtd" style="margin:0;">
+                <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                    <tbody>
+                    <tr class="thead">
+                        <td>订单号</td><td width="136">下单时期</td><td>资料类型</td><td width="99">资料获取日期</td><td width="98">资料预览</td><td width="110">资料下载</td>
+                    </tr>
+                   <tr>
+                        <td>SO0804859</td><td>2014-11-20  19:08</td><td>验血报告</td><td>2014-11-20</td><td><a href="#"><img src="images/new/deft.jpg" width="29" height="29" /></a></td><td><a class="newbutt_downld" href="#">下载</a></td>
+                    </tr>
+                    <tr>
+                        <td>SO0804859</td><td>2014-11-20  19:08</td><td>验血报告</td><td>2014-11-20</td><td><a href="#"><img src="images/new/deft.jpg" width="29" height="29" /></a></td><td><a class="newbutt_downld" href="#">下载</a></td>
+                    </tr>
+                    <tr>
+                        <td>SO0804859</td><td>2014-11-20  19:08</td><td>验血报告</td><td>2014-11-20</td><td><a href="#"><img src="images/new/deft.jpg" width="29" height="29" /></a></td><td><a class="newbutt_downld" href="#">下载</a></td>
+                    </tr>
+                    <tr>
+                        <td>SO0804859</td><td>2014-11-20  19:08</td><td>验血报告</td><td>2014-11-20</td><td><a href="#"><img src="images/new/deft.jpg" width="29" height="29" /></a></td><td><a class="newbutt_downld" href="#">下载</a></td>
+                    </tr>
+                    <tr>
+                        <td>SO0804859</td><td>2014-11-20  19:08</td><td>验血报告</td><td>2014-11-20</td><td><a href="#"><img src="images/new/deft.jpg" width="29" height="29" /></a></td><td><a class="newbutt_downld" href="#">下载</a></td>
+                    </tr>
+                             
+                </tbody></table>
+            </div>            
+        </div>    
+        <a href="#" class="showmore"><img src="images/new/more.png">查看更多</a>
+    </div>
+</div>
+    </div>
+  </div>
+  <div class="clearit"></div>
+  <div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.shCircleLoader-min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0
+        });
+      });
+    });
+  </script>
+    <script src="assets/doctor_schedules.js"></script>
+  <script src="assets/orders.js"></script>
+  <script src="assets/chinese_pid_verify.js"></script>
+  <script src="assets/services/attachments.js"></script>
+  <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

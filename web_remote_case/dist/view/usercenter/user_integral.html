@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />	
+	<title>html5</title>
+	<link rel="stylesheet" href="/static/css/core.css" />
+	<link rel="stylesheet" href="/static/css/style.css" />
+</head>	
+<body class="page-usercenter">
+	<div class="global-top">
+		<div class="container">
+			<span class="l">欢迎您，进入就诊通网站</span>
+			<div class="r">
+				<a class="message" href="">
+					<i>1</i>
+				</a>
+				<span class="userbar">
+					<a href="">登录</a>
+					<span class="line-split">|</span>
+					<a href="">退出</a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<div class="container pr clearfix">
+			<a class="l logo" href=""><img src="/static/image/logo_large.png" width="311" height="50" /></a>
+			<ul class="nav">
+				<li class="current"><a href="">首页</a></li>
+				<li><a href="">接收的会诊</a></li>
+				<li><a href="">我申请的会诊</a></li>
+				<li><a href="">个人中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="layout-two clearfix layout-two--usercenter">
+			<div class="layout-two-left">
+				<div class="sidebar">
+					<h2>个人中心</h2>
+					<ul class="sidebar-nav">
+						<li class="sidebar-nav__item--first">
+							<a href="user_info.html">基本信息</a>
+						</li>
+						<li class="sidebar-nav__item--second">
+							<a href="user_resume.html">个人简历</a>
+						</li>
+						<li class="sidebar-nav__item--third current">
+							<a href="user_integral.html">积分兑换</a>
+						</li>
+						<li class="sidebar-nav__item--fourth">
+							<a href="user_balance.html">我的余额</a>
+						</li>
+						<li class="sidebar-nav__item--fifth">
+							<a href="user_password.html">修改密码</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="layout-two-right">
+				<div class="mod-box--third">
+					<div class="hd">
+						<h3>积分兑换</h3>
+					</div>				
+					<div class="bd">
+						<div class="myAssets">
+							<span class="count-info">当前积分<em class="count">5885.22</em>分</span>
+							<a class="c-btn c-btn--default c-btn--fillet c-btn--blue--second c-btn--exchange" href="user_integral_detail.html">积分详情</a>
+							<a class="r c-btn--jump" href="user_integral_records.html">积分兑换记录</a>			
+						</div>
+						<div class="c-tab c-tab--second tab-integral-convert">
+							<ul class="tab-trigger clearfix">
+								<li class="active">
+									<a href="#hotConvert" data-toggle="tab">热门兑换</a>
+								</li>							
+							</ul>
+							<div class="tab-content">
+								<div id="hotConvert" class="tab-pane active">
+									<ul id="J_integral-convert-list" class="integral-convert-list">
+										<li>
+											<a href="javascript:;">
+												<img src="/static/image/integral_convert.jpg" width="280" height="140" />
+											</a>											
+										</li>
+										<li>
+											<a href="javascript:;">
+												<img src="/static/image/integral_convert.jpg" width="280" height="140" />
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<img src="/static/image/integral_convert.jpg" width="280" height="140" />
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<img src="/static/image/integral_convert.jpg" width="280" height="140" />
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>	
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-hd">
+			<div class="container">
+				<div class="media clearfix footer-media--weixin">
+					<img class="media__img" src="/static/image/weixin.jpg" width="72" height="72" />
+					<div class="media__body">
+						<span class="attention">关注微信公众号</span>
+						<p>客服热线：400-888-4013</p>
+						<p>用手机上传病历资料</p>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="footer-bd">
+			<div class="footer-nav">
+				<a href="">关于我们</a>
+				<span class="line-split">|</span>
+				<a href="">联系我们</a>
+				<span class="line-split">|</span>
+				<a href="">招贤纳士</a>
+				<span class="line-split">|</span>
+				<a href="">反馈信息</a>
+				<span class="line-split">|</span>
+				<span>使用条款 移动版</span>
+			</div>
+			<p class="copyright">
+				2014诊通健康科技(上海)有限公司 All Rights Reserved 沪ICP备09010079号-14沪卫(中医) 网审[2015]第10069号
+			</p>
+		</div>
+	</div>
+	<div id="J_integral-convert-dialog" class="modal fade c-modal c-modal-form integral-convert-dialog" role="dialog">
+	  	<div class="modal-dialog">
+		    <div class="modal-content">
+		      	<div class="modal-header">
+		      		<a class="r c-icon c-icon-close" href="javascript:;" data-dismiss="modal" aria-label="Close"></a>			       
+		      	</div>
+		   		<div class="modal-body">
+		   			<div class="hd">
+		   				<div class="media clearfix">
+							<img class="media__img" src="/static/image/shopping_card.jpg" width="220" height="155" />
+							<div class="media__body">
+								<h3 class="ie-title">2000元京东购物卡购物卡购物卡</h3>
+								<p class="ie-integral">
+									<span>积分：</span>
+									<em>2000</em>分
+								</p>
+								<div class="ie-exchange-count">
+									<span>选择数量：</span>									
+									<a class="btn-count-decrease" href="javascript:;">-</a>
+									<input class="ie-exchange-count-input" type="text" value="1" />
+									<a class="btn-count-increase" href="javascript:;">+</a>
+								</div>
+								<button class="c-btn c-btn--orange c-btn--circle c-btn--large" href="">立即兑换</button>
+								<button class="c-btn c-btn--grey c-btn--circle c-btn--large dn" href="">立即兑换</button>
+							</div>
+						</div>
+		   			</div>
+			      	<div class="bd">
+						<div class="ie-merchandise-intro">
+							商品简介
+							<p>做的想法做的想法做的想法做的想法做的想法做的想法做的想法做的想法做的想法做的想法做的想法做的想法做的想法做的想法做的想法</p>
+						</div>
+						<div class="ie-scope">
+							适用范围
+							<p>做的想法</p>
+						</div>
+						<div class="ie-validity">
+							使用有效期
+							<p>做的想法</p>
+						</div>
+					</div>			      	
+			    </div>			    
+		    </div>
+		</div>
+	</div>
+	<script src="/static/js/all.js"></script>
+	<script src="/static/js/page/usercenter/user_integral.js"></script>
+</body>
+</html>

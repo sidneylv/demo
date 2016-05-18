@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>就诊通</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="w clearfix">
+	<div class="t clearfix">
+    	<div class="searchbox"><span class="iconbg sarchbg"></span><div class="keybox"><a href="#" class="iconbg searchbut frdisplay"></a><input value="输入疾病、症状、医生姓名、医院…" id="keywords" class="keywords" type="text" /></div></div>
+    </div>
+    <div class="cont_mar20" style="padding-top:0px;">
+        <div class="searrestit verbase">您搜索<span class="col_org mar_lr10">胃癌</span>共找到<span class="red mar_lr10">788</span>名相关医生：<a id="slecttj_a" class="sel_a" href="javascript:void(0);"><span class="iconbg choose"></span>筛选</a></div>
+        <div class="font20 verbase">您选择了 <em class="col_org mar_r10">北京</em><em class="col_org mar_r10">肿瘤科</em><em class="col_org mar_r10">主任</em><em class="col_org mar_r10">一周后可预约</em> </div>
+        <div class="mar_tb10"><a class="bluebutsml" href="#">人工推荐医生？</a></div>
+        <ul class="doclist_rest clearfix" id="doclist_rest">
+        	<li>
+            	<table class="chotimetab pad15td" cellpadding="0" cellspacing="0" border="0" width="100%">
+                	<tr>
+                    <td>
+                    	<dl class="zhdoct clearfix">
+                            <dt><img src="images/pic.jpg" /></dt>
+                            <dd>
+                                <p><span class="font36">张大海</span><br /><span class="mar_r10">主任医师</span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span></p>
+                                <p><span class="mar_r10">上海瑞金医院</span> <span>普外科</span></p>
+                                <p class="blueas_mar" style="padding-bottom:0px;"><a href="#">胃肠道肿瘤</a><a href="#">腹腔镜</a><a href="#">腹腔镜</a></p>
+                            </dd>
+                        </dl>
+                    </td>
+                    <td width="155" class="rigtd_biga"><p class="borbot"><a class="bigtxta" href="#"><span class="iconbg yunzhen"></span>云诊</a></p><p><a class="bigtxta" href="#"><span class="iconbg order"></span>预约</a></p></td></tr>
+                </table>
+            </li>
+            <li>
+            	<table class="chotimetab pad15td" cellpadding="0" cellspacing="0" border="0" width="100%">
+                	<tr>
+                    <td>
+                    	<dl class="zhdoct clearfix">
+                            <dt><img src="images/pic.jpg" /></dt>
+                            <dd>
+                                <p><span class="font36">张大海</span><br /><span class="mar_r10">主任医师</span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span></p>
+                                <p><span class="mar_r10">上海瑞金医院</span> <span>普外科</span></p>
+                                <p class="blueas_mar" style="padding-bottom:0px;"><a href="#">胃肠道肿瘤</a><a href="#">腹腔镜</a><a href="#">腹腔镜</a></p>
+                            </dd>
+                        </dl>
+                    </td>
+                    <td width="155" class="rigtd_biga"><p class="borbot"><a class="bigtxta" href="#"><span class="iconbg yunzhen"></span>云诊</a></p><p><a class="bigtxta" href="#"><span class="iconbg order"></span>预约</a></p></td></tr>
+                </table>
+            </li>
+            <li>
+            	<table class="chotimetab pad15td" cellpadding="0" cellspacing="0" border="0" width="100%">
+                	<tr>
+                    <td>
+                    	<dl class="zhdoct clearfix">
+                            <dt><img src="images/pic.jpg" /></dt>
+                            <dd>
+                                <p><span class="font36">张大海</span><br /><span class="mar_r10">主任医师</span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span></p>
+                                <p><span class="mar_r10">上海瑞金医院</span> <span>普外科</span></p>
+                                <p class="blueas_mar" style="padding-bottom:0px;"><a href="#">胃肠道肿瘤</a><a href="#">腹腔镜</a><a href="#">腹腔镜</a></p>
+                            </dd>
+                        </dl>
+                    </td>
+                    <td width="155" class="rigtd_biga"><p class="borbot"><a class="bigtxta" href="#"><span class="iconbg yunzhen"></span>云诊</a></p><p><a class="bigtxta" href="#"><span class="iconbg order"></span>预约</a></p></td></tr>
+                </table>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="cenalign" id="loadingtxt" style="display:none;">加载中...</div>
+<div class="float_sele" id="slecttj">
+	<div class="font36">筛选医生：</div>
+    <ul class="cfotlist clearfix">
+    	<li class="clearfix"><div class="fcleft"><span class="font20">●</span><span> 地区：</span></div><div class="fcright"><a class="on" href="#">北京</a><a href="#">上海</a><a href="#">美国</a><a href="#">香港</a><a href="#">台湾</a></div></li>
+        <li class="clearfix"><div class="fcleft"><span class="font20">●</span><span> 科室：</span></div><div class="fcright"><a class="on" href="#">肿瘤科</a><a href="#">肿瘤科</a><a href="#">肿瘤科</a><a href="#">肿瘤科</a><a href="#">肿瘤科</a><a href="#" class="showmore"><em id="mr">更多</em><span class="iconbg slessspan"></span></a></div></li>
+        <li class="clearfix"><div class="fcleft"><span class="font20">●</span><span> 职称：</span></div><div class="fcright"><a class="on" href="#">主任</a><a href="#">副主任</a><a href="#">主治</a><a href="#">医师</a></div></li>
+        <li class="clearfix"><div class="fcleft"><span class="font20">●</span><span> 状态：</span></div><div class="fcright"><a class="on" href="#">一周内可预约</a><a href="#">可预约</a></div></li>
+        <li class="clearfix"><div class="fcleft"><span class="font20">●</span><span> 学历：</span></div><div class="fcright"><a class="on" href="#"> 博士</a><a href="#">硕士</a></div></li>
+    </ul>
+    <div class="cenalign clearfix">
+    	<a class="biggraybut mar_r40 cancel_aclk" href="javascript:void(0);">取消</a><a class="bigbluebut" href="#">确定</a>
+    </div>
+</div>
+<script src="js/common.js"></script>
+<script type="text/javascript"> 
+ $(window).on('scroll',function(){ 
+if (getScrollTop() + getClientHeight()- getScrollHeight()<=0) { $("#loadingtxt").show();
+	$("#doclist_rest").append('<li><table class="chotimetab pad15td" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><dl class="zhdoct clearfix"><dt><img src="images/pic.jpg" /></dt><dd><p><span class="font36">张小海</span><br /><span class="mar_r10">主任医师</span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span></p><p><span class="mar_r10">上海瑞金医院</span> <span>普外科</span></p><p class="blueas_mar" style="padding-bottom:0px;"><a href="#">胃肠道肿瘤</a><a href="#">腹腔镜</a><a href="#">腹腔镜</a></p></dd></dl></td><td width="155" class="rigtd_biga"><p class="borbot"><a class="bigtxta" href="#"><span class="iconbg yunzhen"></span>云诊</a></p><p><a class="bigtxta" href="#"><span class="iconbg order"></span>预约</a></p></td></tr></table></li><li><table class="chotimetab pad15td" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><dl class="zhdoct clearfix"><dt><img src="images/pic.jpg" /></dt><dd><p><span class="font36">张小海</span><br /><span class="mar_r10">主任医师</span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span></p><p><span class="mar_r10">上海瑞金医院</span> <span>普外科</span></p><p class="blueas_mar" style="padding-bottom:0px;"><a href="#">胃肠道肿瘤</a><a href="#">腹腔镜</a><a href="#">腹腔镜</a></p></dd></dl></td><td width="155" class="rigtd_biga"><p class="borbot"><a class="bigtxta" href="#"><span class="iconbg yunzhen"></span>云诊</a></p><p><a class="bigtxta" href="#"><span class="iconbg order"></span>预约</a></p></td></tr></table></li><li><table class="chotimetab pad15td" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><dl class="zhdoct clearfix"><dt><img src="images/pic.jpg" /></dt><dd><p><span class="font36">张小海</span><br /><span class="mar_r10">主任医师</span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span><span class="iconbg star"></span></p><p><span class="mar_r10">上海瑞金医院</span> <span>普外科</span></p><p class="blueas_mar" style="padding-bottom:0px;"><a href="#">胃肠道肿瘤</a><a href="#">腹腔镜</a><a href="#">腹腔镜</a></p></dd></dl></td><td width="155" class="rigtd_biga"><p class="borbot"><a class="bigtxta" href="#"><span class="iconbg yunzhen"></span>云诊</a></p><p><a class="bigtxta" href="#"><span class="iconbg order"></span>预约</a></p></td></tr></table></li>');
+	$("#loadingtxt").hide();
+	//注意，此处用ajax调用，成功时执行append和hide事件，未成功时loadingtxt show();请根据具体情况自行调用代码。
+	} })
+</script> 
+</body>
+</html>

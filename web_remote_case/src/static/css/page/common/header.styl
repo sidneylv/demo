@@ -1,0 +1,59 @@
+@import '../../core/var'
+@import '../../core/mix'
+
+.global-top
+	height 27px
+	background-color #34455b
+	line-height 27px
+	color #bdcbde
+	.message
+		position relative
+		display inline-block
+		margin-right 25px
+		width 14px
+		height 15px
+		background url('/static/image/message.png') no-repeat
+		vertical-align -2px
+		>i
+			position absolute
+			left 10px
+			top -3px
+			padding 0 4px
+			height 11px
+			background-color #f52c0c
+			border-radius(3px)
+			line-height 11px
+			color #fff
+	.userbar
+		font-size 0
+		span,
+		a
+			font-size 12px
+			color #bdcbde
+		span
+			margin 0 10px
+.header
+	height 64px	
+	background-color #fff
+	.logo
+		img
+			margin-top 7px
+.nav
+	position absolute
+	right 0
+	top 0
+	li
+		float left
+		margin 0 20px		
+		>a
+			display block
+			padding 0 15px
+			height 61px
+			border-bottom 3px solid #fff
+			line-height 61px
+			text-align center
+			font-size 16px
+			color #666
+	.current
+		a
+			border-bottom 3px solid #28b9cf				

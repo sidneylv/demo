@@ -1,0 +1,545 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.min.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="true" src="assets/application.js"></script>
+
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <ul>
+        <li class="on">
+          <a class="application" href="/provider/appointments/pending">预约管理</a>
+        </li>
+        <li>
+          <a class="question" href="/question">常见问题</a>
+        </li>
+      
+    </ul>
+    <div class="login">
+      <a class="usericon" href="/provider" id="home_user_name">狄青</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+  <div id="wrap">
+    <div id="leftpart">
+      <div id="user-kind">
+  <h1 class="f-white-20">我的就诊通</h1>
+  <h2 class="f-white-14">用户类型：医生</h2>
+</div>
+<dl id="user-menu">
+  <dt><a>预约管理</a></dt>
+  <dd><a href="/provider/appointments/pending" id="menu_dashboard">我的预约</a></dd>
+  <dd><a href="/provider/consultations/pending" id="provider_consultations">我的会诊</a></dd>
+  <dd><a href="/provider/doctor_schedules/near_week" id="provider_schedules" class="on">我的日程</a></dd>
+  
+  <dt><a>个人信息管理</a></dt>
+  <dd><a href="/provider/profile/edit" id="provider_profile">个人信息</a></dd>
+  <dd><a href="/provider/resumes/experience" id="provider_resumes">我的简历</a></dd>
+  <dd><a href="/users/edit" id="provider_edit_password">密码修改</a></dd>
+
+  <dt><a>账户管理</a></dt>
+  <dd><a href="/provider/balances" id="provider_balances">余额/充值/提现</a></dd>
+  <dd><a href="/provider/member_points" id="provider_member_points">我的积分</a></dd>
+
+  <dt><a>评价建议</a></dt>
+  <dd><a href="/provider/messages/new" id="provider_message">投诉建议</a></dd>
+</dl>
+
+
+    </div>
+    <div id="rightpart">
+      <div id="contitle">
+  <h1 class="f-org-24">我的日程</h1>
+  <ul id="usercont-menu">
+    <li><a class="on" href="/provider/doctor_schedules/near_week">最近一周</a></li>
+    <li><a href="/provider/doctor_schedules/weekly">每周设置</a></li>
+  </ul>
+</div>
+
+<div id="usercont">
+  <div class="bj-tb">
+      <form accept-charset="UTF-8" action="/provider/doctor_schedules/update_near" data-remote="true" id="near_week_1" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <table>
+            <tr>
+              <th>日期</th>
+              <th>星期</th>
+              <th>可选时间</th>
+              <th>价格设置</th>
+              <th>操作</th>
+            </tr>
+          <tr>
+            <td>
+              2014-12-15
+            </td>
+            <td>
+              星期一
+            </td>
+            <td>
+              <table>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[561][id]" value="561" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[561][is_appointment]" />
+                      早晨
+                      07:00-08:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[562][id]" value="562" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[562][is_appointment]" />
+                      上午
+                      08:00-11:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[563][id]" value="563" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[563][is_appointment]" />
+                      中午
+                      11:30-13:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[564][id]" value="564" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[564][is_appointment]" />
+                      下午
+                      13:30-17:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[565][id]" value="565" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[565][is_appointment]" />
+                      傍晚
+                      17:00-20:00
+                    </td>
+                  </tr>
+              </table>
+            </td>
+            <td>
+              <input type="text" name="price" id="price1" value="" />
+            </td>
+            <td>
+              <input type="submit" data-week-day="1" class='submitC' name="update_schedule" value="保存">
+            </td>
+          </tr>
+        </table>
+</form>      <form accept-charset="UTF-8" action="/provider/doctor_schedules/update_near" data-remote="true" id="near_week_2" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <table>
+          <tr>
+            <td>
+              2014-12-16
+            </td>
+            <td>
+              星期二
+            </td>
+            <td>
+              <table>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[566][id]" value="566" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[566][is_appointment]" />
+                      早晨
+                      07:00-08:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[567][id]" value="567" />
+                      <input type="checkbox" value="1" checked name="doctor_schedules[567][is_appointment]" />
+                      上午
+                      08:00-11:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[568][id]" value="568" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[568][is_appointment]" />
+                      中午
+                      11:30-13:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[569][id]" value="569" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[569][is_appointment]" />
+                      下午
+                      13:30-17:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[570][id]" value="570" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[570][is_appointment]" />
+                      傍晚
+                      17:00-20:00
+                    </td>
+                  </tr>
+              </table>
+            </td>
+            <td>
+              <input type="text" name="price" id="price2" value="100" />
+            </td>
+            <td>
+              <input type="submit" data-week-day="2" class='submitC' name="update_schedule" value="保存">
+            </td>
+          </tr>
+        </table>
+</form>      <form accept-charset="UTF-8" action="/provider/doctor_schedules/update_near" data-remote="true" id="near_week_3" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <table>
+          <tr>
+            <td>
+              2014-12-17
+            </td>
+            <td>
+              星期三
+            </td>
+            <td>
+              <table>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[571][id]" value="571" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[571][is_appointment]" />
+                      早晨
+                      07:00-08:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[572][id]" value="572" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[572][is_appointment]" />
+                      上午
+                      08:00-11:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[573][id]" value="573" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[573][is_appointment]" />
+                      中午
+                      11:30-13:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[574][id]" value="574" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[574][is_appointment]" />
+                      下午
+                      13:30-17:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[575][id]" value="575" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[575][is_appointment]" />
+                      傍晚
+                      17:00-20:00
+                    </td>
+                  </tr>
+              </table>
+            </td>
+            <td>
+              <input type="text" name="price" id="price3" value="" />
+            </td>
+            <td>
+              <input type="submit" data-week-day="3" class='submitC' name="update_schedule" value="保存">
+            </td>
+          </tr>
+        </table>
+</form>      <form accept-charset="UTF-8" action="/provider/doctor_schedules/update_near" data-remote="true" id="near_week_4" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <table>
+          <tr>
+            <td>
+              2014-12-18
+            </td>
+            <td>
+              星期四
+            </td>
+            <td>
+              <table>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[576][id]" value="576" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[576][is_appointment]" />
+                      早晨
+                      07:00-08:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[577][id]" value="577" />
+                      <input type="checkbox" value="1" checked name="doctor_schedules[577][is_appointment]" />
+                      上午
+                      08:00-11:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[578][id]" value="578" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[578][is_appointment]" />
+                      中午
+                      11:30-13:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[579][id]" value="579" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[579][is_appointment]" />
+                      下午
+                      13:30-17:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[580][id]" value="580" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[580][is_appointment]" />
+                      傍晚
+                      17:00-20:00
+                    </td>
+                  </tr>
+              </table>
+            </td>
+            <td>
+              <input type="text" name="price" id="price4" value="200" />
+            </td>
+            <td>
+              <input type="submit" data-week-day="4" class='submitC' name="update_schedule" value="保存">
+            </td>
+          </tr>
+        </table>
+</form>      <form accept-charset="UTF-8" action="/provider/doctor_schedules/update_near" data-remote="true" id="near_week_5" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <table>
+          <tr>
+            <td>
+              2014-12-19
+            </td>
+            <td>
+              星期五
+            </td>
+            <td>
+              <table>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[581][id]" value="581" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[581][is_appointment]" />
+                      早晨
+                      07:00-08:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[582][id]" value="582" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[582][is_appointment]" />
+                      上午
+                      08:00-11:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[583][id]" value="583" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[583][is_appointment]" />
+                      中午
+                      11:30-13:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[584][id]" value="584" />
+                      <input type="checkbox" value="1" checked name="doctor_schedules[584][is_appointment]" />
+                      下午
+                      13:30-17:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[585][id]" value="585" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[585][is_appointment]" />
+                      傍晚
+                      17:00-20:00
+                    </td>
+                  </tr>
+              </table>
+            </td>
+            <td>
+              <input type="text" name="price" id="price5" value="100" />
+            </td>
+            <td>
+              <input type="submit" data-week-day="5" class='submitC' name="update_schedule" value="保存">
+            </td>
+          </tr>
+        </table>
+</form>      <form accept-charset="UTF-8" action="/provider/doctor_schedules/update_near" data-remote="true" id="near_week_6" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <table>
+          <tr>
+            <td>
+              2014-12-20
+            </td>
+            <td>
+              星期六
+            </td>
+            <td>
+              <table>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[586][id]" value="586" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[586][is_appointment]" />
+                      早晨
+                      07:00-08:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[587][id]" value="587" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[587][is_appointment]" />
+                      上午
+                      08:00-11:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[588][id]" value="588" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[588][is_appointment]" />
+                      中午
+                      11:30-13:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[589][id]" value="589" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[589][is_appointment]" />
+                      下午
+                      13:30-17:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[590][id]" value="590" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[590][is_appointment]" />
+                      傍晚
+                      17:00-20:00
+                    </td>
+                  </tr>
+              </table>
+            </td>
+            <td>
+              <input type="text" name="price" id="price6" value="" />
+            </td>
+            <td>
+              <input type="submit" data-week-day="6" class='submitC' name="update_schedule" value="保存">
+            </td>
+          </tr>
+        </table>
+</form>      <form accept-charset="UTF-8" action="/provider/doctor_schedules/update_near" data-remote="true" id="near_week_0" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <table>
+          <tr>
+            <td>
+              2014-12-21
+            </td>
+            <td>
+              星期日
+            </td>
+            <td>
+              <table>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[591][id]" value="591" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[591][is_appointment]" />
+                      早晨
+                      07:00-08:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[592][id]" value="592" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[592][is_appointment]" />
+                      上午
+                      08:00-11:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[593][id]" value="593" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[593][is_appointment]" />
+                      中午
+                      11:30-13:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[594][id]" value="594" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[594][is_appointment]" />
+                      下午
+                      13:30-17:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="doctor_schedules[595][id]" value="595" />
+                      <input type="checkbox" value="1"  name="doctor_schedules[595][is_appointment]" />
+                      傍晚
+                      17:00-20:00
+                    </td>
+                  </tr>
+              </table>
+            </td>
+            <td>
+              <input type="text" name="price" id="price0" value="" />
+            </td>
+            <td>
+              <input type="submit" data-week-day="0" class='submitC' name="update_schedule" value="保存">
+            </td>
+          </tr>
+        </table>
+</form>  </div>
+  <div class="bj-sp-35"></div>
+</div>
+
+
+    </div>
+  </div>
+  <div class="clearit"></div>
+  <div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+  <script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="javascripts/messages_cn.js"></script>
+  <script type="text/javascript" src="admin/javascripts/jquery.cokie.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function() {
+      HighlightLeftMenu.init();
+      $('body').on('focus', ".attachment_dp", function(){
+        $(this).datepicker({ 
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true,
+          yearRange: "1900:+0"
+        });
+      });
+    });
+  </script>
+    <script src="assets/doctor_schedules.js"></script>
+  <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

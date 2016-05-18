@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />	
+	<title>html5</title>
+	<link rel="stylesheet" href="/static/css/core.css" />
+	<link rel="stylesheet" href="/static/css/style.css" />
+</head>	
+<body>
+	<div class="global-top">
+		<div class="container">
+			<span class="l">欢迎您，进入就诊通网站</span>
+			<div class="r">
+				<a class="message" href="">
+					<i>1</i>
+				</a>
+				<span class="userbar">
+					<a href="">登录</a>
+					<span class="line-split">|</span>
+					<a href="">退出</a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<div class="container pr clearfix">
+			<a class="l logo" href=""><img src="/static/image/logo_large.png" width="311" height="50" /></a>
+			<ul class="nav">
+				<li class="current"><a href="">首页</a></li>
+				<li><a href="">接收的会诊</a></li>
+				<li><a href="">我申请的会诊</a></li>
+				<li><a href="">个人中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="mod-box--fourth consultation-list">
+			<div class="hd">
+				<h3>所有会诊</h3>
+			</div>
+			<div class="bd">
+				<div class="c-tab c-tab--fourth">
+					<ul class="tab-trigger clearfix">
+						<li class="active">
+							<a href="#all" data-toggle="tab">全部(20)</a>
+						</li>
+						<li>
+							<a href="#pending" data-toggle="tab">待处理(6)</a>
+						</li>
+						<li>
+							<a href="#pendingFeedback" data-toggle="tab">等待对方反馈(3)</a>
+						</li>
+						<li>
+							<a href="#feedback" data-toggle="tab">对方已反馈(3)</a>
+						</li>
+						<li>
+							<a href="#pendingFilled" data-toggle="tab">资料待补齐(3)</a>
+						</li>
+						<li>
+							<a href="#complete" data-toggle="tab">已完结(3)</a>
+						</li>
+						<li>
+							<a href="#cancel" data-toggle="tab">订单已取消(3)</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div id="all" class="tab-pane active">
+							<table class="c-table" width="100%">
+								<thead>
+									<tr>
+										<th>订单日期</th>
+										<th>患者基本信息</th>
+										<th>疾病名称</th>
+										<th>申请医生</th>
+										<th>会诊科室</th>
+										<th>状态</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tc">2015-01-04</td>
+										<td class="tc">潘某某 女 27</td>
+										<td class="tc">右乳癌术后，左乳肿块(CA待排)</td>
+										<td class="tc">张晓萌主治医生</td>
+										<td class="tc">普外科</td>
+										<td class="tc">
+											<span class="order-status--1">待处理</span>
+										</td>
+										<td class="tc">
+											<a class="operate--1" href="">开始会诊</a>
+										</td>
+									</tr>
+									<tr class="even">
+										<td class="tc">2015-01-04</td>
+										<td class="tc">潘某某 女 27</td>
+										<td class="tc">右乳癌术后，左乳肿块(CA待排)</td>
+										<td class="tc">张晓萌主治医生</td>
+										<td class="tc">普外科</td>
+										<td class="tc">
+											<span class="order-status--1">待处理</span>
+										</td>
+										<td class="tc">
+											<a class="operate--1" href="">开始会诊</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div id="J_pagination-records-all"></div>
+						</div>
+						<div id="pending" class="tab-pane"></div>							
+						<div id="pendingFeedback" class="tab-pane"></div>						
+						<div id="feedback" class="tab-pane"></div>							
+						<div id="pendingFilled" class="tab-pane"></div>							
+						<div id="complete" class="tab-pane"></div>							
+						<div id="cancel" class="tab-pane"></div>							
+					</div>
+				</div>
+				<div class="consultation-list--empty dn">
+					<p>您还没有接受的会诊</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-hd">
+			<div class="container">
+				<div class="media clearfix footer-media--weixin">
+					<img class="media__img" src="/static/image/weixin.jpg" width="72" height="72" />
+					<div class="media__body">
+						<span class="attention">关注微信公众号</span>
+						<p>客服热线：400-888-4013</p>
+						<p>用手机上传病历资料</p>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="footer-bd">
+			<div class="footer-nav">
+				<a href="">关于我们</a>
+				<span class="line-split">|</span>
+				<a href="">联系我们</a>
+				<span class="line-split">|</span>
+				<a href="">招贤纳士</a>
+				<span class="line-split">|</span>
+				<a href="">反馈信息</a>
+				<span class="line-split">|</span>
+				<span>使用条款 移动版</span>
+			</div>
+			<p class="copyright">
+				2014诊通健康科技(上海)有限公司 All Rights Reserved 沪ICP备09010079号-14沪卫(中医) 网审[2015]第10069号
+			</p>
+		</div>		
+	</div>
+	<script src="/static/js/all.js"></script>
+	<script src="/static/js/page/remotecase/consultation_receive.js"></script>
+</body>
+</html>
+		

@@ -1,0 +1,69 @@
+.global-top {
+  height: 27px;
+  background-color: #34455b;
+  line-height: 27px;
+  color: #bdcbde;
+}
+.global-top .message {
+  position: relative;
+  display: inline-block;
+  margin-right: 25px;
+  width: 14px;
+  height: 15px;
+  background: url("/static/image/message.png") no-repeat;
+  vertical-align: -2px;
+}
+.global-top .message >i {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  padding: 0 4px;
+  height: 11px;
+  background-color: #f52c0c;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  line-height: 11px;
+  color: #fff;
+}
+.global-top .userbar {
+  font-size: 0;
+}
+.global-top .userbar span,
+.global-top .userbar a {
+  font-size: 12px;
+  color: #bdcbde;
+}
+.global-top .userbar span {
+  margin: 0 10px;
+}
+.header {
+  height: 64px;
+  background-color: #fff;
+}
+.header .logo img {
+  margin-top: 7px;
+}
+.nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.nav li {
+  float: left;
+  margin: 0 20px;
+}
+.nav li >a {
+  display: block;
+  padding: 0 15px;
+  height: 61px;
+  border-bottom: 3px solid #fff;
+  line-height: 61px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+.nav .current a {
+  border-bottom: 3px solid #28b9cf;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>就诊统账号-登录</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=high-dpi,width=1242,initial-scale=0.25,maximum-scale=0.25,user-scalable=no" /><link href="css/style.css" rel="stylesheet" type="text/css" />	
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="w clearfix">
+	<div class="mainpad pad_t220">
+        <div class="inputline ipicon hasdel"><input type="text" placeholder="输入手机号码" /><a class="delnum" href="javascript:void(0);"><img src="images/del.png" /> </a></div>
+        <div class="inputline lkicon"><input type="password" placeholder="输入账号密码" /></div>
+        <div class="mar_t150"><a href="javascript:void(0)" class="bluebut" id="login">立即登录</a><br /><a href="#" class="bluea frdisplay">忘记密码？</a><br /><a href="javascript:void(0)" class="blueborbut">注册就诊通账号</a></div>
+    </div>
+
+</div>
+<div class="flotdiv" id="msg">提示信息！</div>
+<script type="text/javascript">
+   $(function(){
+       $("#login").bind("click",function(){
+            $("#msg").show();
+            setTimeout("$('#msg').hide();",2000);
+           
+       });
+       $(".hasdel input:first").bind("keyup",function(e){
+            if($(this).val().length>0){$(".delnum").show();}
+            else{$(".delnum").hide();}
+           
+       });
+       $(".delnum").bind("click",function(){
+            $(".hasdel input").eq(0).val("");
+            $(".hasdel input").eq(0).focus();
+       		$(".delnum").hide();
+       	});
+}) 
+</script>
+</body>
+</html>

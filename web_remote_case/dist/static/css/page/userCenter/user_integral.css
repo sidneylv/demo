@@ -1,0 +1,148 @@
+.myAssets {
+  margin: 20px 0 0;
+  position: relative;
+  padding: 0 20px;
+  height: 58px;
+  border: 1px solid #e1e5e8;
+  line-height: 58px;
+}
+.myAssets .count-info {
+  vertical-align: top;
+  font-size: 14px;
+  color: #666;
+}
+.myAssets .count {
+  margin: 0 10px 0 20px;
+  font-weight: 600;
+  font-size: 28px;
+  color: #ff8208;
+}
+.myAssets .c-btn--exchange {
+  position: absolute;
+  left: 270px;
+  top: 14px;
+  z-index: 10;
+}
+.c-btn--jump {
+  font-size: 14px;
+  color: #3a9fed;
+}
+.tab-integral-convert {
+  margin-top: 20px;
+}
+.integral-convert-list {
+  margin: 0 0 20px 5px;
+  overflow: hidden;
+}
+.integral-convert-list li {
+  float: left;
+  margin: 20px 0 0 25px;
+  width: 280px;
+  height: 138px;
+}
+.integral-convert-dialog .c-icon-close {
+  width: 15px;
+  height: 15px;
+}
+.integral-convert-dialog .modal-dialog {
+  width: 575px;
+}
+.integral-convert-dialog .modal-header {
+  background-color: #fff;
+}
+.integral-convert-dialog .modal-body {
+  padding: 0 40px 40px;
+}
+.integral-convert-dialog .media__img {
+  margin-right: 18px;
+}
+.integral-convert-dialog .media__body {
+  font-size: 16px;
+}
+.integral-convert-dialog .ie-title {
+  font-weight: 600;
+  color: #333;
+}
+.integral-convert-dialog .ie-integral,
+.integral-convert-dialog .ie-exchange-count {
+  font-size: 14px;
+  color: #a9a9a9;
+}
+.integral-convert-dialog .ie-integral {
+  margin-top: 4px;
+}
+.integral-convert-dialog .ie-integral em {
+  font-size: 24px;
+  color: #ff5910;
+}
+.integral-convert-dialog .ie-exchange-count {
+  margin-top: 10px;
+  font-size: 0;
+}
+.integral-convert-dialog .ie-exchange-count span {
+  font-size: 14px;
+}
+.integral-convert-dialog .ie-exchange-count a,
+.integral-convert-dialog .ie-exchange-count input {
+  font-size: 16px;
+}
+.integral-convert-dialog .c-btn {
+  margin-top: 15px;
+  width: 119px;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.integral-convert-dialog .ie-exchange-num {
+  font-size: 16px;
+}
+.integral-convert-dialog .btn-count-decrease,
+.integral-convert-dialog .btn-count-increase,
+.integral-convert-dialog .ie-exchange-count-input {
+  display: inline-block;
+  width: 23px;
+  height: 21px;
+  text-align: center;
+  font-size: 16px;
+  color: #8b8b8b;
+}
+.integral-convert-dialog .btn-count-decrease,
+.integral-convert-dialog .btn-count-increase {
+  border-style: solid;
+  border-color: #cbd1d5;
+}
+.integral-convert-dialog .btn-count-decrease {
+  border-width: 1px 0 1px 1px;
+}
+.integral-convert-dialog .btn-count-increase {
+  border-width: 1px 1px 1px 0;
+}
+.integral-convert-dialog .ie-exchange-count-input {
+  border: 1px solid #969696;
+  vertical-align: top;
+}
+.integral-convert-dialog .ie-merchandise-intro,
+.integral-convert-dialog .ie-scope,
+.integral-convert-dialog .ie-validity {
+  margin-top: 13px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.integral-convert-dialog .ie-merchandise-intro p,
+.integral-convert-dialog .ie-scope p,
+.integral-convert-dialog .ie-validity p {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #777;
+}
+.integral-convert-dialog .ie-merchandise-intro {
+  margin-top: 20px;
+}

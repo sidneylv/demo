@@ -1,0 +1,7 @@
+.consultation-list--empty {
+  padding: 230px 0;
+  background: url("/static/image/consultation_none.png") no-repeat center 130px;
+  text-align: center;
+  font-size: 30px;
+  color: #d7e0e1;
+}

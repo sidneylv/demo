@@ -1,0 +1,43 @@
+.footer {
+  margin-top: 50px;
+}
+.footer-hd {
+  padding: 53px 0 45px;
+  background-color: #fff;
+}
+.footer-media--weixin {
+  margin: 0 auto;
+  width: 295px;
+  font-size: 16px;
+  color: #333;
+}
+.footer-media--weixin .media__img {
+  margin-right: 20px;
+}
+.footer-media--weixin .attention {
+  font-size: 14px;
+}
+.footer-bd {
+  padding: 20px 0;
+  background-color: #109fb5;
+  text-align: center;
+  color: #fff;
+}
+.footer-nav {
+  font-size: 0;
+}
+.footer-nav span,
+.footer-nav a {
+  display: inline-block;
+  font-size: 14px;
+}
+.footer-nav a {
+  color: #fff;
+}
+.footer-nav .line-split {
+  margin: 0 10px;
+}
+.copyright {
+  margin-top: 6px;
+  font-size: 14px;
+}

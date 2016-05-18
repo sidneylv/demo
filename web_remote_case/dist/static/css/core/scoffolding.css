@@ -1,0 +1,309 @@
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body {
+  background: #eaeeef;
+  line-height: 1.5;
+  font-family: 'microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 75%;
+  color: #333;
+}
+a color $link-color:hover {
+  color: #148cec;
+  text-decoration: none;
+}
+.color-warn {
+  color: #e6753e;
+}
+.color-red {
+  color: #f00;
+}
+.color-blue {
+  color: #0a71bc;
+}
+.btn-default {
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #fafafa, #f4f4f4);
+  background: -moz-linear-gradient(top, #fafafa, #f4f4f4);
+  background: linear-gradient(top, #fafafa, #f4f4f4);
+  border: 1px solid #e6eaec;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: #333;
+}
+.btn-default--disabled {
+  background: #eee;
+}
+.media .media__img {
+  float: left;
+  margin-right: 10px;
+}
+.media .media__body {
+  overflow: hidden;
+}
+.container {
+  margin: 0 auto;
+  width: 1300px;
+}
+.layout-two {
+  margin-top: 33px;
+  overflow: hidden;
+}
+.layout-two-left {
+  float: left;
+  width: 320px;
+  padding-bottom: 2000px;
+  margin-bottom: -2000px;
+}
+.layout-two-right {
+  margin-left: 347px;
+  padding-bottom: 2000px;
+  margin-bottom: -2000px;
+  background-color: #fff;
+}
+.c-tab--first >.tab-trigger >li {
+  float: left;
+  width: 50%;
+}
+.c-tab--first >.tab-trigger >li >a {
+  display: block;
+  height: 70px;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #eaeaea;
+  line-height: 70px;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+.c-tab--first >.tab-trigger .active > a {
+  border-color: #19b0c7;
+  color: #19b0c7;
+}
+.c-tab--second .tab-trigger {
+  margin-left: 1px;
+  height: 35px;
+  border-bottom: 1px solid #e0e7ea;
+}
+.c-tab--second .tab-trigger li {
+  float: left;
+  margin-left: -1px;
+  width: 97px;
+  height: 34px;
+  border-width: 1px 1px 0;
+  border-style: solid;
+  border-color: #e0e7ea;
+  text-align: center;
+  line-height: 34px;
+}
+.c-tab--second .tab-trigger li a {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #798592;
+}
+.c-tab--second .tab-trigger .active {
+  border-bottom: 1px solid #fff;
+}
+.c-tab--second .tab-trigger .active a {
+  color: #45bdd8;
+}
+.c-tab--second .tab-content {
+  border-width: 0 1px 1px;
+  border-style: solid;
+  border-color: #e0e7ea;
+}
+.c-tab--third .tab-trigger {
+  margin-left: -35px;
+  height: 35px;
+  border-bottom: 1px solid #e0e7ea;
+}
+.c-tab--third .tab-trigger li {
+  float: left;
+  margin-left: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+.c-tab--third .tab-trigger li a {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+}
+.c-tab--third .tab-trigger li a:after {
+  position: absolute;
+  display: none;
+  margin: 0 0 -5px -5px;
+  left: 50%;
+  bottom: 0;
+  width: 9px;
+  height: 5px;
+  background: url("/static/image/arrow_down.png") no-repeat #fff;
+  content: '';
+}
+.c-tab--third .tab-trigger .active a {
+  color: #35bcd1;
+}
+.c-tab--third .tab-trigger .active a:after {
+  display: block;
+}
+.c-tab--third .tab-content {
+  font-size: 14px;
+}
+.c-tab--fourth {
+  overflow: hidden;
+}
+.c-tab--fourth .tab-trigger {
+  margin-left: -20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.c-tab--fourth .tab-trigger li {
+  float: left;
+  margin-left: 40px;
+}
+.c-tab--fourth .tab-trigger li a {
+  position: relative;
+  display: block;
+  padding: 0 5px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+.c-tab--fourth .tab-trigger li a:after {
+  position: absolute;
+  display: none;
+  margin: 0 0 -9px -6px;
+  left: 50%;
+  bottom: 0;
+  width: 12px;
+  height: 6px;
+  background: url("/static/image/arrow_down_orange.png") no-repeat #fff;
+  content: '';
+}
+.c-tab--fourth .tab-trigger .active a {
+  margin-bottom: -1px;
+  height: 58px;
+  line-height: 58px;
+  border-bottom: 3px solid #f86f3e;
+}
+.c-tab--fourth .tab-trigger .active a:after {
+  display: block;
+}
+.c-tab--fifth .tab-trigger li {
+  float: left;
+  border-left: 1px solid #fff;
+}
+.c-tab--fifth .tab-trigger li:first-child {
+  border: none;
+}
+.c-tab--fifth .tab-trigger li a {
+  display: block;
+  padding: 0 53px;
+  height: 60px;
+  background-color: #dbe3e4;
+  border-top: 3px solid #dbe3e4;
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+.c-tab--fifth .tab-trigger li.last a {
+  padding: 0 38px 0 65px;
+  background-color: #fdbda6;
+  background-image: url("/static/image/commit_white.png");
+  background-repeat: no-repeat;
+  background-position: 31px 50%;
+  border-top: 3px solid #fdbda6;
+  color: #fff;
+}
+.c-tab--fifth .tab-trigger .active a {
+  background-color: #fff;
+  border-top: 3px solid #28b9cf;
+  color: #28b9cf;
+}
+.c-tab--fifth .tab-trigger .last.active a {
+  background-color: #fff;
+  background-image: url("/static/image/commit_orange.png");
+  border-top: 3px solid #f86f3e;
+  color: #f86f3e;
+}
+.form-horizontal .control-group {
+  margin-bottom: 18px;
+}
+.form-horizontal .control-label {
+  float: left;
+  width: 0;
+  text-align: right;
+}
+.form-horizontal .controls {
+  margin-left: 0;
+}
+.mod-box--first {
+  background-color: #fff;
+}
+.mod-box--second {
+  background-color: #fff;
+}
+.mod-box--second .hd {
+  padding: 20px 0;
+  border-bottom: 1px solid #e1e5e6;
+}
+.mod-box--second .hd .title {
+  padding-left: 22px;
+  border-left: 3px solid #28bdcf;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+.mod-box--second .hd .title em {
+  color: #fb5e01;
+}
+.mod-box--third .hd {
+  border-bottom: 1px solid #e0e7ea;
+}
+.mod-box--third .hd h3 {
+  display: inline-block;
+  margin-bottom: -1px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #28b9cf;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.mod-box--fourth .hd {
+  height: 67px;
+  padding-left: 25px;
+  background-color: #dbe3e4;
+  line-height: 67px;
+}
+.mod-box--fourth .hd h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+.mod-box--fourth .bd {
+  padding: 0 25px;
+}
+/*
+*0、订单已取消操作
+*1、订单或者数据正常操作
+*
+*/
+.operate--0,
+.operate--1 {
+  text-decoration: underline;
+}
+.operate--0 {
+  color: #7c7c7c;
+}
+.operate--1 {
+  color: #21b5ef;
+}

@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的就诊通</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="icon" type="image/png" href="images/jzt_web_favicon.png">
+  <script data-turbolinks-track="true" src="assets/application.js"></script>
+</head>
+<body>
+  <div id="header">
+  <div class="inheader">
+    <div id="sitelogo">
+      <a href="/" id="header_logo"></a>
+    </div>
+    <ul>
+        <li class="on">
+          <a class="application" href="/customer">服务申请</a>
+        </li>
+        <li>
+          <a class="price" href="/service_price">服务价格</a>
+        </li>
+        <li>
+          <a class="question" href="/question">常见问题</a>
+        </li>
+      
+    </ul>
+    <div class="login">
+      <a class="usericon" href="/customer" id="home_user_name">王欣捷</a>
+      <div class="line">|</div>
+      <a class="logout" data-method="delete" href="/users/sign_out" rel="nofollow">退出</a>
+    </div>
+  </div>
+</div>
+  <div id="wrap">
+  <div id="leftpart">
+      <div id="user-kind">
+  <h1 class="f-white-20">我的就诊通</h1>
+  <h2 class="f-white-14">用户类型：普通</h2>
+</div>
+<dl id="user-menu">
+  <dt><a>服务申请</a></dt>
+  <dd><a href="/customer" id="menu_dashboard">预约服务</a></dd>
+  <dd><a href="/customer/patients" id="customer_patients">病历资料</a></dd>
+  <dd><a href="/customer/doctors" id="customer_doctors">我的医生</a></dd>
+  <dd><a href="/customer/orders" id="customer_orders">我的订单</a></dd>
+  <dd><a href="/customer/orders/preview" id="customer_orders_preview">订单查看</a></dd>
+
+  <dt><a>个人信息管理</a></dt>
+  <dd><a href="/customer/profile/edit" id="customer_profile">个人信息</a></dd>
+  <dd><a href="/users/edit" id="customer_edit_password" class="on">密码修改</a></dd>
+
+  <dt><a>账户管理</a></dt>
+  <dd><a href="/customer/balances" id="customer_balances">余额/充值/提现</a></dd>
+  <dd><a href="/customer/member_points" id="customer_member_points">我的积分</a></dd>
+
+  <dt><a>评价建议</a></dt>
+  <dd><a href="/customer/messages/new" id="customer_message">投诉建议</a></dd>
+</dl>
+
+
+  </div>
+  <div id="rightpart">
+    <div id="contitle">
+      <h1 class="f-org-24">密码修改</h1>
+    </div>
+    <div id="usercont" class="without-menu">
+    <form accept-charset="UTF-8" action="/users" class="edit_user" id="edit_user" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="NY1gvh/9Q2veNOWgaMlBvgXhvPW1xVZcXIAu86nElWU=" /></div>
+      
+      <dl>
+        <dt>
+          <label for="user_current_password">当前密码</label>
+        </dt>
+        <dd>
+          <input autocomplete="off" id="user_current_password" name="user[current_password]" type="password" />
+          <small>我们需要您输入当前密码来确认修改</small>
+        </dd>
+        <dt>
+          <label>新密码</label>
+        </dt>
+        <dd>
+          <input autocomplete="off" id="user_password" name="user[password]" type="password" />
+          <small>新密码,如果不想修改请留空</small>
+        </dd>
+        <dt>
+          <label for="user_password_confirmation">确认密码</label>
+        </dt>
+        <dd>
+          <input autocomplete="off" id="user_password_confirmation" name="user[password_confirmation]" type="password" />
+        </dd>
+        <dt></dt>
+        <dd>
+          <button class="BigBtn-green" type="submit">更新</button>
+        </dd>
+      </dl>
+</form>    </div>
+  </div>
+</div>
+
+
+
+
+
+  <div class="clearit"></div>
+  <div id="footer">2014 诊通健康科技（上海）有限公司 All Rights Reserved 沪ICP备09010079号-14</div>
+<script type="text/javascript">
+</script>
+
+
+    <script data-turbolinks-track="false" src="assets/highlight_left_menu.js"></script>
+
+</body>
+</html>

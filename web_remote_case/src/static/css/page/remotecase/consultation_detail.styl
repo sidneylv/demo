@@ -1,0 +1,719 @@
+@import '../../core/var'
+@import '../../core/mix'
+
+.tab-consultation-detail
+	background-color #fff
+	margin-top 32px	
+
+.tab-content--empty
+	padding 270px 0
+	background url('/static/image/file_empty.png') no-repeat center 175px
+	text-align center
+	font-size 32px
+	color #d7dfe0	
+
+.consultation-detail-bsxj
+	padding 42px 0
+	.hd,
+	.bd
+		margin 0 40px
+	.hd		
+		ul
+			margin-left -20px
+		li
+			float left
+			margin-left 20px
+			padding 0 60px
+			height 53px
+			background-color #eaf0f0
+			border-radius(3px)
+			line-height 53px
+			font-size 16px
+			color #333
+			em
+				color #28b9cf
+		.last
+			float right
+			padding 0
+			.btn-apply
+				display block	
+				padding 0 40px 0 75px
+				background url('/static/image/apply.png') no-repeat 43px 50% #50a2cb
+				border-radius(3px)
+				font-size 18px
+				color #fff
+	.bd
+		margin-top 35px
+		min-height 500px
+		border 4px solid #eceeee
+
+.consultation-detail-twd
+	padding 0 0 40px
+	.bd
+		ul
+			margin-left 58px	
+			li
+				position relative
+				float left
+				margin 40px 0 20px 0
+				padding-left 48px
+				width 260px
+				height 350px
+				border-bottom 4px solid #e0e6e8	
+				.t-img				
+					border 1px solid #e0e6e8
+					border-radius(5px)
+					img
+						display block
+						margin 15px auto
+				&:before
+					position absolute
+					left 48px
+					bottom -4px
+					width 260px
+					border-bottom 4px solid #e0e6e8
+					content ''							
+				&:after
+					position absolute
+					left 178px
+					bottom 0							
+					width 1px
+					height 28px
+					background-color #e0e6e8
+					content ''
+				.t-date
+					position absolute
+					left 48px
+					bottom -35px
+					width 260px
+					text-align center
+					font-size 14px
+				&:nth-child(4n+1)
+					padding-left 0
+					.t-date
+						left 0
+					&:before
+						left 0
+					&:after
+						left 130px								
+				&:hover						
+					.t-img
+						border-color #f87b52			
+					.t-date
+						color #f87b52
+					&:before
+						border-color #f87b52	
+					&:after
+						background-color #f87b52
+
+.consultation-detail-ct
+	ul
+		margin-left 7px
+		padding 20px 0
+		li
+			position relative
+			float left
+			margin 18px 0 0 45px			
+			width 265px
+			height 280px
+			a
+				position absolute
+				left 0
+				top 0
+				width 100%
+				height 220px
+				border-radius(3px)
+				&:hover					
+					opacity(0.65)
+			.view-movie:hover
+				background url('/static/image/prev-pic.png') no-repeat center center #000
+			.view-image:hover
+				background url('/static/image/sign_play.png') no-repeat center center #000
+			img
+				display block
+				margin 0 auto
+				border-radius(3px)
+			.p-name
+				margin-top 12px
+				font-size 14px
+				font-weight 600
+				color #333
+			.p-date
+				margin-top 3px
+				font-size 14px
+				color #999
+
+.consultation-detail-jcbg				
+	padding 30px 43px
+	.hd
+		border-bottom 1px solid #e0e6e8		
+	.bd
+		padding-top 20px
+		.pic-list
+			margin-left -33px
+			>li	
+				position relative
+				float left
+				margin 24px 0 0 33px
+				width 262px
+				height 278px
+				border 1px solid #e0e6e8				
+				>img 
+					display block
+				.p-play,
+				.p-view
+					position absolute
+					left 0
+					top 0
+					z-index $zindex-page
+					width 262px
+					height 230px
+					background url('/static/image/sign_play.png') no-repeat center center rgba(0,0,0,.55)
+				.p-view
+					background-image url('/static/image/sign_view.png')
+				.p-name
+					position relative
+					z-index $zindex-page
+					padding 0 0 0 12px				
+					height 48px
+					border-top 1px solid #e0e6e8
+					line-height 48px
+					font-size 14px
+					color #333				
+				.btn-group		
+					position absolute
+					left 0
+					bottom 0
+					z-index $zindex-page
+					display none		
+					width 100%
+					height 52px
+					line-height 52px
+					background-color rgba(255,255,255,.3)
+					font-size 0
+				.btn-report, .btn-picture
+					display inline-block
+					margin-top 11px	
+					padding 0 20px
+					height 30px
+					border-radius(3px)
+					line-height 30px
+					text-align center
+					font-size 14px
+					color #fff
+				.btn-picture
+					margin-left 15px
+					background #1c98e7		
+				.btn-report
+					margin-left 10px
+					background #f69601	
+				.btn-download
+					margin 15px 10px 0 0		
+					width 22px
+					height 22px
+					border-radius(3px)
+					background url('/static/image/download_white.png') no-repeat center center #00a8e0
+				&:hover								
+					.btn-group
+						display block
+						bottom 49px
+	.ft
+		margin-top 50px
+		text-align right
+		.download
+			width 229px
+			height 47px
+			background-color #dce4e5
+			line-height 47px
+			text-align center
+			border-radius(3px)
+			border 1px solid #c7d3d4
+			font-size 16px
+			color #333
+		.pagination--second
+			font-size 14px
+			margin-top 14px
+
+.timeline	
+	padding 0 28px
+	border-left 2px solid #9cd8e0
+.timeline__item
+	position relative
+	margin-bottom 20px
+	width 100%
+	&:before
+		position absolute
+		top 0
+		left -35px
+		width 13px
+		height 13px
+		background-color #9cd8e0
+		border-radius(13px)
+		content ''
+.timeline-date
+	display inline-block
+	width 160px
+	height 30px
+	background-color #e5eef0
+	border-radius(30px)
+	line-height 30px
+	text-align center
+	font-size 16px
+	color #333		
+
+.consultation-detail-bsjl
+	padding 30px 43px
+	.hd
+		border-bottom 1px solid #e0e6e8		
+	.bd
+		padding-top 20px
+	.c-table
+		>thead
+			th
+				background-color #fff
+				font-size 16px
+				font-weight 500
+		>tbody
+			>tr:hover
+				background-color #f5fafc
+				.filename
+					text-decoration underline
+					color #4193c6
+				.btn-view
+					background-image url('/static/image/view_orange.png')	
+			td
+				padding 18px 0		
+		.file-pdf,
+		.file-pic,
+		.file-1,
+		.file-movie
+			display inline-block
+			margin-right 10px
+			vertical-align middle
+		.file-pdf
+			width 25px
+			height 24px
+			background url('/static/image/file_pdf.png') no-repeat
+		.file-pic
+			width 23px
+			height 19px
+			background url('/static/image/file_pic.png') no-repeat
+		.file-movie
+			width 24px
+			height 22px
+			background url('/static/image/file_movie.png') no-repeat
+		.file-1
+			width 23px
+			height 23px
+			background url('/static/image/file_1.png') no-repeat
+		.filename
+			color #666
+		.btn-view
+			display block
+			margin 0 auto
+			font-size 0
+			width 34px
+			height 34px
+			background url('/static/image/view_grey.png') no-repeat
+
+.search-condition	
+	a
+		float left
+		margin 0 0 -1px 28px
+		padding 0 28px
+		height 40px
+		line-height 40px
+		font-size 14px
+		color #333
+		&:first-child
+			margin-left 0
+	.active
+		background-color #28b9cf
+		color #fff
+
+.consultation-detail-hjbg,
+.consultation-detail-yz
+	padding 40px 0
+	.bd
+		margin 0 40px
+		min-height 500px
+		border 4px solid #eceeee		
+
+.consultation-detail-hzyj
+	background-color #ebeeef
+	.row
+		padding 20px 40px
+	.row-bqxq
+		background-color #fff
+		h3
+			padding-left 33px
+			background url('/static/image/hospital.png') no-repeat left center
+			font-size 18px
+			font-weight 600
+			color #333
+		ul
+			margin 26px 0
+			border-width 1px 0
+			border-style solid
+			border-color #d8e1e5
+			li
+				float left
+				padding 16px 0
+				width 25%
+				text-align center
+				font-size 16px
+				em
+					color #41bed2
+			.bdr
+				margin-left -1px
+				border-right 1px solid #d8e1e5	
+		.item
+			margin-top 10px
+			padding 12px 16px
+			background-color #f3f6f6
+			font-size 16px
+			color #333
+			&:first-child
+				margin-top 25px
+			.item-left
+				float left	
+				width 80px
+				text-align right
+				font-weight 600
+			.item-right
+				margin-left 93px
+
+	.row-ysyj
+		background-color #fff
+		.hd
+			border-bottom 1px solid #d8e1e5
+			h3	
+				position relative	
+				margin-bottom -1px			
+				border-bottom 3px solid #28b9cf
+				font-size 18px
+				font-weight 600
+				color #333
+				i
+					position absolute
+					left 50%
+					bottom -8px
+					margin 0 0 0 -5px
+					width 10px
+					height 5px
+					background url('/static/image/arrow_down_blue.png') no-repeat
+		.bd
+			.item
+				margin-top 15px
+				font-size 14px
+				label
+					display block
+					font-weight 600
+				input,
+				textarea
+					margin-top 9px
+					padding 15px				
+					border 1px solid #d8e1e5
+					text-align left
+					resize none
+				input
+					width 450px
+				textarea
+					width 1190px
+					height 90px	
+			&:first-child
+				margin-top 30px
+		.ft
+			margin-top 34px
+
+	.btn-refuse,
+	.btn-publish,
+	.btn-save
+		display inline-block
+		border 0
+		border-radius(3px)
+		height 53px
+		line-height 53px
+		text-align center
+		font-size 18px
+		color #fff
+	.btn-refuse
+		width 197px
+		background-color #7c9cb7
+	.btn-save
+		width 199px
+		background-color #1eb7ce
+	.btn-publish
+		margin-left 25px	
+		width 143px
+		background-color #f16d3d									
+
+	.row-history
+		margin-top 20px
+		padding-bottom 40px
+		background-color #fff		
+		.hd
+			border-bottom 1px solid #d8e1e5
+			h3	
+				position relative	
+				margin-bottom -1px			
+				border-bottom 3px solid #28b9cf
+				font-size 18px
+				font-weight 600
+				color #333
+				i
+					position absolute
+					left 50%
+					bottom -8px
+					margin 0 0 0 -5px
+					width 10px
+					height 5px
+					background url('/static/image/arrow_down_blue.png') no-repeat
+		.bd
+			margin-top 20px
+			padding 0 35px 27px
+			background-color #f5f5f5
+			h4	
+				margin-bottom 20px			
+				padding 27px 0 10px
+				border-bottom 1px solid #e0e0e0	
+				font-size 16px
+				font-weight 600
+				color #666
+			.item
+				margin-top 7px
+				font-size 14px
+				color #777
+			.item-left
+				float left
+				width 70px
+				text-align right
+				font-weight 600
+			.item-right
+				margin-left 90px		
+
+.consultation-detail-hzyj--done
+	padding 15px 0
+	.row
+		padding 30px 37px 0
+	.row-patient-info
+		ul
+			border-top 1px solid #d8e1e5
+			border-bottom 1px solid #d8e1e5
+			li
+				float left
+				padding 12px 80px				
+				border-right 1px solid #d8e1e5
+				text-align center
+				font-size 16px
+				em
+					color #41bed2
+			&:first-child
+				border-left 1px solid #d8e1e5	
+		.view-consultation
+			margin-top -3px
+			padding-left 81px
+			width 179px
+			height 76px
+			background url('/static/image/search.png') no-repeat 34px 50% #50a2cb
+			line-height 76px
+			font-size 18px
+			color #fff
+	.row-consultation-detail
+		margin 30px 37px 0
+		padding 0		
+		border 1px solid #d8e1e5
+		h3
+			margin-top 30px
+			padding 0 14px
+			height 46px
+			background-color #ecefef
+			line-height 46px
+			font-size 16px
+			font-weight 600
+			color #28b9cf
+			&:first-child
+				margin-top 0	
+		.item
+			margin-top 10px
+			padding 0 14px
+			font-size 14px
+		.item-left
+			float left
+			width 70px
+			text-align right
+			font-weight 600
+		.item-right 
+			margin-left 90px
+	.signature
+		position relative
+		padding 50px 45px 30px
+		font-size 16px
+		color #333
+		p
+			display inline-block
+			width 150px
+			border-bottom 1px solid #434343
+		img
+			position absolute
+			right 0
+			bottom 40px
+	.row-consultation-history
+		h3
+			padding-left 12px
+			border-left 4px solid #28b9cf
+			line-height 1
+			font-size 18px
+			font-weight 600
+			color #333
+		.bd
+			position relative
+			margin-top 20px
+			padding 0 35px 27px
+			background-color #f5f5f5
+			h4	
+				margin-bottom 20px			
+				padding 27px 0 10px
+				border-bottom 1px solid #e0e0e0	
+				font-size 16px
+				font-weight 600
+				color #666
+			.item
+				margin-top 7px
+				font-size 14px
+				color #777
+			.item-left
+				float left
+				width 70px
+				text-align right
+				font-weight 600
+			.item-right
+				margin-left 90px
+			&:before,
+			&:after	
+				position absolute
+				left 42px
+				width 18px
+				height 9px
+				content ''
+			&:before	
+				top 0
+				background url('/static/image/arrow_down_white.png') no-repeat
+			&:after
+				bottom -9px	
+				background url('/static/image/arrow_down_grey.png') no-repeat
+
+.publishForm
+	.modal-body
+		padding 0 33px 40px
+	.sc-info
+		margin-top 25px
+		font-size 14px
+		color #555
+		a 
+			position relative
+			color #54b5cb
+			&:hover
+				.signature-box
+					display block
+	.signature-box
+		display none
+		position absolute
+		left -80px
+		top 25px
+		width 229px
+		height 119px
+		background #fff
+		border-radius(3px)
+		box-shadow(0 0 3px rgba(0,0,0, .3))
+		z-index $zindex-page
+		img 
+			margin 17px 0  0 15px
+	.signature-box-arr
+		position absolute
+		left 103px
+		top -8px
+		z-index $zindex-page
+		width 14px
+		height 8px
+		background url('/static/image/arr_up_white.png') no-repeat 
+	.sc-input
+		margin-top 25px
+	.sc-input-text
+		padding 0 8px
+		width 234px
+		height 40px
+		border 1px solid #c5c5c5
+		line-height 40px
+		font-size 16px
+	.btn-sc 
+		margin-left 10px
+		width 99px
+		height 42px
+		background-color #fff
+		border 1px solid #e0e0e0	
+		line-height 42px
+		font-size 14px
+		color #666
+	.btn-sc-disable
+		color #999
+	.sc-help 
+		margin-top 7px
+		font-size 14px
+		color #666
+
+.returnForm
+	.modal-body
+		padding-bottom 0
+	.form-horizontal
+		padding 15px 0 25px
+		font-size 14px
+		color #000
+		.control-group
+			margin 0 0 10px
+			height auto
+			line-height 1.5
+		.controls
+			margin-left 56px	
+		.textarea-text
+			padding 10px
+			width 295px
+			height 80px
+			border 1px solid #c5c5c5
+			resize none
+			font-size 14px
+
+.receiveConsultation
+	.modal-header
+		background-color #fff
+	.modal-body	
+		.title
+			text-align center
+			font-size 18px
+			color #333
+		.tips
+			margin-top 22px
+			text-align center
+			font-size 14px
+		.btn-group
+			margin-top 28px
+			text-align center
+			font-size 0
+			button
+				display inline-block
+				width 162px
+				height 41px
+				border 0
+				border-radius(3px)
+				line-height 41px
+				text-align center
+				font-size 14px
+			.btn-refuse
+				background-color #dedede
+				color #666
+			.btn-receive
+				margin-left 20px
+				background-color #f86e3d
+				color #fff			
+						
+							

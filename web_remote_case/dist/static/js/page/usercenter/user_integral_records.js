@@ -1,0 +1,1 @@
+require(["bootstrap"],function(){function n(){$("#J_integral-convert-records").on("click","a",o)}function o(){$("#J_integral-convert-dialog").modal("show")}function t(){n()}t()});

@@ -1,0 +1,6 @@
+.c-tab .tab-content > .tab-pane {
+  display: none;
+}
+.c-tab .tab-content .active {
+  display: block;
+}

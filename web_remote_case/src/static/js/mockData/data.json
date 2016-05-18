@@ -1,0 +1,18 @@
+{
+	"error_code": 200,
+	"error_msg": "\u6e38\u620f\u7c7b\u578b\u83b7\u53d6\u6210\u529f",
+	"data": [{
+		"id": "11",
+		"classifyName": "\u4f11\u95f2",
+		"status": "1"
+	}, {
+		"id": "12",
+		"classifyName": "\u684c\u9762",
+		"status": "1"
+	}, {
+		"id": "13",
+		"classifyName": "\u5176\u4ed6",
+		"status": "1"
+	}],
+	"total": "11"
+}
